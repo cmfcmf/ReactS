@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CMFReactTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

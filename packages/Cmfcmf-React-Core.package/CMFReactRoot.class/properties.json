@@ -1,0 +1,15 @@
+{
+	"category" : "Cmfcmf-React-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"onDelete",
+		"proxee" ],
+	"name" : "CMFReactRoot",
+	"pools" : [
+		 ],
+	"super" : "ProtoObject",
+	"type" : "normal" }

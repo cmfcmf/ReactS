@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Morphs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"onChange" ],
+	"name" : "CMFReactBaseTextInput",
+	"pools" : [
+		 ],
+	"super" : "PluggableTextMorphWithModel",
+	"type" : "normal" }

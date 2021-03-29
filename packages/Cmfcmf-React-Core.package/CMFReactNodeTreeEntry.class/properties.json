@@ -1,0 +1,18 @@
+{
+	"category" : "Cmfcmf-React-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"node",
+		"childNodes",
+		"parent",
+		"index",
+		"renderResult" ],
+	"name" : "CMFReactNodeTreeEntry",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

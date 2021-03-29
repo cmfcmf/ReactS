@@ -1,0 +1,15 @@
+{
+	"category" : "Cmfcmf-React-Hooks",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"state",
+		"onUpdate" ],
+	"name" : "CMFReactHookUseState",
+	"pools" : [
+		 ],
+	"super" : "CMFReactHook",
+	"type" : "normal" }

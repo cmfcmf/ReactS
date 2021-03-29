@@ -1,0 +1,18 @@
+{
+	"category" : "Cmfcmf-React-Hooks",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"effect",
+		"react",
+		"cleanup",
+		"dependencies",
+		"hasRun" ],
+	"name" : "CMFReactHookUseEffect",
+	"pools" : [
+		 ],
+	"super" : "CMFReactHook",
+	"type" : "normal" }

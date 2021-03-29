@@ -1,0 +1,8 @@
+OrderedDictionary {
+	'packages/Cmfcmf-React-Components.package' : #SquotCypressCodeSerializer,
+	'packages/Cmfcmf-React-Core.package' : #SquotCypressCodeSerializer,
+	'packages/Cmfcmf-React-Hooks.package' : #SquotCypressCodeSerializer,
+	'packages/Cmfcmf-React-Morphs.package' : #SquotCypressCodeSerializer,
+	'packages/Cmfcmf-React-Tests.package' : #SquotCypressCodeSerializer,
+	'packages/BaselineOfCmfcmfReact.package' : #SquotCypressCodeSerializer
+}

@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CMFReactComponentWindow",
+	"pools" : [
+		 ],
+	"super" : "CMFReactComponentBasicMorphs",
+	"type" : "normal" }

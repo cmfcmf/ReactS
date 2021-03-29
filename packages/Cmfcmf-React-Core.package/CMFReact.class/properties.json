@@ -1,0 +1,21 @@
+{
+	"category" : "Cmfcmf-React-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"rootElement",
+		"rootMorph",
+		"stateHooks",
+		"elementTree",
+		"currentRenderElement",
+		"useStateHookIndex",
+		"effectHooks",
+		"useEffectHookIndex" ],
+	"name" : "CMFReact",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

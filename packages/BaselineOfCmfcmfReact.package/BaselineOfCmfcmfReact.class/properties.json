@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfCmfcmfReact",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfCmfcmfReact",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

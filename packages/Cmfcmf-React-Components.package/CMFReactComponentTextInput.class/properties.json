@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CMFReactComponentTextInput",
+	"pools" : [
+		 ],
+	"super" : "CMFReactComponentBasicMorphs",
+	"type" : "normal" }
