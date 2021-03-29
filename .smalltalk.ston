@@ -2,7 +2,15 @@ SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
       #baseline : 'CmfcmfReact',
+      #load : [ 'tests' ],
+      #directory : 'packages',
       #platforms : [ #squeak ]
     }
-  ]
+  ],
+  #testing : {
+    #categories : [ 'Cmfcmf-React-*' ],
+    #coverage : {
+      #categories : [ 'Cmfcmf-React-*' ]
+    }
+  }
 }
