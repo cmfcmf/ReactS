@@ -5,4 +5,6 @@ codeChanged: event
 	
 	Transcript showln: event.
 	self flag: #todo. "Only re-render updated components"
+	
+	elementTree := CMFReactNodeTree new.
 	self render
