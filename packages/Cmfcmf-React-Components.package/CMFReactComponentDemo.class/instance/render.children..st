@@ -10,7 +10,7 @@ render: props children: children
 			'Simple Calculator'.
 			CMFReactComponentCalculator asElementBuilder build.
 			{
-				'Hallo :)' asText allBold.
+				'Hallo Christian!!!' asText allBold.
 				{
 					{'toll das alles!!!' asText allBold} 
 				}.

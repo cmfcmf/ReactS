@@ -6,9 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"factoryBlock",
-		"children",
-		"key" ],
+		"createBlock",
+		"initBlock",
+		"childrenMorphsBlock",
+		"key",
+		"children" ],
 	"name" : "CMFReactNodeMorph",
 	"pools" : [
 		 ],

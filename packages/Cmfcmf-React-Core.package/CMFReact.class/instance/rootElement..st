@@ -11,6 +11,6 @@ rootElement: rootElement_
 	
 	self render.
 	
-	SystemChangeNotifier uniqueInstance notify: self ofAllSystemChangesUsing: #render.
+	SystemChangeNotifier uniqueInstance notify: self ofAllSystemChangesUsing: #codeChanged:.
 	
 	^ rootMorph

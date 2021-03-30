@@ -1,13 +1,15 @@
 as yet unclassified
 render: props children: children
 	
-	^ CMFReactNodeMorph factory: [ 
-		"self assert: children size = 1." self flag: #todo. "Why is this assert triggered?"
-		(SystemWindow labelled: (props at: #label ifAbsent: ['My Window']))
-			"addMorph: children first fullFrame: (LayoutFrame fractions: (0@0 corner: 1@1));"
-			yourself] children: children.
-	"
-		<systemwindow label={props.label}>
-			{children}
-		</systemwindow>
-	"
+	| extent |
+	
+	extent := self useState: [CMFReactBaseSystemWindow new defaultBounds extent].
+	
+	^ CMFReactBaseSystemWindow asReactNodeBuilder
+		init: [:m | m
+			label: (props at: #label ifAbsent: ['My Window']);
+			extent: extent get;
+			onChangeExtent: [:newExtent | extent set: newExtent]];
+		childrenMorphs: [:m :childMorphs | m updateChildren: childMorphs];
+		children: children;
+		build

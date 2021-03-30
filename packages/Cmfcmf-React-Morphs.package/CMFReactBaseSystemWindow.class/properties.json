@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Morphs",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"onChangeExtent" ],
+	"name" : "CMFReactBaseSystemWindow",
+	"pools" : [
+		 ],
+	"super" : "PluggableSystemWindow",
+	"type" : "normal" }

@@ -1,14 +1,13 @@
 {
 	"class" : {
-		"factory:" : "cmfcmf 3/29/2021 11:40",
-		"factory:children:" : "cmfcmf 3/29/2021 12:16",
-		"key:factory:" : "cmfcmf 3/29/2021 12:16",
-		"key:factory:children:" : "cmfcmf 3/29/2021 12:15" },
+		 },
 	"instance" : {
 		"children" : "cmfcmf 3/29/2021 11:38",
-		"children:" : "cmfcmf 3/29/2021 11:38",
-		"factoryBlock:" : "cmfcmf 3/29/2021 10:14",
+		"children:" : "cmfcmf 3/30/2021 14:07",
+		"childrenMorphsBlock:" : "cmfcmf 3/30/2021 13:02",
+		"createBlock:" : "cmfcmf 3/30/2021 12:30",
+		"initBlock:" : "cmfcmf 3/30/2021 12:31",
 		"key" : "cmfcmf 3/29/2021 12:17",
 		"key:" : "cmfcmf 3/29/2021 12:17",
-		"render:" : "cmfcmf 3/29/2021 15:20",
+		"render:lastRenderResult:" : "cmfcmf 3/30/2021 14:07",
 		"type" : "cmfcmf 3/29/2021 12:00" } }

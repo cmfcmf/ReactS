@@ -1,5 +1,7 @@
 as yet unclassified
 set: updater
 
-	state := updater isBlock ifTrue: [updater cull: state] ifFalse: [updater].
-	onUpdate value
+	| oldState |
+	oldState := state.
+	state := updater isBlock ifTrue: [updater cull: oldState] ifFalse: [updater].
+	state ~~ oldState ifTrue: [onUpdate value]

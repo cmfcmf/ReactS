@@ -12,7 +12,7 @@ renderingWithChildren: node during: aBlock
 		ifFalse: [currentLevel := currentLevel addChild: node].
 	currentIndex := 1.
 	
-	result := aBlock value.
+	result := aBlock value: (treeNodeFromLastRender ifNotNil: [:t | t renderResult]).
 	
 	currentLevel renderResult: result.
 	

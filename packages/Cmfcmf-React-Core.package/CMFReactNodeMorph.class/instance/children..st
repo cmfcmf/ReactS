@@ -1,5 +1,5 @@
 as yet unclassified
 children: anObject
 
-	self assert: anObject isSequenceable.
+	self assert: (anObject isNil or: [anObject isSequenceable]).
 	children := anObject

@@ -1,4 +1,4 @@
 *Cmfcmf-React-Core
 asCMFReactNode
 
-	^ CMFReactNodeMorph factory: [self asMorph readOnly: true; yourself]
+	^ TextMorph asReactNodeBuilder init: [:m | m contentsAsIs: self; readOnly: true]; build

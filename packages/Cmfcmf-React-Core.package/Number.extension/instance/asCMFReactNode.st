@@ -1,4 +1,4 @@
 *Cmfcmf-React-Core
 asCMFReactNode
 
-	^ CMFReactNodeMorph factory: [self asString asMorph]
+	^ self asString asCMFReactNode
