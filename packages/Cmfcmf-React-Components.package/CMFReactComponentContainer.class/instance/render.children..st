@@ -8,7 +8,7 @@ render: props children: children
 			cellInset: 2;
 			layoutPolicy: TableLayout new;
 			layoutFrame: (LayoutFrame fractions: (0@0 extent: 1@1));
-			hResizing: #shrinkWrap;
+			hResizing: #spaceFill;
 			vResizing: #shrinkWrap;
 			yourself];
 		init: [:m | m 

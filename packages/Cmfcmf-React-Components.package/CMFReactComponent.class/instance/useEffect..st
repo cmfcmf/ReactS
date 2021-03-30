@@ -1,4 +1,4 @@
 as yet unclassified
 useEffect: effect
 
-	^ self useEffect: effect dependencies: nil
+	^ CMFReact useEffect: effect dependencies: nil

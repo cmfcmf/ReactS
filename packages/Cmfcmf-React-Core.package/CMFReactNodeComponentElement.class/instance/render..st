@@ -3,4 +3,5 @@ render: react
 
 	| component |
 	component := elementClass new.
-	^ react renderNode: (component render: props children: children react: react)
+	^ react renderNode: (
+		CMFCurrentReact value: react during: [component render: props children: children])
