@@ -7,7 +7,7 @@ renderingWithChildren: node during: aBlock
 	
 	treeNodeFromLastRender := currentLevel childTreeNodeAt: currentIndex ifAbsent: [nil].
 	oldIndex := currentIndex + 1.
-	(treeNodeFromLastRender notNil and: [treeNodeFromLastRender node type == node type]) 
+	(treeNodeFromLastRender notNil and: [treeNodeFromLastRender node type = node type]) 
 		ifTrue: [
 			currentLevel := treeNodeFromLastRender.
 			currentLevel node: node]

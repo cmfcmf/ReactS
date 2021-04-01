@@ -1,4 +1,4 @@
 accessing
 type
 
-	^ #morph
+	^ {#morph. createBlock}

@@ -8,7 +8,6 @@ renderNode: nodeOrStringOrNumber
 		| result |
 		self beginRendering: node. "for hooks"
 		result :=  [node render: self lastRenderResult: lastRenderResult] ensure: [
-			self endRendering: node "for hooks"
-		].
+			self endRendering: node "for hooks"].
 		self assert: (self class isValidRenderResult: result).
 		result]
