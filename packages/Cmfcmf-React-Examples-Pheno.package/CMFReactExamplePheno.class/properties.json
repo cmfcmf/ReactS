@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Examples-Pheno",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CMFReactExamplePheno",
+	"pools" : [
+		 ],
+	"super" : "CMFReactComponent",
+	"type" : "normal" }

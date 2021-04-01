@@ -4,5 +4,7 @@ OrderedDictionary {
 	'packages/Cmfcmf-React-Hooks.package' : #SquotCypressCodeSerializer,
 	'packages/Cmfcmf-React-Morphs.package' : #SquotCypressCodeSerializer,
 	'packages/Cmfcmf-React-Tests.package' : #SquotCypressCodeSerializer,
-	'packages/BaselineOfCmfcmfReact.package' : #SquotCypressCodeSerializer
+	'packages/BaselineOfCmfcmfReact.package' : #SquotCypressCodeSerializer,
+	'packages/Cmfcmf-React-Examples-Core.package' : #SquotCypressCodeSerializer,
+	'packages/Cmfcmf-React-Examples-Pheno.package' : #SquotCypressCodeSerializer
 }
