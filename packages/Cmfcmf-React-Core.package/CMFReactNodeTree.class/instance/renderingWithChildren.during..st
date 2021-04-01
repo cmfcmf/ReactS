@@ -1,22 +1,24 @@
 as yet unclassified
 renderingWithChildren: node during: aBlock
 
-	| oldLevel oldIndex treeNodeFromLastRender result |
+	| oldId oldIndex treeNodeFromLastRender result |
 	
-	oldLevel := currentLevel.
+	oldId := currentLevel id.
 	
-	treeNodeFromLastRender := currentLevel childNodeAt: currentIndex ifAbsent: [nil].
+	treeNodeFromLastRender := currentLevel childTreeNodeAt: currentIndex ifAbsent: [nil].
 	oldIndex := currentIndex + 1.
 	(treeNodeFromLastRender notNil and: [treeNodeFromLastRender node type == node type]) 
-		ifTrue: [currentLevel := treeNodeFromLastRender]
-		ifFalse: [currentLevel := currentLevel addChild: node].
+		ifTrue: [
+			currentLevel := treeNodeFromLastRender.
+			currentLevel node: node]
+		ifFalse: [currentLevel := currentLevel addChildNodeToTree: node].
 	currentIndex := 1.
 	
 	result := aBlock value: (treeNodeFromLastRender ifNotNil: [:t | t renderResult]).
 	
 	currentLevel renderResult: result.
 	
-	currentLevel := oldLevel.
+	currentLevel := (rootEntry findTreeNodeAndIndexById: oldId) first.
 	currentIndex := oldIndex.
 	
 	^ result

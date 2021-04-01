@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 childrenMorphsBlock: aBlock
 
 	childrenMorphsBlock := aBlock

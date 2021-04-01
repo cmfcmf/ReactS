@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CMFReactComponentDemo2Windows",
+	"pools" : [
+		 ],
+	"super" : "CMFReactComponent",
+	"type" : "normal" }

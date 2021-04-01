@@ -1,9 +1,9 @@
-as yet unclassified
+initialize-release
 initialize 
 
 	super initialize.
 	
 	elementClass := nil.
 	key := nil.
+	children := nil.
 	props := Dictionary new.
-	children := {}

@@ -1,7 +1,7 @@
-as yet unclassified
+initialize-release
 initialize 
 
 	super initialize.
-	childNodes := OrderedCollection new.
+	childrenTreeNodes := OrderedCollection new.
 	parent := nil.
 	index := -1

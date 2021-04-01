@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 render: react lastRenderResult: renderResult
 
 	^ self render: react

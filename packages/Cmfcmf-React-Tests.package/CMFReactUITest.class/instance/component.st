@@ -1,0 +1,4 @@
+running
+component
+
+	self subclassResponsibility 

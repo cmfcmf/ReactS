@@ -7,10 +7,10 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"node",
-		"childNodes",
 		"parent",
 		"index",
-		"renderResult" ],
+		"renderResult",
+		"childrenTreeNodes" ],
 	"name" : "CMFReactNodeTreeEntry",
 	"pools" : [
 		 ],

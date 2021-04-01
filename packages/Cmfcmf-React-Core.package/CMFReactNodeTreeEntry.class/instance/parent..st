@@ -1,4 +1,4 @@
-as yet unclassified
-parent: aCompTreeNode
+accessing
+parent: aCMFReactNodeTreeEntry
 
-	parent := aCompTreeNode
+	parent := aCMFReactNodeTreeEntry

@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CMFReactSimpleClickCounterTestComponent",
+	"pools" : [
+		 ],
+	"super" : "CMFReactComponent",
+	"type" : "normal" }

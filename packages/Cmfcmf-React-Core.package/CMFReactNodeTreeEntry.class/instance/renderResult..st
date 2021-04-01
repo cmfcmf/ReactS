@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 renderResult: result
 
 	self assert: (CMFReact isValidRenderResult: result).

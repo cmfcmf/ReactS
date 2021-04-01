@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 props: aDictionaryOrSequenceableCollection
 
 	props := aDictionaryOrSequenceableCollection isDictionary 

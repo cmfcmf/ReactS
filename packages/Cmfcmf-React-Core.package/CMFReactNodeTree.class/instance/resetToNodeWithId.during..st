@@ -1,12 +1,12 @@
 as yet unclassified
 resetToNodeWithId: id during: aBlock
 
-	| oldLevel oldIndex nodeAndIndex treeNode index |
-	oldLevel := currentLevel.
+	| oldId oldIndex nodeAndIndex treeNode index |
+	oldId := currentLevel id.
 	oldIndex := currentIndex.
 	
 	^ [
-		nodeAndIndex := currentLevel findNodeAndIndexById: id.
+		nodeAndIndex := currentLevel findTreeNodeAndIndexById: id.
 		self assert: nodeAndIndex notNil.
 	
 		treeNode := nodeAndIndex first.
@@ -15,4 +15,4 @@ resetToNodeWithId: id during: aBlock
 		currentLevel := treeNode parent.
 		currentIndex := index.
 
-		aBlock value: treeNode] ensure: [currentLevel := oldLevel. currentIndex := oldIndex]
+		aBlock value: treeNode] ensure: [currentLevel := (rootEntry findTreeNodeAndIndexById: oldId) first. currentIndex := oldIndex]

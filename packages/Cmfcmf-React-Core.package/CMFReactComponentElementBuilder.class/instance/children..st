@@ -1,4 +1,4 @@
-as yet unclassified
-children: aSequenceableCollection
+accessing
+children: aSequenceableCollectionOrNil
 
-	children := aSequenceableCollection asArray
+	children := aSequenceableCollectionOrNil

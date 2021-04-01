@@ -1,4 +1,5 @@
-as yet unclassified
+accessing
 node: aCMFReactNode
 
-	node := aCMFReactNode
+	self assert: (CMFReact isValidNode: aCMFReactNode).
+	node := aCMFReactNode asCMFReactNode 

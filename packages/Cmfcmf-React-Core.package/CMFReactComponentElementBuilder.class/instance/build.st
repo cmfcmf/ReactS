@@ -1,9 +1,12 @@
-as yet unclassified
+building
 build
 
-	^ CMFReactNodeComponentElement new 
+	| propsWithChildren |
+	propsWithChildren := props.
+	children ifNotNil: [propsWithChildren at: #children put: children asArray].
+	
+	^ CMFReactNodeClassComponentElement new 
 		elementClass: elementClass;
 		key: key;
-		props: props;
-		children: children;
+		props: propsWithChildren;
 		yourself

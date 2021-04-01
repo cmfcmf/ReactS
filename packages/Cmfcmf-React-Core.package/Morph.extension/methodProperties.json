@@ -2,4 +2,8 @@
 	"class" : {
 		"asReactNodeBuilder" : "cmfcmf 3/30/2021 12:35" },
 	"instance" : {
-		 } }
+		"addCustomMenuItems:hand:" : "cmfcmf 4/1/2021 10:59",
+		"cmfGetCorrespondingReactRoot" : "cmfcmf 3/30/2021 21:24",
+		"cmfOutOfWorld" : "cmfcmf 3/30/2021 21:31",
+		"cmfSetCorrespondingReactRoot:" : "cmfcmf 3/30/2021 21:24",
+		"outOfWorld:" : "cmfcmf 3/30/2021 21:26" } }

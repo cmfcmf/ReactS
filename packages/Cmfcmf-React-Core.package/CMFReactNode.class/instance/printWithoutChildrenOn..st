@@ -1,0 +1,4 @@
+printing
+printWithoutChildrenOn: aStream
+
+	self subclassResponsibility

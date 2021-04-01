@@ -6,7 +6,9 @@ renderNode: nodeOrStringOrNumber
 		
 	^ elementTree renderingWithChildren: node during: [:lastRenderResult |
 		| result |
-		self beginRendering: node.
-		result :=  [node render: self lastRenderResult: lastRenderResult] ensure: [self endRendering: node].
+		self beginRendering: node. "for hooks"
+		result :=  [node render: self lastRenderResult: lastRenderResult] ensure: [
+			self endRendering: node "for hooks"
+		].
 		self assert: (self class isValidRenderResult: result).
 		result]

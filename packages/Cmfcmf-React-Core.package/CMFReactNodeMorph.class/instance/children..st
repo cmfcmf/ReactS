@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 children: anObject
 
 	self assert: (anObject isNil or: [anObject isSequenceable]).
