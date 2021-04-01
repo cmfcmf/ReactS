@@ -1,15 +1,14 @@
 {
-	"category" : "Cmfcmf-React-Hooks",
+	"category" : "Cmfcmf-React-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"state",
-		"onChange" ],
-	"name" : "CMFReactHookUseState",
+		 ],
+	"name" : "CMFReactTextInputTest",
 	"pools" : [
 		 ],
-	"super" : "CMFReactHook",
+	"super" : "CMFReactUITest",
 	"type" : "normal" }

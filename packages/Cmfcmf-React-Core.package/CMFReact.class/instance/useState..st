@@ -8,8 +8,7 @@ useState: default
 			at: useStateHookIndex 
 			ifAbsentPut: [
 				CMFReactHookUseState new
-					initState: default;
-					when: #stateChanged send: #reRenderNodeWithId: to: self with: id;
+					initState: default onChange: [self reRenderNodeWithId: id];
 					yourself].
 	useStateHookIndex := useStateHookIndex + 1.
 	^ hook
