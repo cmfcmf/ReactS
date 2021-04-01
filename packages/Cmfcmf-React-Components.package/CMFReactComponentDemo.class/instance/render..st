@@ -12,7 +12,7 @@ render: props
 			{
 				'Hallo Welt!' asText allBold.
 				{
-					{'noch mehr Text!!!' asText allBold} 
+					{'das ist cool :)' asText allBold} 
 				}.
 			}.
 		}; build

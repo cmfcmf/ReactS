@@ -4,5 +4,9 @@ updateChildren: aCollection
 	children ifNil: [children := {}].
 	self removeAllMorphsIn: children.
 	children := aCollection.
-	self addAllMorphs: children.
-	children do: [:m| m hResizing: #spaceFill; vResizing: #spaceFill]
+	children do: [:m| 
+		m
+			layoutFrame: (LayoutFrame fractions: (0@0 extent: 1@1));
+			hResizing: #spaceFill; 
+			vResizing: #spaceFill.
+		self addMorph: m]

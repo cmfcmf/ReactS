@@ -11,8 +11,8 @@ render: react lastRenderResult: lastRenderResult
 				childrenMorphsBlock 
 					ifNil: [newMorph addAllMorphs: newChildren] 
 					ifNotNil: [childrenMorphsBlock value: newMorph value: newChildren]]]
-		ifNotNil: [:oldMorph |
-			newMorph := oldMorph.
+		ifNotNil: [
+			newMorph := lastRenderResult.
 			initBlock value: newMorph.
 			children ifNotNil: [| newChildren |
 				newChildren := children ifNotNil: [react renderNodes: children].
