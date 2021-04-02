@@ -25,7 +25,7 @@ WIP: Modern [ReactJS](https://reactjs.org), including React Hooks, implemented i
   - [ ] [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer)
   - [ ] [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback)
   - [ ] [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo)
-  - [ ] [useRef](https://reactjs.org/docs/hooks-reference.html#useref)
+  - [x] [useRef](https://reactjs.org/docs/hooks-reference.html#useref)
   - [ ] [useImperativeHandle](https://reactjs.org/docs/hooks-reference.html#useimperativehandle)
   - [ ] [useDebugValue](https://reactjs.org/docs/hooks-reference.html#usedebugvalue)
 - [x] Fast Refresh (refresh UI on source code changes without losing its state)
@@ -45,7 +45,9 @@ Metacello new
 CMFReactComponentDemo openInHand
 ```
 
-## Example
+## Examples
+
+### Simple Click Counter
 
 A simple example component that provides a button to increment a number is shown below:
 
@@ -69,3 +71,43 @@ MyExampleComponent >> render: props
 ```
 
 `MyExampleComponent` must inherit from `CMFReactComponent`. To render and open it, execute `CMFReactComponent openInHand`
+
+### TODO Notes App
+
+A window that manages a list of TODO items.
+
+```smalltalk
+CMFReactExampleAppTodoNotes >> render: props
+
+	| todos nextId addTodo deleteTodo |
+	nextId := self useRef: 1.
+	todos := self useState: {}.
+	
+	addTodo := [
+		todos set: [:old | | id |
+			id := nextId get.
+			nextId set: id + 1.
+			old copyWith: (Dictionary newFrom: {#id -> id. #content -> (UIManager default request: 'Note content?')})]].
+	
+	deleteTodo := [:id | todos set: [:old | old copyWithout: (old detect: [:oldEach | (oldEach at: #id) == id])]].
+	
+	^ CMFReactComponentWindow asElementBuilder
+		props: {#label -> 'TODO Notes'. #defaultExtent -> (400 @ 225)};
+		children: {
+			CMFReactComponentContainer asElementBuilder
+				props: {#scrollable -> true};
+				children: {
+					CMFReactComponentButton asElementBuilder
+						props: {#label -> 'Add TODO Note'. #onClick -> addTodo};
+						build.
+					todos get collect: [:each |
+						CMFReactComponentContainer asElementBuilder
+							children: {
+								each at: #content.
+								CMFReactComponentButton asElementBuilder
+									props: {#label -> 'delete'. #onClick -> [deleteTodo value: (each at: #id)]};
+									build};
+							build]};
+				build};
+		build
+```
