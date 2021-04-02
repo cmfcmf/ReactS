@@ -9,8 +9,9 @@
 		"elementClass",
 		"key",
 		"props",
-		"children" ],
-	"name" : "CMFReactComponentElementBuilder",
+		"children",
+		"overwrittenProps" ],
+	"name" : "CMFReactNodeComponentBuilder",
 	"pools" : [
 		 ],
 	"super" : "Object",

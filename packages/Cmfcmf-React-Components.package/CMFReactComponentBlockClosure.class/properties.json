@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Components",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cmfcmf 4/2/2021 09:45",
+	"instvars" : [
+		 ],
+	"name" : "CMFReactComponentBlockClosure",
+	"pools" : [
+		 ],
+	"super" : "CMFReactComponentInternal",
+	"type" : "normal" }

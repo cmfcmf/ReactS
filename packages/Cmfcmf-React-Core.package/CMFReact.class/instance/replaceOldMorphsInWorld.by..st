@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 replaceOldMorphsInWorld: old by: new
 
 	| oldMorphs newMorphs |

@@ -1,5 +1,5 @@
 as yet unclassified
-abandon
+onComponentWasDestroyed
 
 	cleanup ifNotNil: [cleanup value].
 	effect := cleanup := nil.

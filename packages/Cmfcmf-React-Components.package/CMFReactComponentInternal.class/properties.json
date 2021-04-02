@@ -1,5 +1,5 @@
 {
-	"category" : "Cmfcmf-React-Tests",
+	"category" : "Cmfcmf-React-Components",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "CMFReactSimpleClickCounterTestComponent",
+	"name" : "CMFReactComponentInternal",
 	"pools" : [
 		 ],
 	"super" : "CMFReactComponent",

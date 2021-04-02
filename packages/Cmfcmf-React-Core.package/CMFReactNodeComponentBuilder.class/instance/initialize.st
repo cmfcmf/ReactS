@@ -7,3 +7,4 @@ initialize
 	key := nil.
 	children := nil.
 	props := Dictionary new.
+	overwrittenProps := Dictionary new

@@ -2,7 +2,8 @@ building
 build
 
 	| propsWithChildren |
-	propsWithChildren := props.
+	propsWithChildren := props copy.
+	propsWithChildren addAll: overwrittenProps.
 	children ifNotNil: [propsWithChildren at: #children put: children asArray].
 	
 	^ CMFReactNodeClassComponentElement new 

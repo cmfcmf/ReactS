@@ -1,8 +1,7 @@
 as yet unclassified
 cleanup
 
-	effectHooks values concatenation do: #abandon.
-	effectHooks removeAll.
+	hooks values concatenation do: #onComponentWasDestroyed.
 	
 	SystemChangeNotifier uniqueInstance noMoreNotificationsFor: self.
 	

@@ -7,7 +7,6 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"effect",
-		"react",
 		"cleanup",
 		"dependencies",
 		"hasRun" ],

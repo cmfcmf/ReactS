@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "CMFReactComponentMutatingChildren",
+	"name" : "CMFReactEffectTest",
 	"pools" : [
 		 ],
-	"super" : "CMFReactComponent",
+	"super" : "CMFReactUITest",
 	"type" : "normal" }

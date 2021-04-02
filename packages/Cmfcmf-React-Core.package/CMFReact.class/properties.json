@@ -7,12 +7,10 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"rootElement",
-		"stateHooks",
 		"elementTree",
 		"currentRenderElement",
-		"useStateHookIndex",
-		"effectHooks",
-		"useEffectHookIndex",
+		"hooks",
+		"hookIndex",
 		"renderResult" ],
 	"name" : "CMFReact",
 	"pools" : [
