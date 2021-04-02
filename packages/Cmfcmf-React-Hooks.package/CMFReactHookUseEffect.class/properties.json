@@ -9,7 +9,8 @@
 		"effect",
 		"cleanup",
 		"dependencies",
-		"hasRun" ],
+		"hasRun",
+		"mustRun" ],
 	"name" : "CMFReactHookUseEffect",
 	"pools" : [
 		 ],

@@ -1,7 +1,10 @@
 as yet unclassified
 onComponentWasRendered
 
-	(dependencies isNil "wants to always re-execute" or: [hasRun not] "execute on first render") ifTrue: [
+	mustRun ifTrue: [
 		cleanup ifNotNil: [cleanup value].
 		cleanup := effect value.
-		hasRun := true]
+		self assert: (cleanup isNil or: [cleanup isBlock]).
+		hasRun := true].
+	
+	mustRun := nil. "reset to something invalid so that we trigger an error if mustRun is accessed without calling updateDependencies"

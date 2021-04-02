@@ -3,5 +3,5 @@ set: updater
 
 	| oldState |
 	oldState := state.
-	state := updater isBlock ifTrue: [updater cull: oldState] ifFalse: [updater].
+	state := updater isBlock ifTrue: [updater value: oldState] ifFalse: [updater].
 	state ~~ oldState ifTrue: onChange
