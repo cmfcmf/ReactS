@@ -1,6 +1,6 @@
 as yet unclassified
 asElementBuilder
 
-	^ CMFReactComponentElementBuilder new
+	^ CMFReactNodeComponentBuilder new
 		elementClass: self;
 		yourself
