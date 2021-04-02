@@ -8,4 +8,7 @@ reRenderNodeWithId: id
 	elementTree resetToNodeWithId: id during: [:treeNode | | oldRenderResult newRenderResult |
 		oldRenderResult := treeNode renderResult.
 		newRenderResult := self renderNode: treeNode node.
-		self replaceOldMorphsInWorld: oldRenderResult by: newRenderResult]
+		self replaceOldMorphsInWorld: oldRenderResult by: newRenderResult].
+	
+	hooks keysAndValuesDo: [:nodeId :hooks | 
+		(nodeId beginsWith: id) ifTrue: [hooks do: #onComponentWasRendered]].

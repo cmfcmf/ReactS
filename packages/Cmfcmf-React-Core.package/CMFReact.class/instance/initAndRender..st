@@ -3,7 +3,7 @@ initAndRender: rootElement_
 
 	rootElement := rootElement_.
 	
-	hooks := Dictionary new.
+	hooks := OrderedDictionary new.
 		
 	SystemChangeNotifier uniqueInstance notify: self ofAllSystemChangesUsing: #codeChanged:.
 	

@@ -1,0 +1,15 @@
+{
+	"category" : "Cmfcmf-React-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"effectRuns",
+		"effectCleanups" ],
+	"name" : "CMFReactUseEffect2Test",
+	"pools" : [
+		 ],
+	"super" : "CMFReactUITest",
+	"type" : "normal" }
