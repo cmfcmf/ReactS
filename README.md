@@ -19,7 +19,7 @@ WIP: Modern [ReactJS](https://reactjs.org), including React Hooks, implemented i
 - [ ] [Keys](https://reactjs.org/docs/lists-and-keys.html)
 - [ ] Hooks
   - [x] [useState](https://reactjs.org/docs/hooks-state.html)
-  - [x] [useEffect](https://reactjs.org/docs/hooks-effect.html) (dependency array not yet fully supported)
+  - [x] [useEffect](https://reactjs.org/docs/hooks-effect.html)
   - [ ] [useLayoutEffect](https://reactjs.org/docs/hooks-reference.html#uselayouteffect) (not sure if this is even needed)
   - [ ] [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext)
   - [ ] [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer)
