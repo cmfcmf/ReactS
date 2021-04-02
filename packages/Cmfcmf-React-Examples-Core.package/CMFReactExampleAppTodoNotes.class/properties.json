@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Examples-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CMFReactExampleAppTodoNotes",
+	"pools" : [
+		 ],
+	"super" : "CMFReactComponent",
+	"type" : "normal" }
