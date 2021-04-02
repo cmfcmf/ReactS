@@ -1,7 +1,10 @@
 hooks
 useReducer: reducer initialState: initialState
 
-	^ self getHook: CMFReactHookUseReducer IfAbsent: [:nodeId |
+	| hook |
+	hook := self getHook: CMFReactHookUseReducer IfAbsent: [:nodeId |
 		CMFReactHookUseReducer new
-			initState: initialState reducer: reducer onChange: [self reRenderNodeWithId: nodeId];
-			yourself]
+			initState: initialState onChange: [self reRenderNodeWithId: nodeId];
+			yourself].
+	hook reducer: reducer.
+	^ hook

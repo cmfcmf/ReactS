@@ -1,17 +1,20 @@
 as yet unclassified
 render: props
 
-	| todos nextId addTodo deleteTodo |
+	| todos nextId |
 	nextId := self useRef: 1.
-	todos := self useState: {}.
-	
-	addTodo := [
-		todos set: [:old | | id |
-			id := nextId get.
-			nextId set: id + 1.
-			old copyWith: (Dictionary newFrom: {#id -> id. #content -> (UIManager default request: 'Note content?')})]].
-	
-	deleteTodo := [:id | todos set: [:old | old copyWithout: (old detect: [:oldEach | (oldEach at: #id) == id])]].
+	todos := self useReducer: [:state :action | action first caseOf: {
+		[#add] -> [| id content |
+			content := UIManager default request: 'Content'.
+			content 
+				ifEmpty: [state] 
+				ifNotEmpty: [
+					id := nextId get.
+					nextId set: id + 1.
+					state copyWith: (Dictionary newFrom: {#id -> id. #content -> content})]].
+		[#delete] -> [| id |
+			id := action second.
+			state copyWithout: (state detect: [:oldTodo | (oldTodo at: #id) == id])]}] initialState: {}.
 	
 	^ CMFReactComponentWindow asElementBuilder
 		props: {#label -> 'TODO Notes'. #defaultExtent -> (400 @ 225)};
@@ -20,14 +23,14 @@ render: props
 				props: {#scrollable -> true};
 				children: {
 					CMFReactComponentButton asElementBuilder
-						props: {#label -> 'Add TODO Note'. #onClick -> addTodo};
+						props: {#label -> 'Add TODO Note'. #onClick -> [todos dispatch: {#add}]};
 						build.
 					todos get collect: [:each |
 						CMFReactComponentContainer asElementBuilder
 							children: {
 								each at: #content.
 								CMFReactComponentButton asElementBuilder
-									props: {#label -> 'delete'. #onClick -> [deleteTodo value: (each at: #id)]};
+									props: {#label -> 'delete'. #onClick -> [todos dispatch: {#delete. each at: #id}]};
 									build};
 							build]};
 				build};
