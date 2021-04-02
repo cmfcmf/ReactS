@@ -6,10 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"effect",
-		"cleanup" ],
-	"name" : "CMFReactHookUseEffect",
+		"state",
+		"reducer",
+		"onChange",
+		"dispatcher" ],
+	"name" : "CMFReactHookUseReducer",
 	"pools" : [
 		 ],
-	"super" : "CMFReactHookWithDependencies",
+	"super" : "CMFReactHook",
 	"type" : "normal" }

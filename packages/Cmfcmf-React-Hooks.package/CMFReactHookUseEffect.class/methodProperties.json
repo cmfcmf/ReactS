@@ -2,7 +2,6 @@
 	"class" : {
 		"shortName" : "cmfcmf 4/2/2021 10:17" },
 	"instance" : {
-		"initEffect:" : "cmfcmf 4/2/2021 10:47",
+		"initEffect:" : "cmfcmf 4/2/2021 14:01",
 		"onComponentWasDestroyed" : "cmfcmf 4/2/2021 10:19",
-		"onComponentWasRendered" : "cmfcmf 4/2/2021 10:55",
-		"updateDependencies:" : "cmfcmf 4/2/2021 11:58" } }
+		"onComponentWasRendered" : "cmfcmf 4/2/2021 14:00" } }

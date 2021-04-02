@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"effect",
-		"cleanup" ],
-	"name" : "CMFReactHookUseEffect",
+		"block",
+		"value" ],
+	"name" : "CMFReactHookUseMemo",
 	"pools" : [
 		 ],
 	"super" : "CMFReactHookWithDependencies",

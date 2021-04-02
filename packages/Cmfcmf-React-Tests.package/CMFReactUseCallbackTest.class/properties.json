@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"callback" ],
+	"name" : "CMFReactUseCallbackTest",
+	"pools" : [
+		 ],
+	"super" : "CMFReactUITest",
+	"type" : "normal" }

@@ -1,10 +1,10 @@
 as yet unclassified
 onComponentWasRendered
 
-	mustRun ifTrue: [
+	dependenciesChanged ifTrue: [
 		cleanup ifNotNil: [cleanup value].
 		cleanup := effect value.
-		self assert: (cleanup isNil or: [cleanup isBlock]).
-		hasRun := true].
+		self assert: (cleanup isNil or: [cleanup isBlock])].
 	
-	mustRun := nil. "reset to something invalid so that we trigger an error if mustRun is accessed without calling updateDependencies"
+	"reset to something invalid so that we trigger an error if mustRun is accessed without calling updateDependencies"
+	dependenciesChanged := nil. 
