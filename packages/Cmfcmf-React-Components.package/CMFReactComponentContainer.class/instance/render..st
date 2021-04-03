@@ -11,16 +11,16 @@ render: props
 				borderWidth: 2;
 				cellInset: 2;
 				layoutPolicy: TableLayout new;
-				layoutFrame: (LayoutFrame fractions: (0 @ 0 extent: 1 @ 1));
 				hResizing: #spaceFill;
 				vResizing: #shrinkWrap;
 				yourself];
 		init: [:m |
 			m
+				"change border color with every render as a re-render indication"
 				borderColor: Color random;
-				listDirection: (props at: #direction ifAbsent: ["change border color with every render as a re-render indication"
-				#topToBottom]);
-				name: (props at: #name ifAbsent: [nil])];
+				listDirection: (props at: #direction ifAbsent: [#topToBottom]);
+				name: (props at: #name ifAbsent: [nil]).
+			scrollable ifFalse: [m layoutFrame: (props at: #layoutFrame ifAbsent: [LayoutFrame fractions: (0 @ 0 extent: 1 @ 1)])]];
 		children: (props at: #children);
 		build.
 	
@@ -28,16 +28,16 @@ render: props
 	
 	^ CMFReactNodeMorphBuilder new
 		create: [ | m |
-			m := ScrollPane new.
+			m := ScrollPane new
+				color: Color transparent;
+				yourself.
 			m scroller
 				layoutPolicy: TableLayout new;
-				layoutFrame: (LayoutFrame fractions: (0 @ 0 extent: 1 @ 1));
 				hResizing: #spaceFill;
 				vResizing: #shrinkWrap.
 			m];
+		init: [:m |
+			m layoutFrame: (props at: #layoutFrame ifAbsent: [LayoutFrame fractions: (0 @ 0 extent: 1 @ 1)])];
 		children: {container};
-		childrenMorphs: [:m :childMorphs |
-			m scroller
-				removeAllMorphs;
-				addAllMorphs: childMorphs];
+		childrenMorphs: [:m :childMorphs | m scroller removeAllMorphs; addAllMorphs: childMorphs];
 		build

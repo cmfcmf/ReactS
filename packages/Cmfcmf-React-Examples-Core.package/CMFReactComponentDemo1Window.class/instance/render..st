@@ -7,11 +7,8 @@ render: props
 	^ CMFReactComponentWindow asElementBuilder
 		props: {#label -> 'First Window'. #defaultExtent -> (400@225)};
 		children: {
-			CMFReactComponentContainer asElementBuilder
-				children: {
-					clicks get.
-					CMFReactComponentButton asElementBuilder
-						props: {#label -> 'increment'. #onClick -> [clicks set: [:old | old + 1]]};
-						build};
+			clicks get.
+			CMFReactComponentButton asElementBuilder
+				props: {#label -> 'increment'. #onClick -> [clicks set: [:old | old + 1]]};
 				build};
 		build

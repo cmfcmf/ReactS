@@ -6,6 +6,7 @@ render: props
 	
 	^ CMFReactBaseSystemWindow asReactNodeBuilder
 		init: [:m | m
+			"wantsPaneSplitters: true;"
 			label: (props at: #label ifAbsent: ['My Window']);
 			extent: extent get;
 			onChangeExtent: [:newExtent | extent set: newExtent];
