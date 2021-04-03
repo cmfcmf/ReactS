@@ -10,18 +10,18 @@ WIP: Modern [ReactJS](https://reactjs.org), including React Hooks, implemented i
   - [x] Text
   - [x] nil
   - [x] SequenceableCollection
-  - [x] "Function Component"
-  - [ ] "Class Component"
+  - [x] Components
   - [x] Morph (via CMFReactNodeMorph)
   - [x] Fragment (via Array)
 - [x] [Fragments](https://reactjs.org/docs/fragments.html)
+- [x] [memo](https://reactjs.org/docs/react-api.html#reactmemo)
 - [ ] [Refs](https://reactjs.org/docs/refs-and-the-dom.html)
 - [ ] [Keys](https://reactjs.org/docs/lists-and-keys.html)
 - [ ] Hooks
   - [x] [useState](https://reactjs.org/docs/hooks-state.html)
   - [x] [useEffect](https://reactjs.org/docs/hooks-effect.html)
   - [ ] [useLayoutEffect](https://reactjs.org/docs/hooks-reference.html#uselayouteffect) (not sure if this is even needed)
-  - [ ] [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext)
+  - [ ] [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext) (missing support for memo)
   - [x] [useReducer](https://reactjs.org/docs/hooks-reference.html#usereducer)
   - [x] [useCallback](https://reactjs.org/docs/hooks-reference.html#usecallback)
   - [x] [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo)
