@@ -1,6 +1,6 @@
 as yet unclassified
 render: props
-	
+
 	^ CMFReactComponentWindow asElementBuilder props: {#label -> 'Demo Window'. #defaultExtent -> (225@400)}; children: {
 		CMFReactComponentContainer asElementBuilder children: {
 			'Counter 123 Example'.
