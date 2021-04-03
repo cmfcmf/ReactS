@@ -2,8 +2,9 @@ as yet unclassified
 build
 
 	^ CMFReactNodeMorph new
-		createBlock: createBlock;
-		initBlock: initBlock;
+		morphClass: morphClass;
+		create: createBlock;
+		onRender: onRenderBlock;
 		childrenMorphsBlock: childrenMorphsBlock;
 		key: key;
 		children: children;

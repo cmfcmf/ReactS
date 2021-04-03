@@ -1,5 +1,5 @@
 as yet unclassified
-init: aBlock
+onRender: aBlock
 
 	self assert: aBlock numArgs == 1.
-	initBlock := aBlock
+	onRenderBlock := aBlock

@@ -9,7 +9,6 @@ render: react oldTreeNode: oldTreeNode
 	selector ~~ #render: ifTrue: [self halt]."
 	
 	(memoize and: [oldTreeNode notNil]) ifTrue: [
-		self halt.
 		self flag: #todo. "Key!"
 		(oldTreeNode node props cmfPropsEqualTo: props) ifTrue: [^ oldTreeNode renderResult]].
 	

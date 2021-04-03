@@ -1,6 +1,8 @@
 as yet unclassified
 render: props
 	
+	"<memoize>"
+	
 	| clicks |
 	clicks := self useState: 0.
 	

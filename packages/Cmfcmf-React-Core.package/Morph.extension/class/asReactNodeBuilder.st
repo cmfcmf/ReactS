@@ -2,5 +2,5 @@
 asReactNodeBuilder
 
 	^ CMFReactNodeMorphBuilder new
-		create: [self new];
+		morphClass: self;
 		yourself

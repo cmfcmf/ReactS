@@ -4,7 +4,7 @@ TODOItem: props
 	<memoize>
 	| todo |
 	todo := props at: #todo.
-	
+
 	^ CMFReactComponentContainer asElementBuilder
 		children: {
 			todo at: #title.

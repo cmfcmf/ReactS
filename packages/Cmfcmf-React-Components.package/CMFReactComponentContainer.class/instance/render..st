@@ -4,9 +4,9 @@ render: props
 	| container scrollable |
 	scrollable := props at: #scrollable ifAbsent: [false].
 	
-	container := CMFReactNodeMorphBuilder new
-		create: [
-			BorderedMorph new
+	container := BorderedMorph asReactNodeBuilder
+		create: [:c |
+			c new
 				color: Color transparent;
 				borderWidth: 2;
 				cellInset: 2;
@@ -14,7 +14,7 @@ render: props
 				hResizing: #spaceFill;
 				vResizing: #shrinkWrap;
 				yourself];
-		init: [:m |
+		onRender: [:m |
 			m
 				"change border color with every render as a re-render indication"
 				borderColor: Color random;
@@ -26,17 +26,16 @@ render: props
 	
 	scrollable ifFalse: [^ container].
 	
-	^ CMFReactNodeMorphBuilder new
-		create: [ | m |
-			m := ScrollPane new
-				color: Color transparent;
-				yourself.
+	^ ScrollPane asReactNodeBuilder
+		create: [:c | | m |
+			m := c new.
+			m color: Color transparent.
 			m scroller
 				layoutPolicy: TableLayout new;
 				hResizing: #spaceFill;
 				vResizing: #shrinkWrap.
 			m];
-		init: [:m |
+		onRender: [:m |
 			m layoutFrame: (props at: #layoutFrame ifAbsent: [LayoutFrame fractions: (0 @ 0 extent: 1 @ 1)])];
 		children: {container};
 		childrenMorphs: [:m :childMorphs | m scroller removeAllMorphs; addAllMorphs: childMorphs];

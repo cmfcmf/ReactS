@@ -1,5 +1,5 @@
 as yet unclassified
 create: aBlock
 
-	self assert: aBlock numArgs == 0.
+	self assert: aBlock numArgs == 1.
 	createBlock := aBlock

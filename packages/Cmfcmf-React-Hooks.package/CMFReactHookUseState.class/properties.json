@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"state",
-		"onChange" ],
+		"onChange",
+		"setter" ],
 	"name" : "CMFReactHookUseState",
 	"pools" : [
 		 ],

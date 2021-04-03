@@ -2,7 +2,7 @@ as yet unclassified
 render: props
 
 	^ StringMorph asReactNodeBuilder
-		init: [:m |
+		onRender: [:m |
 			m
 				contents: (props at: #contents) asString;
 				name: (props at: #name ifAbsent: [nil])];

@@ -38,7 +38,7 @@ render: props
 				children: {
 					todos get collect: [:each |
 						(#TODOItem asElementBuilder: self)
-							props: {#todo -> each. #dispatch -> todos dispatch. #setSelectedId -> [:id | selectedId set: id]};
+							props: {#todo -> each. #dispatch -> todos dispatch. #setSelectedId -> selectedId setter};
 							build]};
 				build.
 			CMFReactComponentContainer asElementBuilder

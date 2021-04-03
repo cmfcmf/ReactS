@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"morphClass",
 		"createBlock",
-		"initBlock",
+		"onRenderBlock",
 		"childrenMorphsBlock",
 		"key",
 		"children" ],

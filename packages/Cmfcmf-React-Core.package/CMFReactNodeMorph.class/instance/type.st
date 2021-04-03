@@ -1,4 +1,5 @@
 accessing
 type
 
-	^ {#morph. createBlock}
+	self assert: morphClass notNil.
+	^ {#morph. morphClass. createBlock}
