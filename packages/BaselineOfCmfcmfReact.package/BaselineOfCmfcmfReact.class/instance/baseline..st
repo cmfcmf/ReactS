@@ -7,7 +7,7 @@ baseline: spec
 			spec
 				baseline: 'MorphicTestingFramework'
 					with: [spec repository: 'github://hpi-swa-teaching/Morphic-Testing-Framework:master/packages'];
-				baseline: 'JSON' with: [spec repository: 'http://www.squeaksource.com/JSON'];
+				package: 'JSON' with: [spec repository: 'http://www.squeaksource.com/JSON'];
 				yourself.
 			spec
 				package: 'Cmfcmf-React-Core'
