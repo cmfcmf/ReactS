@@ -1,4 +1,4 @@
 accessing
 type
 
-	^ elementClass
+	^ {#component. elementClass}

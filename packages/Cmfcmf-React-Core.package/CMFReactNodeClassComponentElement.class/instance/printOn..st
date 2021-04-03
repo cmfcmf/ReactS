@@ -6,6 +6,6 @@ printOn: aStream
 		(props at: #children) do: [:each | aStream cr. each printOn: aStream].
 		aStream 
 			cr;
-			nextPut: $<;
-			nextPutAll: elementClass asString;
-			nextPutAll: ' />']
+			nextPut: $<.
+		self printTagNameOn: aStream.
+		aStream nextPutAll: ' />']

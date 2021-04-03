@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CMFReactContext",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

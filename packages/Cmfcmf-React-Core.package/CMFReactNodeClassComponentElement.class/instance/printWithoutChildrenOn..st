@@ -1,9 +1,8 @@
 printing
 printWithoutChildrenOn: aStream
 
-	aStream 
-		nextPut: $<;
-		nextPutAll: elementClass asString.
+	aStream nextPut: $<.
+	self printTagNameOn: aStream.
 		
 	self key ifNotNil: [aStream nextPutAll: ' key="'; nextPutAll: self key asString; nextPut: $"].
 	

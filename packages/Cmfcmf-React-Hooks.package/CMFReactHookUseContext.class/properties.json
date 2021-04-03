@@ -1,0 +1,15 @@
+{
+	"category" : "Cmfcmf-React-Hooks",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"contextClass",
+		"nodeId" ],
+	"name" : "CMFReactHookUseContext",
+	"pools" : [
+		 ],
+	"super" : "CMFReactHook",
+	"type" : "normal" }

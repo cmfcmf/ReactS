@@ -5,6 +5,7 @@
 		"addChildNodeToTree:" : "cmfcmf 4/1/2021 14:08",
 		"childTreeNodeAt:ifAbsent:" : "cmfcmf 4/1/2021 14:07",
 		"childrenTreeNodes" : "cmfcmf 4/1/2021 14:08",
+		"findNearestContextProviderFor:" : "cmfcmf 4/3/2021 10:16",
 		"findTreeNodeAndIndexById:" : "cmfcmf 4/1/2021 14:10",
 		"iconOrThumbnailOfSize:" : "cmfcmf 4/1/2021 11:10",
 		"id" : "cmfcmf 3/29/2021 12:17",
