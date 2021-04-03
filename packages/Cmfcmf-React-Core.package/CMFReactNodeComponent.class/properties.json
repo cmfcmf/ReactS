@@ -10,7 +10,7 @@
 		"key",
 		"elementClass",
 		"selector" ],
-	"name" : "CMFReactNodeClassComponentElement",
+	"name" : "CMFReactNodeComponent",
 	"pools" : [
 		 ],
 	"super" : "CMFReactNode",

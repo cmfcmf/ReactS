@@ -1,8 +1,8 @@
 rendering
-render: react lastRenderResult: lastRenderResult
+render: react oldTreeNode: oldTreeNode
 
 	| newMorph |	
-	lastRenderResult
+	oldTreeNode
 		ifNil: [
 			newMorph := createBlock value.
 			initBlock value: newMorph.
@@ -12,7 +12,7 @@ render: react lastRenderResult: lastRenderResult
 					ifNil: [newMorph addAllMorphs: newChildren] 
 					ifNotNil: [childrenMorphsBlock value: newMorph value: newChildren]]]
 		ifNotNil: [
-			newMorph := lastRenderResult.
+			newMorph := oldTreeNode renderResult.
 			initBlock value: newMorph.
 			children ifNotNil: [| newChildren |
 				newChildren := children ifNotNil: [react renderNodes: children].

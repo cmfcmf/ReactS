@@ -1,0 +1,4 @@
+accessing
+currentParentId
+
+	^ currentParentEntry id

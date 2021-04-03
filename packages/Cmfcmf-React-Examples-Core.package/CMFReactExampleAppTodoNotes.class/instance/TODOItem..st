@@ -1,6 +1,7 @@
 as yet unclassified
 TODOItem: props
 
+	<memoize>
 	| todo |
 	todo := props at: #todo.
 	

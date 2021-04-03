@@ -1,0 +1,4 @@
+accessing
+currentParentNode
+
+	^ currentParentEntry node

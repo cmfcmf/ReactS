@@ -1,26 +1,34 @@
-as yet unclassified
+rendering
 renderingWithChildren: node during: aBlock
 
-	| oldId oldIndex treeNodeFromLastRender result |
+	| result |
+	self resetCurrentParentEntryAndChildIndexAfter: [| currentEntry oldData |
+		currentEntry := self currentEntryOrNil.
+		oldData := currentEntry ifNotNil: [JsonObject newFrom: {
+			#node -> currentEntry node.
+			#renderResult -> currentEntry renderResult
+		}].
+		true caseOf: {
+			[currentEntry isNil] -> [
+				"not old node exists. Append the new node as a new child."
+				Transcript showln: 'throwing away old node'.
+				currentParentEntry := currentParentEntry addChildNodeToTree: node].
+			[currentEntry nodeType ~= node type] -> [
+				"an old node exists, but has a different node type. Replace the old node."
+				currentParentEntry := currentParentEntry replaceChildTreeNodeAt: currentChildIndex with: node].
+			[true] -> [
+				"an old node exists, and has the same node type. Re-use the old node."
+				currentParentEntry := currentEntry
+					node: node;
+					yourself].
+		}.
+		"in any case, set the currentChildIndex to 1, since we changed the parent to the newly inserted node."
+		currentChildIndex := 1.
+		
+		"now render the new node, and pass it the old node (TODO)"
+		self flag: #todo.
+		currentParentEntry renderResult: (result := aBlock value: oldData)].
 	
-	oldId := currentLevel id.
-	
-	treeNodeFromLastRender := currentLevel childTreeNodeAt: currentIndex ifAbsent: [nil].
-	oldIndex := currentIndex + 1.
-	(treeNodeFromLastRender notNil and: [treeNodeFromLastRender node type = node type]) 
-		ifTrue: [
-			currentLevel := treeNodeFromLastRender.
-			currentLevel node: node]
-		ifFalse: [currentLevel := treeNodeFromLastRender 
-			ifNil: [currentLevel addChildNodeToTree: node]
-			ifNotNil: [currentLevel replaceChildTreeNodeAt: currentIndex with: node]].
-	currentIndex := 1.
-	
-	result := aBlock value: (treeNodeFromLastRender ifNotNil: [:t | t renderResult]).
-	
-	currentLevel renderResult: result.
-	
-	currentLevel := (rootEntry findTreeNodeAndIndexById: oldId) first.
-	currentIndex := oldIndex.
-	
+	"Now that this node and its children have rendered, and the currentParentNode and currentChildIndex have been reset, increment the currentChildIndex"
+	currentChildIndex := currentChildIndex + 1.
 	^ result

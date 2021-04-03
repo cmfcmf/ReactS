@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"currentLevel",
-		"currentIndex",
-		"rootEntry" ],
+		"rootEntry",
+		"currentParentEntry",
+		"currentChildIndex" ],
 	"name" : "CMFReactNodeTree",
 	"pools" : [
 		 ],

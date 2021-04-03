@@ -2,9 +2,10 @@ hooks
 getHook: CMFReactHookClass IfAbsent: aBlock
 
 	| hook nodeId |
-	nodeId := elementTree currentId.
+	nodeId := elementTree currentParentId.
 	
-	Transcript showln: CMFReactHookClass shortName, ' ', nodeId, ' ', elementTree currentName.
+	"Transcript showln: CMFReactHookClass shortName, ' ', nodeId, ' ',
+		(String streamContents: [:s | elementTree currentNode printWithoutChildrenOn: s])."
 	
 	hook := (hooks at: nodeId ifAbsentPut: [OrderedCollection new]) 
 		at: hookIndex 
