@@ -8,7 +8,8 @@
 	"instvars" : [
 		"props",
 		"key",
-		"elementClass" ],
+		"elementClass",
+		"selector" ],
 	"name" : "CMFReactNodeClassComponentElement",
 	"pools" : [
 		 ],

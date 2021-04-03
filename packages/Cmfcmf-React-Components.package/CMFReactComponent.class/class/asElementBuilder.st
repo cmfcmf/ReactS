@@ -2,5 +2,5 @@ as yet unclassified
 asElementBuilder
 
 	^ CMFReactNodeComponentBuilder new
-		elementClass: self;
+		privateElementClass: self;
 		yourself

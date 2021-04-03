@@ -37,15 +37,8 @@ render: props
 					#layoutFrame -> (LayoutFrame fractions: (0 @ 0 extent: 0.3 @ 1) offsets: (0 @ 20 extent: 0 @ -20))};
 				children: {
 					todos get collect: [:each |
-						CMFReactComponentContainer asElementBuilder
-							children: {
-								each at: #title.
-								CMFReactComponentButton asElementBuilder
-									props: {#label -> 'select'. #onClick -> [selectedId set: (each at: #id)]};
-									build.
-								CMFReactComponentButton asElementBuilder
-									props: {#label -> 'delete'. #onClick -> [todos dispatch: {#delete. each at: #id}]};
-									build};
+						(#TODOItem asElementBuilder: self)
+							props: {#todo -> each. #dispatch -> todos dispatch. #setSelectedId -> [:id | selectedId set: id]};
 							build]};
 				build.
 			CMFReactComponentContainer asElementBuilder
