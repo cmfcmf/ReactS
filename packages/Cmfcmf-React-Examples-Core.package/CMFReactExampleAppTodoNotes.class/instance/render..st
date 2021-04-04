@@ -6,13 +6,15 @@ render: props
 	todos := self
 		useReducer: [:state :action |
 			action first caseOf: {
-				[#add] -> [ | id title content |
+				[#add] -> [ | id title |
 					title := UIManager default request: 'Title'.
-					content := UIManager default request: 'Content'.
-					title ifEmpty: [state] ifNotEmpty: [
-						id := nextId get.
-						nextId set: id + 1.
-						state copyWith: (Dictionary newFrom: {#id -> id. #title -> title. #content -> content})]].
+					title 
+						ifEmpty: [state] 
+						ifNotEmpty: [| content |
+							content := UIManager default request: 'Content'.
+							id := nextId get.
+							nextId set: id + 1.
+							state copyWith: (Dictionary newFrom: {#id -> id. #title -> title. #content -> content})]].
 				[#delete] -> [ | id |
 					id := action second.
 					state copyWithout: (state detect: [:oldTodo | (oldTodo at: #id) == id])]}]
@@ -22,24 +24,10 @@ render: props
 	selectedTodo := todos get detect: [:each | (each at: #id) == selectedId get] ifNone: [nil].
 	
 	^ CMFReactComponentWindow asElementBuilder
-		props: {#label -> 'TODO Notes'. #defaultExtent -> (400 @ 225)};
+		props: {#label -> 'TODO Notes'. #defaultExtent -> (600 @ 300)};
 		children: {
-			CMFReactComponentContainer asElementBuilder
-				props: {#layoutFrame -> (LayoutFrame fractions: (0 @ 0 extent: 0.3 @ 0) offsets: (0 @ 0 extent: 0 @ 20))};
-				children: {
-					CMFReactComponentButton asElementBuilder
-						props: {#label -> 'Add TODO Note'. #onClick -> [todos dispatch: {#add}]};
-						build};
-				build.
-			CMFReactComponentContainer asElementBuilder
-				props: {
-					#scrollable -> true.
-					#layoutFrame -> (LayoutFrame fractions: (0 @ 0 extent: 0.3 @ 1) offsets: (0 @ 20 extent: 0 @ -20))};
-				children: {
-					todos get collect: [:each |
-						(#TODOItem asElementBuilder: self)
-							props: {#todo -> each. #dispatch -> todos dispatch. #setSelectedId -> selectedId setter};
-							build]};
+			(#Sidebar asElementBuilder: self)
+				props: {#todos -> todos get. #todosDispatch -> todos dispatch. #setSelectedId -> selectedId setter};
 				build.
 			CMFReactComponentContainer asElementBuilder
 				props: {#scrollable -> true. #layoutFrame -> (LayoutFrame fractions: (0.3 @ 0 corner: 1 @ 1))};

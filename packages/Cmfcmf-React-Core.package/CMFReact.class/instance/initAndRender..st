@@ -1,4 +1,4 @@
-as yet unclassified
+initialize-release
 initAndRender: rootElement_
 
 	rootElement := rootElement_.

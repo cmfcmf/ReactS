@@ -6,4 +6,4 @@ useContext: contextClass
 		CMFReactHookUseContext new
 			contextClass: contextClass nodeId: nodeId;
 			yourself].
-	^ hook getValueBasedOnNodeTree: elementTree
+	^ hook getValueBasedOnNodeTree: elementTree setLastValue: true

@@ -29,11 +29,14 @@ render: props
 	^ ScrollPane asReactNodeBuilder
 		create: [:c | | m |
 			m := c new.
-			m color: Color transparent.
+			m 
+				"color: Color transparent;"
+				hResizing: #spaceFill;
+				vResizing: #spaceFill.
 			m scroller
 				layoutPolicy: TableLayout new;
 				hResizing: #spaceFill;
-				vResizing: #shrinkWrap.
+				vResizing: #spaceFill.
 			m];
 		onRender: [:m |
 			m layoutFrame: (props at: #layoutFrame ifAbsent: [LayoutFrame fractions: (0 @ 0 extent: 1 @ 1)])];

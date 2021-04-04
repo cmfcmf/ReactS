@@ -1,4 +1,4 @@
-as yet unclassified
+lifecycle
 codeChanged: event
 
 	event isDoIt ifTrue: [^ self].

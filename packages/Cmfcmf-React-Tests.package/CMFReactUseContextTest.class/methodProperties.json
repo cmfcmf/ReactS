@@ -2,5 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"component" : "cmfcmf 4/3/2021 10:31",
-		"testWorks" : "cmfcmf 4/3/2021 10:32" } }
+		"Subscriber1:" : "cmfcmf 4/4/2021 10:46",
+		"Subscriber1Memo:" : "cmfcmf 4/4/2021 10:46",
+		"Subscriber2:" : "cmfcmf 4/4/2021 10:46",
+		"Subscriber2Memo:" : "cmfcmf 4/4/2021 10:46",
+		"Window:" : "cmfcmf 4/4/2021 10:36",
+		"WindowChild:" : "cmfcmf 4/4/2021 10:46",
+		"assertMorphs:contain:" : "cmfcmf 4/4/2021 10:48",
+		"component" : "cmfcmf 4/4/2021 10:35",
+		"testWorks" : "cmfcmf 4/4/2021 10:49" } }

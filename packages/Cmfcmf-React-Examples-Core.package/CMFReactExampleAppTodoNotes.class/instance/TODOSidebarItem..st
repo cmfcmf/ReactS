@@ -1,7 +1,8 @@
 as yet unclassified
-TODOItem: props
+TODOSidebarItem: props
 
 	<memoize>
+	
 	| todo |
 	todo := props at: #todo.
 

@@ -3,4 +3,7 @@
 		 },
 	"instance" : {
 		"contextClass:nodeId:" : "cmfcmf 4/3/2021 10:08",
-		"getValueBasedOnNodeTree:" : "cmfcmf 4/3/2021 12:46" } }
+		"getValueBasedOnNodeTree:setLastValue:" : "cmfcmf 4/4/2021 11:21",
+		"isValueOutdatedBasedOnNodeTree:" : "cmfcmf 4/4/2021 11:21",
+		"lastValue" : "cmfcmf 4/4/2021 10:59",
+		"nodeId" : "cmfcmf 4/4/2021 11:25" } }

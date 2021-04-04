@@ -10,6 +10,7 @@ render: react renderInfo: renderInfo
 	
 	(memoize and: [renderInfo reusingOldNodes] and: [renderInfo forceReRender not]) ifTrue: [
 		self flag: #todo. "Key!"
+		"self halt."
 		(renderInfo oldNode props cmfPropsEqualTo: props) ifTrue: [^ renderInfo oldRenderResult]].
 	
 	^ react renderNode: (CMFCurrentReact value: react during: [
