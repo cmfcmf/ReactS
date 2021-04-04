@@ -3,6 +3,6 @@ render
 
 	| component |
 	component := self component.
-	^ CMFReact render: (component isBlock 
-		ifTrue: [component asCMFReactNodeComponentBuilder build] 
-		ifFalse: [component asElementBuilder build])
+	^ CMFReact render: (true caseOf: {
+		[component isBlock] -> [component asCMFReactNodeComponentBuilder build].
+		[component isSymbol] -> [(component asElementBuilder: self) build]} otherwise: [component asElementBuilder build])

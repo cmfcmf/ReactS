@@ -8,11 +8,11 @@ baseline: spec
 				baseline: 'MorphicTestingFramework'
 					with: [spec repository: 'github://hpi-swa-teaching/Morphic-Testing-Framework:master/packages'];
 				baseline: 'Pheno' with: [spec repository: 'github://tom95/Pheno:master/src'];
-				package: 'JSON' with: [spec repository: 'http://www.squeaksource.com/JSON'];
+				"package: 'JSON' with: [spec repository: 'http://www.squeaksource.com/JSON'];"
 				yourself.
 			spec
 				package: 'Cmfcmf-React-Core'
-					with: [spec requires: #('Cmfcmf-React-Components' 'Cmfcmf-React-Hooks' 'Cmfcmf-React-Morphs' 'JSON')];
+					with: [spec requires: #('Cmfcmf-React-Components' 'Cmfcmf-React-Hooks' 'Cmfcmf-React-Morphs' "'JSON'")];
 				package: 'Cmfcmf-React-Components';
 				package: 'Cmfcmf-React-Hooks';
 				package: 'Cmfcmf-React-Morphs';

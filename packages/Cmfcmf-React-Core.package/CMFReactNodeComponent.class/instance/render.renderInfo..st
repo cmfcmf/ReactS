@@ -1,5 +1,5 @@
 rendering
-render: react oldTreeNode: oldTreeNode
+render: react renderInfo: renderInfo
 
 	| method memoize |
 	method := elementClass >> selector.
@@ -8,9 +8,9 @@ render: react oldTreeNode: oldTreeNode
 	"Transcript showln: method asString; showln: memoize; showln: oldTreeNode.
 	selector ~~ #render: ifTrue: [self halt]."
 	
-	(memoize and: [oldTreeNode notNil]) ifTrue: [
+	(memoize and: [renderInfo reusingOldNodes] and: [renderInfo forceReRender not]) ifTrue: [
 		self flag: #todo. "Key!"
-		(oldTreeNode node props cmfPropsEqualTo: props) ifTrue: [^ oldTreeNode renderResult]].
+		(renderInfo oldNode props cmfPropsEqualTo: props) ifTrue: [^ renderInfo oldRenderResult]].
 	
 	^ react renderNode: (CMFCurrentReact value: react during: [
-		elementClass new withArgs: {props} executeMethod: method])
+		elementClass new withArgs: {props} executeMethod: method]) forceReRender: false

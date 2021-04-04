@@ -1,4 +1,4 @@
 rendering
-render: react oldTreeNode: oldTreeNode
+render: react renderInfo: renderInfo
 
 	^ react renderNodes: children

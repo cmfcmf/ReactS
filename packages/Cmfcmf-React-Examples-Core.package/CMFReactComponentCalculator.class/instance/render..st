@@ -1,7 +1,7 @@
 as yet unclassified
 render: props
 	
-	"<memoize>"
+	<memoize>
 	
 	| a b r |
 	a := self useState: ''.

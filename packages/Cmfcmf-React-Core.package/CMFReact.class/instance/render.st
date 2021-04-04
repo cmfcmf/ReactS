@@ -4,7 +4,7 @@ render
 	| newRenderResult |
 	elementTree prepareForNextRender.
 	
-	newRenderResult := self renderNode: rootElement.
+	newRenderResult := self renderNode: rootElement forceReRender: false.
 	renderResult ifNotNil: [self replaceOldMorphsInWorld: renderResult by: newRenderResult].
 	newRenderResult asOrderedCollection do: [:each | each cmfSetCorrespondingReactRoot: self].
 	renderResult := newRenderResult.

@@ -1,9 +1,9 @@
 rendering
-render: react oldTreeNode: oldTreeNode
+render: react renderInfo: renderInfo
 
 	| newMorph |	
-	oldTreeNode
-		ifNil: [
+	renderInfo reusingOldNodes
+		ifFalse: [
 			newMorph := createBlock ifNil: [morphClass new] ifNotNil: [createBlock value: morphClass].
 			onRenderBlock value: newMorph.
 			children ifNotNil: [| newChildren |
@@ -11,8 +11,8 @@ render: react oldTreeNode: oldTreeNode
 				childrenMorphsBlock 
 					ifNil: [newMorph addAllMorphs: newChildren] 
 					ifNotNil: [childrenMorphsBlock value: newMorph value: newChildren]]]
-		ifNotNil: [
-			newMorph := oldTreeNode renderResult.
+		ifTrue: [
+			newMorph := renderInfo oldRenderResult.
 			self assert: newMorph class == morphClass.
 			onRenderBlock value: newMorph.
 			children ifNotNil: [| newChildren |

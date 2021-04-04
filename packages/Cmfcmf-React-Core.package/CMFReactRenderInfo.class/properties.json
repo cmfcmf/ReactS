@@ -1,0 +1,18 @@
+{
+	"category" : "Cmfcmf-React-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"oldNode",
+		"oldRenderResult",
+		"forceRender",
+		"forceReRender",
+		"reusingOldNodes" ],
+	"name" : "CMFReactRenderInfo",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

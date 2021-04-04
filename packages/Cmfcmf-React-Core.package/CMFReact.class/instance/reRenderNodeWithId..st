@@ -7,7 +7,7 @@ reRenderNodeWithId: id
 	"self halt."
 	elementTree resetToNodeWithId: id during: [:treeNode | | oldRenderResult newRenderResult |
 		oldRenderResult := treeNode renderResult.
-		newRenderResult := self renderNode: treeNode node.
+		newRenderResult := self renderNode: treeNode node forceReRender: true.
 		self replaceOldMorphsInWorld: oldRenderResult by: newRenderResult].
 	
 	hooks keysAndValuesDo: [:nodeId :hooks | 
