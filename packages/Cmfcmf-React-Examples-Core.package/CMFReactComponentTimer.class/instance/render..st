@@ -1,6 +1,8 @@
 as yet unclassified
 render: props
 	
+	<memoize>
+	
 	| counter |
 	counter := self useState: 0.
 	

@@ -2,7 +2,7 @@ rendering
 render: react renderInfo: renderInfo
 
 	| method memoize |
-	method := elementClass >> selector.
+	method := (elementClass whichClassIncludesSelector: selector) >> selector.
 	memoize := method hasPragma: #memoize.
 	
 	"Transcript showln: method asString; showln: memoize; showln: oldTreeNode.
