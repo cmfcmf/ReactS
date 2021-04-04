@@ -6,6 +6,5 @@ build
 		create: createBlock;
 		onRender: onRenderBlock;
 		childrenMorphsBlock: childrenMorphsBlock;
-		key: key;
 		children: children;
 		yourself

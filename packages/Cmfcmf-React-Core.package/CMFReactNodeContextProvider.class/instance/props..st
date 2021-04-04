@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 props: aDictionary
 
 	self assert: aDictionary isDictionary.

@@ -1,11 +1,11 @@
 private
 resetCurrentParentEntryAndChildIndexAfter: aBlock
 
-	| index entry |
+	| pointer entry |
 	entry := currentParentEntry.
-	index := currentChildIndex.
+	pointer := currentChildPointer.
 	
 	^ aBlock ensure: [
 		currentParentEntry := entry. 
-		currentChildIndex := index.
+		currentChildPointer := pointer.
 		self assert: (rootEntry findTreeNodeById: entry id) == entry]

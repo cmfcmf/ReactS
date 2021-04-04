@@ -10,7 +10,9 @@
 		"parent",
 		"index",
 		"renderResult",
-		"childrenTreeNodes" ],
+		"childrenTreeNodes",
+		"keyedChildrenTreeNodes",
+		"key" ],
 	"name" : "CMFReactNodeTreeEntry",
 	"pools" : [
 		 ],

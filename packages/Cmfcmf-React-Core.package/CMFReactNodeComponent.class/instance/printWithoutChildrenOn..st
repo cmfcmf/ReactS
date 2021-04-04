@@ -4,10 +4,10 @@ printWithoutChildrenOn: aStream
 	aStream nextPut: $<.
 	self printTagNameOn: aStream.
 		
-	self key ifNotNil: [aStream nextPutAll: ' key="'; nextPutAll: self key asString; nextPut: $"].
+	self hasKey ifTrue: [aStream nextPutAll: ' key="'; nextPutAll: self key asString; nextPut: $"].
 	
 	props keysAndValuesDo: [:key :value | 
-		key == #children ifFalse: [aStream 
+		(key == #children or: [key == #key]) ifFalse: [aStream 
 			space; 
 			nextPutAll: key asString; 
 			nextPutAll: '="'; 

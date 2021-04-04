@@ -1,4 +1,4 @@
 accessing
 key
 
-	^ key
+	^ props at: #key

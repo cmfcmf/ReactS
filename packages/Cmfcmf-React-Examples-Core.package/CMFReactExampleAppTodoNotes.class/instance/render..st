@@ -7,11 +7,11 @@ render: props
 		useReducer: [:state :action |
 			action first caseOf: {
 				[#add] -> [ | id title |
-					title := UIManager default request: 'Title'.
+					title := (UIManager default request: 'Title') ifNil: [''].
 					title 
 						ifEmpty: [state] 
 						ifNotEmpty: [| content |
-							content := UIManager default request: 'Content'.
+							content := (UIManager default request: 'Content') ifNil: [''].
 							id := nextId get.
 							nextId set: id + 1.
 							state copyWith: (Dictionary newFrom: {#id -> id. #title -> title. #content -> content})]].

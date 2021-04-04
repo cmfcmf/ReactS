@@ -1,4 +1,5 @@
 initialize-release
 initialize 
 
-	children := {}
+	children := {}.
+	hasKey := false

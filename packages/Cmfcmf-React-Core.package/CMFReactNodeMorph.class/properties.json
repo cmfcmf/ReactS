@@ -10,7 +10,6 @@
 		"createBlock",
 		"onRenderBlock",
 		"childrenMorphsBlock",
-		"key",
 		"children" ],
 	"name" : "CMFReactNodeMorph",
 	"pools" : [

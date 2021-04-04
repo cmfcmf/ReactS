@@ -1,7 +1,7 @@
 rendering
 render: react renderInfo: renderInfo
 
-	| method memoize |
+	| method memoize propsWithoutKey |
 	method := (elementClass whichClassIncludesSelector: selector) >> selector.
 	memoize := method hasPragma: #memoize.
 	
@@ -13,5 +13,7 @@ render: react renderInfo: renderInfo
 		"self halt."
 		(renderInfo oldNode props cmfPropsEqualTo: props) ifTrue: [^ renderInfo oldRenderResult]].
 	
+	propsWithoutKey := (props includesKey: #key) ifTrue: [props copy removeKey: #key; yourself] ifFalse: [props].
+	
 	^ react renderNode: (CMFCurrentReact value: react during: [
-		elementClass new withArgs: {props} executeMethod: method]) forceReRender: false
+		elementClass new withArgs: {propsWithoutKey} executeMethod: method]) forceReRender: false

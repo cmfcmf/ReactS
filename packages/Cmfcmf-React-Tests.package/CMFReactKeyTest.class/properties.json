@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"renderCounts" ],
+	"name" : "CMFReactKeyTest",
+	"pools" : [
+		 ],
+	"super" : "CMFReactUITest",
+	"type" : "normal" }

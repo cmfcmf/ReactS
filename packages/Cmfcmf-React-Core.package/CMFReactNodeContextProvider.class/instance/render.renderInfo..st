@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 render: react renderInfo: renderInfo
 
 	self assert: elementClass notNil. "elementClass is the contextClass"

@@ -1,8 +1,7 @@
 as yet unclassified
-contextClass: aCMFReactContextClass nodeId: aString
+contextClass: aCMFReactContextClass nodeId: nodeId_
 
 	self assert: (aCMFReactContextClass isKindOf: CMFReactContext class).
-	self assert: aString isString.
 	
 	contextClass := aCMFReactContextClass.
-	nodeId := aString
+	nodeId := nodeId_

@@ -1,0 +1,4 @@
+accessing
+hasKey
+
+	self subclassResponsibility 

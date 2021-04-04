@@ -1,4 +1,11 @@
 printing
 printTagNameOn: aStream
 
-	aStream nextPutAll: elementClass asString
+	selector ~~ #render:
+		ifTrue: [
+			aStream 
+				nextPutAll: selector asString allButLast;
+				nextPut: $(;
+				nextPutAll: elementClass asString;
+				nextPut: $)]
+		ifFalse: [aStream nextPutAll: elementClass asString.]

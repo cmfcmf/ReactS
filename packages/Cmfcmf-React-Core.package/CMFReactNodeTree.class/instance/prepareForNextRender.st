@@ -1,6 +1,6 @@
 rendering
 prepareForNextRender
 
-	self flag: #todo. "What is needed here?"
 	self assert: currentParentEntry == rootEntry.
-	currentChildIndex := 1.
+	self flag: #todo. "maybe we do not need #type"
+	currentChildPointer := JsonObject newFrom: {#type -> #index. #index -> 1. #key -> nil}

@@ -1,8 +1,16 @@
 running
 render
 
-	| component |
+	| component result |
 	component := self component.
-	^ CMFReact render: (true caseOf: {
+	component := (true caseOf: {
 		[component isBlock] -> [component asCMFReactNodeComponentBuilder build].
-		[component isSymbol] -> [(component asElementBuilder: self) build]} otherwise: [component asElementBuilder build])
+		[component isSymbol] -> [(component asElementBuilder: self) build]} otherwise: [component asElementBuilder build]).
+	
+	self makeTestInstanceAccessibleViaContext ifTrue: [
+		component := CMFReactTestContext asProviderNodeWithValue: self children: {component}].
+	
+	result := CMFReact render: component.
+	^ result isArray 
+		ifTrue: [self assert: result size == 1. result first]
+		ifFalse: [result]

@@ -26,7 +26,7 @@ Sidebar: props
 				children: {
 					todos collect: [:each |
 						(#TODOSidebarItem asElementBuilder: self)
-							props: {#todo -> each. #dispatch -> todosDispatch. #setSelectedId -> setSelectedId};
+							props: {#key -> (each at: #id). #todo -> each. #dispatch -> todosDispatch. #setSelectedId -> setSelectedId};
 							build]};
 				build};
 		build.

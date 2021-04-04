@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"props",
-		"key",
 		"elementClass",
-		"selector" ],
+		"selector",
+		"props" ],
 	"name" : "CMFReactNodeComponent",
 	"pools" : [
 		 ],

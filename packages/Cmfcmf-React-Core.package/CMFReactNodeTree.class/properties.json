@@ -8,7 +8,7 @@
 	"instvars" : [
 		"rootEntry",
 		"currentParentEntry",
-		"currentChildIndex" ],
+		"currentChildPointer" ],
 	"name" : "CMFReactNodeTree",
 	"pools" : [
 		 ],

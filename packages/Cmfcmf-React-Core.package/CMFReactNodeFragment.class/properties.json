@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"children" ],
+		"children",
+		"key",
+		"hasKey" ],
 	"name" : "CMFReactNodeFragment",
 	"pools" : [
 		 ],

@@ -9,6 +9,5 @@ build
 	^ CMFReactNodeComponent new 
 		elementClass: elementClass;
 		selector: selector;
-		key: key;
 		props: propsWithChildren;
 		yourself

@@ -9,7 +9,6 @@
 		"morphClass",
 		"onRenderBlock",
 		"childrenMorphsBlock",
-		"key",
 		"children",
 		"createBlock" ],
 	"name" : "CMFReactNodeMorphBuilder",

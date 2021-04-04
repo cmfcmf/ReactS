@@ -1,4 +1,6 @@
 accessing
 currentEntry
 
-	^ currentParentEntry childrenTreeNodes at: currentChildIndex
+	^ currentChildPointer type == #index 
+		ifTrue: [currentParentEntry childrenTreeNodes at: currentChildPointer index]
+		ifFalse: [currentParentEntry keyedChildrenTreeNodes at: currentChildPointer key]

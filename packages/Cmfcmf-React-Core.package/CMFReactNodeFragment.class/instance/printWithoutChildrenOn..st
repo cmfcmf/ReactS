@@ -2,7 +2,7 @@ printing
 printWithoutChildrenOn: aStream
 
 	aStream nextPut: $<.
-	self key ifNotNil: [
+	self hasKey ifTrue: [
 		aStream
 			nextPutAll: 'key="';
 			nextPutAll: self key asString;

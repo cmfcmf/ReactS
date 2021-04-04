@@ -9,9 +9,9 @@ printWithoutChildrenOn: aStream renderResult: renderResult
 			nextPutAll: '(', renderResult identityHash, ')']
 		ifNil: [aStream nextPutAll: 'someMorph'].
 	
-	key ifNotNil: [
+	self hasKey ifTrue: [
 		aStream
 			nextPutAll: ' key="';
-			nextPutAll: key asString;
+			nextPutAll: self key asString;
 			nextPut: $"].
 	(children isNil or: [children isEmpty]) ifTrue: [aStream nextPutAll: ' />'] ifFalse: [aStream nextPut: $>]
