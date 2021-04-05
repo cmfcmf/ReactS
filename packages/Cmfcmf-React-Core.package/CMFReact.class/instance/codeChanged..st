@@ -16,8 +16,8 @@ codeChanged: event
 			oldHooks := hooks.
 			hooks := OrderedDictionary new.
 			elementTree := CMFReactNodeTree new.
-			[self render] on: Error do: [:nestedError |
-				"If the error also occurrs when rendering a completely fresh instance, then mark the old one as 'destroyed', but resubscribe to code changes to possibly recover. Also show the error to the user."	
+			[self render] on: Error ensure: ["finally { ... }"
+				"If the error also occurrs when rendering a completely fresh instance, then mark the old one as 'destroyed', but resubscribe to code changes to possibly recover. Also restore hooks (after all, these cannot have caused the error!)."
 				self outOfWorld. 
 				self subscribeToCodeChanges.
-				nestedError signal]]]
+				hooks := oldHooks]]]
