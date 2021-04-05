@@ -1,0 +1,4 @@
+lifecycle
+isSubscribedToCodeChanges
+
+	^ isSubscribedToCodeChanges

@@ -5,8 +5,8 @@ intoWorld: aWorld
 		* owner is already set
 		* owner's submorphs may not include receiver yet.
 	Important: Keep this method fast - it is run whenever morphs are added."
+	self cmfIntoWorld.
+	
 	aWorld ifNil:[^self].
 	self wantsSteps ifTrue:[aWorld startStepping: self].
-	self submorphsDo:[:m| m intoWorld: aWorld].
-
-	self cmfIntoWorld
+	self submorphsDo:[:m| m intoWorld: aWorld]

@@ -1,4 +1,6 @@
 lifecycle
 intoWorld
 
-	hooks values concatenation do: #onComponentWasRendered
+	hooks values concatenation do: #onComponentWasRendered.
+		
+	self subscribeToCodeChanges

@@ -8,10 +8,10 @@
 	"instvars" : [
 		"rootElement",
 		"elementTree",
-		"currentRenderElement",
 		"hooks",
 		"hookIndex",
-		"renderResult" ],
+		"renderResult",
+		"isSubscribedToCodeChanges" ],
 	"name" : "CMFReact",
 	"pools" : [
 		 ],
