@@ -1,6 +1,6 @@
 *Cmfcmf-React-Core
 asCMFReactNodeComponentBuilder
 
-	^ CMFReactComponentBlockClosure asElementBuilder
+	^ CMFReactComponentBlockClosure asReactNodeBuilder
 		privateOverwrittenProps: {#__block -> self};
 		yourself

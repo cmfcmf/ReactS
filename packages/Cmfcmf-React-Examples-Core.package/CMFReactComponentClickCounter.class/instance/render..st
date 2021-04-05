@@ -6,13 +6,13 @@ render: props
 	| clicks |
 	clicks := self useState: 0.
 	
-	^ CMFReactComponentContainer asElementBuilder children: {
+	^ CMFReactComponentContainer asReactNodeBuilder children: {
 		clicks get.
-		CMFReactComponentContainer asElementBuilder props: {#direction -> #leftToRight}; children: {
-			CMFReactComponentButton asElementBuilder props: {
+		CMFReactComponentContainer asReactNodeBuilder props: {#direction -> #leftToRight}; children: {
+			CMFReactComponentButton asReactNodeBuilder props: {
 				#onClick -> [clicks set: [:oldClicks | oldClicks + 1]].
 				#label -> 'increment'}; build.
-			CMFReactComponentButton asElementBuilder props: {
+			CMFReactComponentButton asReactNodeBuilder props: {
 				#onClick -> [clicks set: 0].
 				#label -> 'reset'}; build.
 		}; build.

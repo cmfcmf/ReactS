@@ -6,13 +6,13 @@ TODOSidebarItem: props
 	| todo |
 	todo := props at: #todo.
 
-	^ CMFReactComponentContainer asElementBuilder
+	^ CMFReactComponentContainer asReactNodeBuilder
 		children: {
 			todo at: #title.
-			CMFReactComponentButton asElementBuilder
+			CMFReactComponentButton asReactNodeBuilder
 				props: {#label -> 'select'. #onClick -> [(props at: #setSelectedId) value: (todo at: #id)]};
 				build.
-			CMFReactComponentButton asElementBuilder
+			CMFReactComponentButton asReactNodeBuilder
 				props: {#label -> 'delete'. #onClick -> [(props at: #dispatch) value: {#delete. todo at: #id}]};
 				build};
 		build

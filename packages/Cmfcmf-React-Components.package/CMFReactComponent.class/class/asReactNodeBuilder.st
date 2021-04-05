@@ -1,5 +1,5 @@
 as yet unclassified
-asElementBuilder
+asReactNodeBuilder
 
 	^ CMFReactNodeComponentBuilder new
 		privateElementClass: self;

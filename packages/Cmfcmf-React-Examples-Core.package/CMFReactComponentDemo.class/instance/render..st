@@ -1,14 +1,14 @@
 as yet unclassified
 render: props
 
-	^ CMFReactComponentWindow asElementBuilder props: {#label -> 'Demo Window'. #defaultExtent -> (225@400)}; children: {
-		CMFReactComponentContainer asElementBuilder children: {
+	^ CMFReactComponentWindow asReactNodeBuilder props: {#label -> 'Demo Window'. #defaultExtent -> (225@400)}; children: {
+		CMFReactComponentContainer asReactNodeBuilder children: {
 			'Counter 123 Example'.
-			CMFReactComponentClickCounter asElementBuilder build.
+			CMFReactComponentClickCounter asReactNodeBuilder build.
 			'Timer'.
-			CMFReactComponentTimer asElementBuilder build.
+			CMFReactComponentTimer asReactNodeBuilder build.
 			'Simple Calculator'.
-			CMFReactComponentCalculator asElementBuilder build.
+			CMFReactComponentCalculator asReactNodeBuilder build.
 			{
 				'Hallo Welt!' asText allBold.
 				{

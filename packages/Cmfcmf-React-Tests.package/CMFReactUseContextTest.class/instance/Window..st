@@ -1,8 +1,8 @@
 running
 Window: props
 
-	^ CMFReactComponentWindow asElementBuilder
+	^ CMFReactComponentWindow asReactNodeBuilder
 		children: {
-			(#WindowChild asElementBuilder: self) build
+			(#WindowChild asReactNodeBuilder: self) build
 		};
 		build

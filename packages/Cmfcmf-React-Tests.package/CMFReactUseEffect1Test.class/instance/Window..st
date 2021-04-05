@@ -1,7 +1,7 @@
 running
 Window: props
 
-	 ^ CMFReactComponentWindow asElementBuilder
+	 ^ CMFReactComponentWindow asReactNodeBuilder
 		children: {
-			(#Child asElementBuilder: self) build};
+			(#Child asReactNodeBuilder: self) build};
 		build

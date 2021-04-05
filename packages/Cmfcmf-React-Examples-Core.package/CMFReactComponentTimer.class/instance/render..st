@@ -17,7 +17,7 @@ render: props
 	] dependencies: {}.
 
 	"The container is not necessary, but helpful to see that it is re-rendering"
-	^ CMFReactComponentContainer asElementBuilder children: {
+	^ CMFReactComponentContainer asReactNodeBuilder children: {
 		'Time: ', 
 			((counter get // 10 // 60) asString padded: #left to: 3 with: $0), ' m ', 
 			((counter get // 10 \\ 60) asString padded: #left to: 2 with: $0), ' s ' , 

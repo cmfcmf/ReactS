@@ -1,5 +1,5 @@
 *Cmfcmf-React-Core
-asElementBuilder: aCMFReactComponent
+asReactNodeBuilder: aCMFReactComponent
 
 	self assert: ((aCMFReactComponent isKindOf: CMFReactComponent) or: [aCMFReactComponent isKindOf: CMFReactUITest]).
 

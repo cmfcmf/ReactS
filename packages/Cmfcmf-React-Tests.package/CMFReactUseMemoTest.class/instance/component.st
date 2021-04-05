@@ -9,18 +9,18 @@ component
 			complexValueCalculations := complexValueCalculations + 1.
 			a get] dependencies: {a get}.
 		
-		CMFReactComponentWindow asElementBuilder
+		CMFReactComponentWindow asReactNodeBuilder
 			children: {
 					"The container is not necessary, but helpful to see that it is re-rendering"
-					CMFReactComponentContainer asElementBuilder
+					CMFReactComponentContainer asReactNodeBuilder
 						children: {
-							CMFReactComponentString asElementBuilder props: {#name -> 'complexValue'. #contents -> complexValue}; build.
+							CMFReactComponentString asReactNodeBuilder props: {#name -> 'complexValue'. #contents -> complexValue}; build.
 							a get.
-							CMFReactComponentButton asElementBuilder
+							CMFReactComponentButton asReactNodeBuilder
 								props: {#name -> 'a'. #label -> 'a'. #onClick -> [a set: [:old | old + 1]]};
 								build.
 							b get.
-							CMFReactComponentButton asElementBuilder
+							CMFReactComponentButton asReactNodeBuilder
 								props: {#name -> 'b'. #label -> 'b'. #onClick -> [b set: [:old | old + 1]]};
 								build.
 						};

@@ -12,8 +12,8 @@ Item: props
 	
 	self assert: (props includesKey: #key) not description: 'The key prop should not be passed to child components'.
 		
-	^ CMFReactComponentContainer asElementBuilder 
+	^ CMFReactComponentContainer asReactNodeBuilder 
 		children: {
 			'item'. item.
-			CMFReactComponentString asElementBuilder props: {#name -> 'renderCount'. #contents -> renderCount get}; build};
+			CMFReactComponentString asReactNodeBuilder props: {#name -> 'renderCount'. #contents -> renderCount get}; build};
 		build

@@ -5,7 +5,7 @@ render
 	component := self component.
 	component := (true caseOf: {
 		[component isBlock] -> [component asCMFReactNodeComponentBuilder build].
-		[component isSymbol] -> [(component asElementBuilder: self) build]} otherwise: [component asElementBuilder build]).
+		[component isSymbol] -> [(component asReactNodeBuilder: self) build]} otherwise: [component asReactNodeBuilder build]).
 	
 	self makeTestInstanceAccessibleViaContext ifTrue: [
 		component := CMFReactTestContext asProviderNodeWithValue: self children: {component}].

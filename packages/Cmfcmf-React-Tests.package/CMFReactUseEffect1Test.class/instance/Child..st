@@ -15,9 +15,9 @@ Child: props
 
 
 	"The container is not necessary, but helpful to see that it is re-rendering"
-	^ CMFReactComponentContainer asElementBuilder
+	^ CMFReactComponentContainer asReactNodeBuilder
 		children: {
-			CMFReactComponentString asElementBuilder
+			CMFReactComponentString asReactNodeBuilder
 				props: {#contents -> counter get asString. #name -> 'counter'};
 				build};
 		build

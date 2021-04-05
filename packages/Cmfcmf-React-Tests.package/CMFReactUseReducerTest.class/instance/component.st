@@ -11,20 +11,20 @@ component
 	^ [ | count |	
 		count := CMFReact useReducer: reducer initialState: 0.
 
-		CMFReactComponentWindow asElementBuilder
+		CMFReactComponentWindow asReactNodeBuilder
 			children: {
-				CMFReactComponentContainer asElementBuilder
+				CMFReactComponentContainer asReactNodeBuilder
 					children: {
-						CMFReactComponentString asElementBuilder
+						CMFReactComponentString asReactNodeBuilder
 							props: {#name -> 'count'. #contents -> count get};
 							build.
-						CMFReactComponentButton asElementBuilder
+						CMFReactComponentButton asReactNodeBuilder
 							props: {#name -> 'inc'. #label -> 'increment'. #onClick -> [count dispatch: #increment]};
 							build.
-						CMFReactComponentButton asElementBuilder
+						CMFReactComponentButton asReactNodeBuilder
 							props: {#name -> 'dec'. #label -> 'decrement'. #onClick -> [count dispatch: #decrement]};
 							build.
-						CMFReactComponentButton asElementBuilder
+						CMFReactComponentButton asReactNodeBuilder
 							props: {#name -> 'reset'. #label -> 'reset'. #onClick ->[count dispatch value: #reset]};
 							build.
 					};

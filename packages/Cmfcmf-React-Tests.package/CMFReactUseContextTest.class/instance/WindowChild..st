@@ -5,19 +5,19 @@ WindowChild: props
 	defaultValue := CMFReact useContext: CMFReactTestContext.
 	changingValue := CMFReact useState: 0.
 		
-	^ CMFReactComponentContainer asElementBuilder
+	^ CMFReactComponentContainer asReactNodeBuilder
 		children: {
-			CMFReactComponentString asElementBuilder props: {#name -> 'defaultValue'. #contents -> defaultValue}; build.
+			CMFReactComponentString asReactNodeBuilder props: {#name -> 'defaultValue'. #contents -> defaultValue}; build.
 	
 			CMFReactTestContext asProviderNodeWithValue: 'otherValue' children: {
-				(#Subscriber1 asElementBuilder: self) build.
-				(#Subscriber1Memo asElementBuilder: self) build
+				(#Subscriber1 asReactNodeBuilder: self) build.
+				(#Subscriber1Memo asReactNodeBuilder: self) build
 			}.
 			
-			CMFReactComponentButton asElementBuilder props: {#name -> 'btn'. #label -> 'change'. #onClick -> [changingValue set: [:old | old + 1]]}; build.
+			CMFReactComponentButton asReactNodeBuilder props: {#name -> 'btn'. #label -> 'change'. #onClick -> [changingValue set: [:old | old + 1]]}; build.
 			CMFReactTestContext asProviderNodeWithValue: changingValue get children: {
-				(#Subscriber2 asElementBuilder: self) build.
-				(#Subscriber2Memo asElementBuilder: self) build
+				(#Subscriber2 asReactNodeBuilder: self) build.
+				(#Subscriber2Memo asReactNodeBuilder: self) build
 			}.
 		};
 		build

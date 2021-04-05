@@ -5,13 +5,13 @@ render: props
 	clicks := self useState: 0.
 	
 	^ {
-		CMFReactComponentWindow asElementBuilder props: {#label -> 'First Window'}; children: {	
-			CMFReactComponentContainer asElementBuilder children: {
+		CMFReactComponentWindow asReactNodeBuilder props: {#label -> 'First Window'}; children: {	
+			CMFReactComponentContainer asReactNodeBuilder children: {
 				clicks get.
-				CMFReactComponentButton asElementBuilder props: {#label -> 'increment'. #onClick -> [clicks set: [:old | old + 1]]}; build.
+				CMFReactComponentButton asReactNodeBuilder props: {#label -> 'increment'. #onClick -> [clicks set: [:old | old + 1]]}; build.
 			}; build
 		}; build.
-		CMFReactComponentWindow asElementBuilder props: {#label -> 'Second Window'}; children: {
+		CMFReactComponentWindow asReactNodeBuilder props: {#label -> 'Second Window'}; children: {
 			'Second Window'.
 		}; build.
 	}

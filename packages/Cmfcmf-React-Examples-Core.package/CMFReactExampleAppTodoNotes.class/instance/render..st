@@ -23,13 +23,13 @@ render: props
 	selectedId := self useState: 0.
 	selectedTodo := todos get detect: [:each | (each at: #id) == selectedId get] ifNone: [nil].
 	
-	^ CMFReactComponentWindow asElementBuilder
+	^ CMFReactComponentWindow asReactNodeBuilder
 		props: {#label -> 'TODO Notes'. #defaultExtent -> (600 @ 300)};
 		children: {
-			(#Sidebar asElementBuilder: self)
+			(#Sidebar asReactNodeBuilder: self)
 				props: {#todos -> todos get. #todosDispatch -> todos dispatch. #setSelectedId -> selectedId setter};
 				build.
-			CMFReactComponentContainer asElementBuilder
+			CMFReactComponentContainer asReactNodeBuilder
 				props: {#scrollable -> true. #layoutFrame -> (LayoutFrame fractions: (0.3 @ 0 corner: 1 @ 1))};
 				children: {
 					selectedTodo
