@@ -3,5 +3,6 @@ dispatch: anAction
 
 	| oldState |
 	oldState := state.
-	state := reducer value: state value: anAction.
+	"do not allow nested hooks"
+	state := CMFCurrentReact value: nil during: [reducer value: state value: anAction].
 	state ~~ oldState ifTrue: onChange

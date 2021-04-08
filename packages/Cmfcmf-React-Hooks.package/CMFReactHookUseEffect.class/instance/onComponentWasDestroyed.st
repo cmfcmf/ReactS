@@ -1,6 +1,8 @@
 as yet unclassified
 onComponentWasDestroyed
 
-	cleanup ifNotNil: [cleanup value].
+	cleanup ifNotNil: [
+			"do not allow nested hooks"
+			CMFCurrentReact value: nil during: [cleanup value]].
 	effect := cleanup := nil.
 	
