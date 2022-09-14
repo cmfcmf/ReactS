@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 isValidNode: anObject
 
 	^ anObject respondsTo: #asCMFReactNode

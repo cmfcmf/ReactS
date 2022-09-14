@@ -5,10 +5,10 @@ useReducer: reducer initialState: initialState
 	hook := self getHook: CMFReactHookUseReducer IfAbsent: [:nodeId |
 		CMFReactHookUseReducer new
 			initState: initialState onChange: [
-				Transcript 
+				"Transcript 
 					showln: '';
 					showln: 'Re-render node ', nodeId, ' due to useState -> set'.
-				"self halt."
+				self halt."
 				self reRenderNodeWithId: nodeId];
 			yourself].
 	hook reducer: reducer.

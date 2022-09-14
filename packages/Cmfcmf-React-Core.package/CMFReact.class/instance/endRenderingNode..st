@@ -1,6 +1,6 @@
 rendering
-beginRendering: node
+endRenderingNode: node
 
 	self assert: (CMFReact isValidNode: node).
 	
-	hookIndex := 1
+	hookIndex := nil

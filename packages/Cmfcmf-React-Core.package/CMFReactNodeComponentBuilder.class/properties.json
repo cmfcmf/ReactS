@@ -14,5 +14,5 @@
 	"name" : "CMFReactNodeComponentBuilder",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "CMFReactNodeBuilder",
 	"type" : "normal" }

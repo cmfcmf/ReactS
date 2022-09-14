@@ -1,4 +1,6 @@
 *Cmfcmf-React-Core
 asCMFReactNode
 
-	^ CMFReactNodeFragment children: self
+	^ CMFReactNodeFragmentBuilder new
+		children: self;
+		build

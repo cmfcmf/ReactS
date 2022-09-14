@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 reusingOldNodes: aBoolean
 
 	reusingOldNodes := aBoolean

@@ -6,12 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"morphClass",
-		"onRenderBlock",
-		"childrenMorphsBlock",
-		"children",
-		"createBlock" ],
-	"name" : "CMFReactNodeMorphBuilder",
+		"children" ],
+	"name" : "CMFReactNodeFragmentBuilder",
 	"pools" : [
 		 ],
 	"super" : "CMFReactNodeBuilder",

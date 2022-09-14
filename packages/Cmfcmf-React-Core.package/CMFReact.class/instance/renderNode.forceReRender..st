@@ -7,9 +7,9 @@ renderNode: nodeOrStringOrNumber forceReRender: forceReRender
 	^ elementTree renderingWithChildren: node during: [:renderInfo |
 		| result |
 		renderInfo forceReRender: forceReRender.
-		self beginRendering: node. "for hooks"
+		self beginRenderingNode: node. "for hooks"
 		result :=  [node render: self renderInfo: renderInfo] ensure: [
-			self endRendering: node "for hooks"].
+			self endRenderingNode: node "for hooks"].
 		self assert: (self class isValidRenderResult: result).
 		
 		"remove hooks of components that are no longer rendered."

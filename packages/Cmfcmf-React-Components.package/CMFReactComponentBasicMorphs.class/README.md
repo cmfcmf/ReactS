@@ -1,0 +1,1 @@
+A CMFReactComponentBasicMorphs is a superclass for some essential morphs wrapped in React components. These classes are not in any way special and just here for convenience. All these classes do can be achieved in your own components as well.

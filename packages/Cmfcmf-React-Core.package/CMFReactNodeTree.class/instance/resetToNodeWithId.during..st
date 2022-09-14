@@ -1,7 +1,7 @@
 rendering
 resetToNodeWithId: id during: aBlock
 
-	^ self resetCurrentParentEntryAndChildIndexAfter: [| treeNode |
+	^ self resetCurrentParentEntryAndChildPointerAfter: [| treeNode |
 		treeNode := rootEntry findTreeNodeById: id.
 		self assert: treeNode notNil.
 	

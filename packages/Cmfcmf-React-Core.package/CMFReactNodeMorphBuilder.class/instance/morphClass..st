@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 morphClass: aClass
 
 	self assert: (aClass isKindOf: Morph class).

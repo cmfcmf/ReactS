@@ -1,5 +1,5 @@
 private
-resetCurrentParentEntryAndChildIndexAfter: aBlock
+resetCurrentParentEntryAndChildPointerAfter: aBlock
 
 	| pointer entry |
 	entry := currentParentEntry.

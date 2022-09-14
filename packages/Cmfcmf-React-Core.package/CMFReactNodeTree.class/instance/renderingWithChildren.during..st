@@ -3,14 +3,14 @@ renderingWithChildren: node during: aBlock
 
 	| result isKeyed |
 	isKeyed := node hasKey.
-	self resetCurrentParentEntryAndChildIndexAfter: [| currentEntry renderInfo |
+	self resetCurrentParentEntryAndChildPointerAfter: [| currentEntry renderInfo |
 		isKeyed ifTrue: [currentChildPointer := JsonObject newFrom: {#type -> #key. #index -> nil. #key -> node key}].
 		
 		currentEntry := self currentEntryOrNil.
 		renderInfo := CMFReactRenderInfo from: currentEntry.
 		true caseOf: {
 			[currentEntry isNil] -> [
-				"not old node exists. Append the new node as a new child."
+				"no old node exists. Append the new node as a new child."
 				"Transcript showln: 'throwing away old node (missing)'."
 				renderInfo reusingOldNodes: false.
 				currentParentEntry := isKeyed 
@@ -30,7 +30,7 @@ renderingWithChildren: node during: aBlock
 				currentParentEntry := currentEntry
 					node: node;
 					yourself].
-		.
+		
 		"in any case,  reset the currentChildPointer, since we changed the parent to the newly inserted node."
 		currentChildPointer := JsonObject newFrom: {#type -> #index. #index -> 1. #key -> nil}.
 		

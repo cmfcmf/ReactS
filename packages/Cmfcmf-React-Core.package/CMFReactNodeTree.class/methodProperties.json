@@ -2,14 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"currentEntry" : "cmfcmf 4/4/2021 13:10",
 		"currentEntryOrNil" : "cmfcmf 4/4/2021 13:10",
 		"currentParentId" : "cmfcmf 4/3/2021 21:29",
 		"currentParentNode" : "cmfcmf 4/3/2021 21:29",
 		"initialize" : "cmfcmf 4/3/2021 21:15",
-		"prepareForNextRender" : "cmfcmf 4/4/2021 13:25",
-		"renderingWithChildren:during:" : "cmfcmf 4/4/2021 13:25",
-		"resetCurrentParentEntryAndChildIndexAfter:" : "cmfcmf 4/4/2021 13:11",
-		"resetToNodeWithId:during:" : "cmfcmf 4/4/2021 13:30",
+		"prepareForNextRender" : "cmfcmf 9/14/2022 21:05",
+		"renderingWithChildren:during:" : "cmfcmf 9/14/2022 21:14",
+		"resetCurrentParentEntryAndChildPointerAfter:" : "cmfcmf 9/14/2022 21:14",
+		"resetToNodeWithId:during:" : "cmfcmf 9/14/2022 21:14",
 		"rootEntry" : "cmfcmf 4/1/2021 13:48",
 		"treeSize" : "cmfcmf 4/3/2021 21:42" } }

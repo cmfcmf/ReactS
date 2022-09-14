@@ -1,4 +1,4 @@
-as yet unclassified
+hooks
 useEffect: effect
 
 	^ CMFReact useEffect: effect

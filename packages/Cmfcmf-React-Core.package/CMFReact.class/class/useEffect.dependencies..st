@@ -1,4 +1,4 @@
-as yet unclassified
+hooks
 useEffect: effect dependencies: dependencies
 
 	^ CMFCurrentReact value useEffect: effect dependencies: dependencies

@@ -1,4 +1,4 @@
-as yet unclassified
+hooks
 useContext: contextClass
 
 	^ CMFReact useContext: contextClass

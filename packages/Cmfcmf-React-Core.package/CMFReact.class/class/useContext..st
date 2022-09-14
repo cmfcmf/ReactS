@@ -1,4 +1,4 @@
-as yet unclassified
+hooks
 useContext: contextClass
 
 	^ CMFCurrentReact value useContext: contextClass

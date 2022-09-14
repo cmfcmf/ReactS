@@ -1,4 +1,4 @@
-as yet unclassified
+rendering
 render: rootElement
 
 	self assert: (CMFReact isValidNode: rootElement).

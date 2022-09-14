@@ -1,5 +1,5 @@
 hooks
-getHook: CMFReactHookClass IfAbsent: aBlock
+getHook: aCMFReactHookClass IfAbsent: aBlock
 
 	| hook nodeId |
 	nodeId := elementTree currentParentId.
@@ -11,6 +11,6 @@ getHook: CMFReactHookClass IfAbsent: aBlock
 		at: hookIndex 
 		ifAbsentPut: [aBlock value: nodeId].
 	"verify that the type of hook did not change between re-renders"
-	self assert: hook class == CMFReactHookClass.
+	self assert: hook class == aCMFReactHookClass.
 	hookIndex := hookIndex + 1.
 	^ hook
