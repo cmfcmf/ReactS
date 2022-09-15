@@ -8,6 +8,11 @@ renderNode: nodeOrStringOrNumber forceReRender: forceReRender
 		| numHooks renderResult userCodeResult |
 		renderInfo forceReRender: forceReRender.
 		
+		"If old nodes are not re-used, which means that the type of the node changed, clear all old hooks"
+		renderInfo reusingOldNodes ifFalse: [| oldHooks | 
+			oldHooks := hooks removeKey: elementTree currentParentId ifAbsent: [{}].
+			self assert: oldHooks size == (renderInfo oldNumHooks ifNil: [0])].
+		
 		"start user code processing"
 		self
 			beginRunningRenderCode: node 
