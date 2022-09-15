@@ -1,5 +1,6 @@
 as yet unclassified
-from: aCMFReactNodeTReeEntry
+from: aCMFReactNodeTreeEntry
 
-	oldNode := aCMFReactNodeTReeEntry ifNotNil: #node.
-	oldRenderResult := aCMFReactNodeTReeEntry ifNotNil: #renderResult
+	oldNode := aCMFReactNodeTreeEntry ifNotNil: #node.
+	oldRenderResult := aCMFReactNodeTreeEntry ifNotNil: #renderResult.
+	oldNumHooks := aCMFReactNodeTreeEntry ifNotNil: #numHooks 

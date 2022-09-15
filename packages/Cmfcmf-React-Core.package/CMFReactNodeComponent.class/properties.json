@@ -8,7 +8,8 @@
 	"instvars" : [
 		"elementClass",
 		"selector",
-		"props" ],
+		"props",
+		"blockClosure" ],
 	"name" : "CMFReactNodeComponent",
 	"pools" : [
 		 ],

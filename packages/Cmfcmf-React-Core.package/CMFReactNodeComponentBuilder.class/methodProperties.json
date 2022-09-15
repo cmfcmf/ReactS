@@ -2,9 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"build" : "cmfcmf 4/4/2021 11:56",
+		"build" : "cmfcmf 9/15/2022 21:04",
 		"children:" : "cmfcmf 4/1/2021 15:43",
 		"initialize" : "cmfcmf 4/3/2021 11:53",
+		"privateBlockClosure:" : "cmfcmf 9/15/2022 21:05",
 		"privateElementClass:" : "cmfcmf 4/3/2021 11:47",
 		"privateOverwrittenProps:" : "cmfcmf 4/2/2021 09:38",
 		"privateSelector:" : "cmfcmf 4/3/2021 11:53",

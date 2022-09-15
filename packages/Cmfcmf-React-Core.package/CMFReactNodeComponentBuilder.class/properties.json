@@ -10,7 +10,8 @@
 		"selector",
 		"props",
 		"children",
-		"overwrittenProps" ],
+		"overwrittenProps",
+		"blockClosure" ],
 	"name" : "CMFReactNodeComponentBuilder",
 	"pools" : [
 		 ],

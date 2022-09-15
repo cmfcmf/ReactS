@@ -1,5 +1,5 @@
 rendering
-render: react renderInfo: renderInfo
+executeUserCode: react renderInfo: renderInfo
 
 	| method memoize propsWithoutKey |
 	method := (elementClass whichClassIncludesSelector: selector) >> selector.
@@ -11,9 +11,8 @@ render: react renderInfo: renderInfo
 	(memoize and: [renderInfo reusingOldNodes] and: [renderInfo forceReRender not]) ifTrue: [
 		self flag: #todo. "Key!"
 		"self halt."
-		(renderInfo oldNode props cmfPropsEqualTo: props) ifTrue: [^ renderInfo oldRenderResult]].
+		(renderInfo oldNode props cmfPropsEqualTo: props) ifTrue: [^ #memoize]].
 	
 	propsWithoutKey := (props includesKey: #key) ifTrue: [props copy removeKey: #key; yourself] ifFalse: [props].
 	
-	^ react renderNode: (CMFCurrentReact value: react during: [
-		elementClass new withArgs: {propsWithoutKey} executeMethod: method]) forceReRender: false
+	^ CMFCurrentReact value: react during: [elementClass new withArgs: {propsWithoutKey} executeMethod: method]

@@ -5,12 +5,26 @@ renderNode: nodeOrStringOrNumber forceReRender: forceReRender
 	node := nodeOrStringOrNumber asCMFReactNode.
 		
 	^ elementTree renderingWithChildren: node during: [:renderInfo |
-		| result |
+		| numHooks renderResult userCodeResult |
 		renderInfo forceReRender: forceReRender.
-		self beginRenderingNode: node. "for hooks"
-		result :=  [node render: self renderInfo: renderInfo] ensure: [
-			self endRenderingNode: node "for hooks"].
-		self assert: (self class isValidRenderResult: result).
+		
+		"start user code processing"
+		self
+			beginRunningRenderCode: node 
+			withMaxNumHooks: (renderInfo oldNumHooks ifNil: [Float infinity]).
+		
+		userCodeResult := node executeUserCode: self renderInfo: renderInfo.
+		
+		numHooks := self afterRunningRenderCode: node.
+		userCodeResult == #memoize ifTrue: [
+			self assert: renderInfo oldNumHooks notNil.
+			numHooks := renderInfo oldNumHooks].
+		renderInfo reusingOldNodes ifTrue: [
+			self assert: renderInfo oldNumHooks == numHooks description: 'The number of hooks in a component may not change between re-renders.'].
+		"end user code processing"
+		
+		renderResult := node render: self renderInfo: renderInfo userCodeResult: userCodeResult.
+		self assert: (self class isValidRenderResult: renderResult).
 		
 		"remove hooks of components that are no longer rendered."
 		self flag: #todo. "This seems highly inefficient."
@@ -22,4 +36,4 @@ renderNode: nodeOrStringOrNumber forceReRender: forceReRender
 				treeNode isNil or: [(treeNode node isKindOf: CMFReactNodeComponent) not]]].
 			nodeHooks isEmpty].
 		
-		result]
+		{renderResult. numHooks}]

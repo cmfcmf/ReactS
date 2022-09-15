@@ -1,9 +1,9 @@
 rendering
 renderingWithChildren: node during: aBlock
 
-	| result isKeyed |
+	| renderResult isKeyed |
 	isKeyed := node hasKey.
-	self resetCurrentParentEntryAndChildPointerAfter: [| currentEntry renderInfo |
+	self resetCurrentParentEntryAndChildPointerAfter: [| currentEntry renderInfo numHooks renderResultAndNumHooks |
 		isKeyed ifTrue: [currentChildPointer := JsonObject newFrom: {#type -> #key. #index -> nil. #key -> node key}].
 		
 		currentEntry := self currentEntryOrNil.
@@ -35,7 +35,11 @@ renderingWithChildren: node during: aBlock
 		currentChildPointer := JsonObject newFrom: {#type -> #index. #index -> 1. #key -> nil}.
 		
 		"now render the new node, and pass it the old node"
-		currentParentEntry renderResult: (result := aBlock value: renderInfo)].
+		renderResultAndNumHooks := aBlock value: renderInfo.
+		renderResult := renderResultAndNumHooks first.
+		numHooks  := renderResultAndNumHooks second.
+		currentParentEntry renderResult: renderResult.
+		currentParentEntry numHooks: numHooks].
 	
 	
 	"Now that this node and its children have rendered, and the currentParentNode and currentChildIndex have been reset, increment the currentChildIndex if it was not a keyed node"
@@ -43,4 +47,4 @@ renderingWithChildren: node during: aBlock
 		currentChildPointer := currentChildPointer copy
 			index: currentChildPointer index + 1;
 			yourself].
-	^ result
+	^ renderResult
