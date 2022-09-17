@@ -1,0 +1,16 @@
+{
+	"category" : "Cmfcmf-React-Godot",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"godotClass",
+		"children",
+		"key" ],
+	"name" : "CMFReactNodeGodot",
+	"pools" : [
+		 ],
+	"super" : "JsonObject",
+	"type" : "normal" }

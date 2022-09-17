@@ -1,0 +1,4 @@
+accessing
+hasKey
+
+	^ key notNil

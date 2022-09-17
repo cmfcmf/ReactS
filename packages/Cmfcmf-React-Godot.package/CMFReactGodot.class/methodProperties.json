@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"isValidRenderResult:" : "tobe 9/17/2022 12:07" },
+	"instance" : {
+		"addChild:in:" : "tobe 9/17/2022 12:04",
+		"addUpdate:" : "tobe 9/17/2022 12:04",
+		"deleteChildrenFrom:in:" : "tobe 9/17/2022 12:06",
+		"moveChild:to:in:" : "tobe 9/17/2022 12:05",
+		"replaceChildAt:with:in:" : "tobe 9/17/2022 12:05",
+		"replaceOldMorphsInWorld:by:isRoot:" : "tobe 9/17/2022 06:06" } }
