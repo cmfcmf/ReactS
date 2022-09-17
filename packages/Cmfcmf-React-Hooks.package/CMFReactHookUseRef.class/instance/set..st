@@ -1,4 +1,4 @@
-as yet unclassified
+public
 set: anObject
 
 	state := anObject

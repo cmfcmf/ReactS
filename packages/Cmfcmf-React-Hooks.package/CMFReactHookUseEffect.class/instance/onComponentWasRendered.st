@@ -1,4 +1,4 @@
-as yet unclassified
+lifecycle
 onComponentWasRendered
 
 	dependenciesChanged == true ifTrue: [

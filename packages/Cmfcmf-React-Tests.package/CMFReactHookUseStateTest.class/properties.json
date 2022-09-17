@@ -1,5 +1,5 @@
 {
-	"category" : "Cmfcmf-React-Hooks",
+	"category" : "Cmfcmf-React-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "CMFReactHookUseState",
+	"name" : "CMFReactHookUseStateTest",
 	"pools" : [
 		 ],
-	"super" : "CMFReactHookUseReducer",
+	"super" : "TestCase",
 	"type" : "normal" }

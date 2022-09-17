@@ -1,4 +1,4 @@
-as yet unclassified
+private
 getValueBasedOnNodeTree: aCMFReactNodeTree setLastValue: aBoolean
 
 	| treeEntry contextProviderNode newValue |	
