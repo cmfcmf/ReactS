@@ -1,4 +1,4 @@
-as yet unclassified
+private
 contextClass: aCMFReactContextClass nodeId: nodeId_
 
 	self assert: (aCMFReactContextClass isKindOf: CMFReactContext class).

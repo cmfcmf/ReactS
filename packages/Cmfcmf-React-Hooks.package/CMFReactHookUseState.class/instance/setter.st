@@ -1,4 +1,4 @@
-as yet unclassified
+public
 setter
 
-	^ setter ifNil: [setter := [:value | self set: value]]
+	^ dispatcher

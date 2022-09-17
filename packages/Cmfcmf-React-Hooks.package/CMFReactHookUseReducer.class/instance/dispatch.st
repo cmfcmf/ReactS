@@ -1,4 +1,4 @@
-as yet unclassified
+public
 dispatch
 
 	^ dispatcher
