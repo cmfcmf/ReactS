@@ -1,12 +1,22 @@
 communication
 startListener
 
+	self stopListener.
+	
 	server := WebServer new
 		listenOn: 8000;
 		errorHandler: [:ex :req |
 			req sendResponseCode: 500 content: 'internal error' type: 'text/plain' do: [:res | ].
 			self halt.
 			ex signal];
+		addService: '/init'
+			action: [:req |
+				Transcript showln: 'asd'.
+				self initAndRender: rootElement.
+				Transcript showln: pendingUpdates.
+				req send200Response: pendingUpdates asJsonString.
+				pendingUpdates := nil]
+			methods: #('POST');
 		addService: '/update'
 			action: [:req | | update currentPending allUpdates |
 				currentPending := (pendingUpdates ifNil: [#()]) copy.
