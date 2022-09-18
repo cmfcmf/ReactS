@@ -1,10 +1,14 @@
 {
 	"class" : {
-		"isValidRenderResult:" : "tobe 9/17/2022 12:07" },
+		"isValidRenderResult:" : "tobe 9/18/2022 08:03",
+		"nextGodotId" : "tobe 9/17/2022 15:29" },
 	"instance" : {
-		"addChild:in:" : "tobe 9/17/2022 12:04",
-		"addUpdate:" : "tobe 9/17/2022 12:04",
-		"deleteChildrenFrom:in:" : "tobe 9/17/2022 12:06",
-		"moveChild:to:in:" : "tobe 9/17/2022 12:05",
+		"addChild:in:" : "tobe 9/18/2022 08:35",
+		"addUpdate:" : "tobe 9/17/2022 15:33",
+		"deleteChildrenFrom:in:" : "tobe 9/17/2022 15:32",
+		"initialize" : "tobe 9/17/2022 17:59",
+		"moveChild:to:in:" : "tobe 9/18/2022 08:22",
+		"registerCallback:" : "tobe 9/17/2022 17:59",
 		"replaceChildAt:with:in:" : "tobe 9/17/2022 12:05",
-		"replaceOldMorphsInWorld:by:isRoot:" : "tobe 9/17/2022 06:06" } }
+		"replaceOldMorphsInWorld:by:isRoot:" : "tobe 9/17/2022 06:06",
+		"updateFrameDo:" : "tobe 9/18/2022 09:02" } }

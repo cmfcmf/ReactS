@@ -1,4 +1,4 @@
 reconciliation
 addUpdate: aTuple
 
-	Transcript showln: aTuple
+	pendingUpdates add: aTuple

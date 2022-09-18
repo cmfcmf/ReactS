@@ -1,6 +1,7 @@
 rendering
 render: react renderInfo: renderInfo userCodeResult: anObject
 
+	self render: react properties: self properties.
 	renderInfo reusingOldNodes ifTrue: [ | oldProps |
 		oldProps := renderInfo oldNode properties.
 		"prop that was in oldProps but is not in newProps"

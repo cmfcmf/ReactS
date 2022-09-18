@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Godot",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SBTSEditor3D",
+	"pools" : [
+		 ],
+	"super" : "CMFReactComponent",
+	"type" : "normal" }

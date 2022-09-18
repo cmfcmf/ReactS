@@ -1,0 +1,15 @@
+{
+	"category" : "Cmfcmf-React-Godot",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"godotClass",
+		"properties" ],
+	"name" : "CMFReactNodeGodotResource",
+	"pools" : [
+		 ],
+	"super" : "CMFReactNode",
+	"type" : "normal" }

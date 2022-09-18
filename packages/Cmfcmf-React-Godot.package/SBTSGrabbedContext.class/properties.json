@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Godot",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SBTSGrabbedContext",
+	"pools" : [
+		 ],
+	"super" : "CMFReactContext",
+	"type" : "normal" }

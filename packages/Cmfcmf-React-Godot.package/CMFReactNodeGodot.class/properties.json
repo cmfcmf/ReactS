@@ -8,9 +8,12 @@
 	"instvars" : [
 		"godotClass",
 		"children",
-		"key" ],
+		"key",
+		"godotId",
+		"isResource",
+		"properties" ],
 	"name" : "CMFReactNodeGodot",
 	"pools" : [
 		 ],
-	"super" : "JsonObject",
+	"super" : "CMFReactNode",
 	"type" : "normal" }

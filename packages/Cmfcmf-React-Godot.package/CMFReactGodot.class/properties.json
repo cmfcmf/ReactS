@@ -3,10 +3,11 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"CurrentGodotId" ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"pendingUpdates",
+		"callbacks" ],
 	"name" : "CMFReactGodot",
 	"pools" : [
 		 ],

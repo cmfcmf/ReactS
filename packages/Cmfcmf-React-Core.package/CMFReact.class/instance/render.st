@@ -1,10 +1,11 @@
 rendering
 render
 
-	| newRenderResult |
-	elementTree prepareForNextRender.
+	^ self updateFrameDo: [
+		| newRenderResult |
+		elementTree prepareForNextRender.
 	
-	newRenderResult := self renderNode: rootElement forceReRender: false.
-	self replaceOldMorphsInWorld: renderResult by: newRenderResult isRoot: true.
+		newRenderResult := self renderNode: rootElement forceReRender: false.
+		self replaceOldMorphsInWorld: renderResult by: newRenderResult isRoot: true.
 
-	^ renderResult
+		renderResult]
