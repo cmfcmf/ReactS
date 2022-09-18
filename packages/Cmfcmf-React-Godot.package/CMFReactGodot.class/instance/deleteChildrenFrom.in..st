@@ -1,7 +1,8 @@
 reconciliation
 deleteChildrenFrom: aNumber in: aParentNode
 
-	aNumber
+	aParentNode childrenTreeNodes
+		from: aNumber
 		to: aParentNode childrenTreeNodes size
-		do: [:index | self addUpdate: {#delete. aParentNode godotPath. index}].
+		do: [:node | self addUpdate: {#delete. node godotPath}].
 	^ super deleteChildrenFrom: aNumber in: aParentNode
