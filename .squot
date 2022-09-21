@@ -6,6 +6,5 @@ OrderedDictionary {
 	'packages/Cmfcmf-React-Tests.package' : #SquotCypressCodeSerializer,
 	'packages/BaselineOfCmfcmfReact.package' : #SquotCypressCodeSerializer,
 	'packages/Cmfcmf-React-Examples-Core.package' : #SquotCypressCodeSerializer,
-	'packages/Cmfcmf-React-Examples-Pheno.package' : #SquotCypressCodeSerializer,
-	'packages/Cmfcmf-React-Godot.package' : #SquotCypressCodeSerializer
+	'packages/Cmfcmf-React-Examples-Pheno.package' : #SquotCypressCodeSerializer
 }

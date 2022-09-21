@@ -1,4 +1,0 @@
-testing
-isGodotNode
-
-	^ true

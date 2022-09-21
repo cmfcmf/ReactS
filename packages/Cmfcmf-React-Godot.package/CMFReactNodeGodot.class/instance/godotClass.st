@@ -1,4 +1,0 @@
-accessing
-godotClass
-
-	^ godotClass

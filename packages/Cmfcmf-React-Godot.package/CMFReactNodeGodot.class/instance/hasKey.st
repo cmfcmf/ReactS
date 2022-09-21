@@ -1,4 +1,0 @@
-accessing
-hasKey
-
-	^ key notNil
