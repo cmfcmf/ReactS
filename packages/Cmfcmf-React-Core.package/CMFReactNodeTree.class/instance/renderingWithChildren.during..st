@@ -16,7 +16,8 @@ renderingWithChildren: node during: aBlock
 				[currentEntry isNil] -> [
 					"no old node exists. Append the new node as a new child."
 					renderInfo reusingOldNodes: false.
-					currentParentEntry := self renderer addChild: node in: currentParentEntry].
+					currentParentEntry := self renderer addChild: node in: currentParentEntry.
+					renderInfo treeEntry: currentParentEntry].
 				[currentEntry nodeType ~= node type] -> [
 					"an old node exists, but has a different node type. Replace the old node."
 					renderInfo reusingOldNodes: false.

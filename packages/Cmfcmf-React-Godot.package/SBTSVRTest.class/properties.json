@@ -6,15 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"godotClass",
-		"children",
-		"key",
-		"godotId",
-		"isResource",
-		"properties",
-		"ref" ],
-	"name" : "CMFReactNodeGodot",
+		 ],
+	"name" : "SBTSVRTest",
 	"pools" : [
 		 ],
-	"super" : "CMFReactNode",
+	"super" : "CMFReactComponent",
 	"type" : "normal" }

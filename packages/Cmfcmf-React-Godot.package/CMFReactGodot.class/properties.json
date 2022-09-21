@@ -8,7 +8,10 @@
 	"instvars" : [
 		"pendingUpdates",
 		"callbacks",
-		"server" ],
+		"server",
+		"session",
+		"pendingRefs",
+		"waitingRefs" ],
 	"name" : "CMFReactGodot",
 	"pools" : [
 		 ],

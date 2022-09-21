@@ -11,9 +11,7 @@ startListener
 			ex signal];
 		addService: '/init'
 			action: [:req |
-				Transcript showln: 'asd'.
 				self initAndRender: rootElement.
-				Transcript showln: pendingUpdates.
 				req send200Response: pendingUpdates asJsonString.
 				pendingUpdates := nil]
 			methods: #('POST');

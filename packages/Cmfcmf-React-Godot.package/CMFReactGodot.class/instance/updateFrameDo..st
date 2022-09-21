@@ -3,5 +3,6 @@ updateFrameDo: aBlock
 
 	| ret |
 	pendingUpdates := OrderedCollection new.
-	ret := aBlock value.
+	pendingRefs := OrderedCollection new.
+	GDCurrentSession value: session during: [ret := aBlock value].
 	^ ret

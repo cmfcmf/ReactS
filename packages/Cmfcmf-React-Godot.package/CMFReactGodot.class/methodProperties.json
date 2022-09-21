@@ -2,10 +2,11 @@
 	"class" : {
 		"example" : "tobe 9/18/2022 22:45",
 		"isValidRenderResult:" : "tobe 9/18/2022 08:03",
-		"nextGodotId" : "tobe 9/17/2022 15:29",
+		"nextGodotId" : "tobe 9/20/2022 20:58",
 		"start:" : "tobe 9/18/2022 22:43" },
 	"instance" : {
 		"addChild:in:" : "tobe 9/18/2022 08:35",
+		"addRef:for:" : "tobe 9/21/2022 08:06",
 		"addUpdate:" : "tobe 9/17/2022 15:33",
 		"deleteChildrenFrom:in:" : "tobe 9/18/2022 18:51",
 		"initialize" : "tobe 9/17/2022 17:59",
@@ -13,6 +14,9 @@
 		"registerCallback:" : "tobe 9/17/2022 17:59",
 		"replaceChildAt:with:in:" : "tobe 9/17/2022 12:05",
 		"replaceOldMorphsInWorld:by:isRoot:" : "tobe 9/17/2022 06:06",
-		"startListener" : "tobe 9/18/2022 22:39",
+		"session:" : "tobe 9/21/2022 07:38",
+		"startListener" : "tobe 9/18/2022 22:47",
 		"stopListener" : "tobe 9/18/2022 17:32",
-		"updateFrameDo:" : "tobe 9/18/2022 18:43" } }
+		"tick:" : "tobe 9/21/2022 08:31",
+		"updateFrameDo:" : "tobe 9/21/2022 08:07",
+		"waitingRefs" : "tobe 9/21/2022 08:16" } }
