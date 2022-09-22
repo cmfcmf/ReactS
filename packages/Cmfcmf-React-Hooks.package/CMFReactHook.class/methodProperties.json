@@ -2,5 +2,6 @@
 	"class" : {
 		"shortName" : "cmfcmf 9/17/2022 10:37" },
 	"instance" : {
+		"canTriggerRerender" : "tobe 9/22/2022 15:34",
 		"onComponentWasDestroyed" : "cmfcmf 4/2/2021 10:19",
 		"onComponentWasRendered" : "cmfcmf 4/2/2021 10:18" } }

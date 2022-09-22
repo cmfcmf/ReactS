@@ -9,7 +9,7 @@ reRenderNodeWithId: id
 	
 		hooks keysAndValuesDo: [:nodeId :nodeHooks | (nodeId beginsWith: id) ifTrue: [nodeHooks do: #onComponentWasRendered]].
 		hooks keysAndValuesDo: [:nodeId :nodeHooks | (nodeId beginsWith: id) ifTrue: [
-			nodeHooks select: [:each | each isKindOf: CMFReactHookUseContext] thenDo: [:each |
+			nodeHooks select: [:each | each canTriggerRerender] thenDo: [:each |
 				(each isValueOutdatedBasedOnNodeTree: elementTree) ifTrue: [
 					self reRenderNodeWithId: each nodeId.
 					^ self]]]]]
