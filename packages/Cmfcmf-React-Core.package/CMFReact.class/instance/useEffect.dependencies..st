@@ -8,6 +8,8 @@ useEffect: effect dependencies: dependencies
 			initEffect: effect;
 			yourself].
 	
-	hook updateDependencies: dependencies.	
-		
+	hook
+		updateDependencies: dependencies;
+		initEffect: effect.
+	
 	^ hook

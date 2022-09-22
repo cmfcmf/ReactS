@@ -5,9 +5,10 @@ renderingWithChildren: node during: aBlock
 	isKeyed := node hasKey.
 	self resetCurrentParentEntryAndChildPointerAfter: [ | currentEntry renderInfo numHooks renderResultAndNumHooks |
 		isKeyed ifTrue: [
-			currentChildPointer
+			currentChildPointer := currentChildPointer copy
 				at: #key put: node key;
-				at: #type put: #key].
+				at: #type put: #key;
+				yourself].
 		
 		currentEntry := self currentEntryOrNil.
 		renderInfo := CMFReactRenderInfo from: currentEntry.

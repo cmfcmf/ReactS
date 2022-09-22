@@ -39,7 +39,7 @@
 		"useCallback:dependencies:" : "cmfcmf 4/2/2021 14:05",
 		"useContext:" : "cmfcmf 4/4/2021 11:21",
 		"useEffect:" : "cmfcmf 4/2/2021 10:09",
-		"useEffect:dependencies:" : "cmfcmf 4/2/2021 10:45",
+		"useEffect:dependencies:" : "tobe 9/22/2022 09:25",
 		"useMemo:dependencies:" : "cmfcmf 4/2/2021 14:54",
 		"useReducer:initialArg:init:" : "cmfcmf 4/2/2021 14:23",
 		"useReducer:initialState:" : "cmfcmf 9/17/2022 10:17",
