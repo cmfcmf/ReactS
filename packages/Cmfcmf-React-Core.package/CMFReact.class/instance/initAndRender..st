@@ -1,7 +1,5 @@
 initialize-release
-initAndRender: rootElement_
+initAndRender: rootElement
 
-	rootElement := rootElement_.
-	elementTree := CMFReactNodeTree new renderer: self.
-	
+	self init: rootElement.
 	^ self render
