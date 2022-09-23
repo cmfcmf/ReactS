@@ -12,7 +12,8 @@
 		"hookIndex",
 		"renderResult",
 		"isSubscribedToCodeChanges",
-		"maxNumHooks" ],
+		"maxNumHooks",
+		"batchedUpdates" ],
 	"name" : "CMFReact",
 	"pools" : [
 		 ],
