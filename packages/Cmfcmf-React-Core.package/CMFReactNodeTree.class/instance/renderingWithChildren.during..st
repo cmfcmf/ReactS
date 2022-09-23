@@ -3,7 +3,7 @@ renderingWithChildren: node during: aBlock
 
 	| renderResult isKeyed |
 	isKeyed := node hasKey.
-	self resetCurrentParentEntryAndChildPointerAfter: [ | currentEntry renderInfo numHooks renderResultAndNumHooks |
+	self resetCurrentParentEntryAndChildPointerAfter: [ | currentEntry renderInfo |
 		isKeyed ifTrue: [
 			currentChildPointer := currentChildPointer copy
 				key: node key;
@@ -39,14 +39,11 @@ renderingWithChildren: node during: aBlock
 		currentChildPointer := CMFReactChildPointer initial.
 		
 		"now render the new node, and pass it the old node"
-		renderResultAndNumHooks := aBlock value: renderInfo.
-		renderResult := renderResultAndNumHooks first.
-		numHooks := renderResultAndNumHooks second.
+		renderResult := aBlock value: renderInfo.
 		
 		self renderer deleteChildrenFrom: currentChildPointer index in: currentParentEntry.
 		self assert: (self renderer class isValidRenderResult: renderResult).
-		currentParentEntry renderResult: renderResult.
-		currentParentEntry numHooks: numHooks].
+		currentParentEntry renderResult: renderResult].
 	
 	"Now that this node and its children have rendered, and the currentParentNode and currentChildIndex have been reset, increment the currentChildIndex"
 	currentChildPointer := currentChildPointer copy

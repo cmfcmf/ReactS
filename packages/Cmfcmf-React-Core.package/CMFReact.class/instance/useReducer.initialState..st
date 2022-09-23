@@ -2,14 +2,14 @@ hooks
 useReducer: reducer initialState: initialState
 
 	| hook |
-	hook := self getHook: CMFReactHookUseReducer IfAbsent: [:nodeId |
+	hook := self getHook: CMFReactHookUseReducer IfAbsent: [:node |
 		CMFReactHookUseReducer new
 			initState: initialState reducer: reducer onChange: [
 				"Transcript 
 					showln: '';
 					showln: 'Re-render node ', nodeId, ' due to useState -> set'.
 				self halt."
-				self reRenderNodeWithId: nodeId];
+				self reRenderNode: node];
 			yourself].
 	hook reducer: reducer.
 	^ hook

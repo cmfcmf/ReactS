@@ -1,10 +1,7 @@
 rendering
-resetToNodeWithId: id during: aBlock
+resetToNode: treeNode during: aBlock
 
-	^ self resetCurrentParentEntryAndChildPointerAfter: [ | treeNode |
-		treeNode := rootEntry findTreeNodeById: id.
-		self assert: treeNode notNil.
-		
+	^ self resetCurrentParentEntryAndChildPointerAfter: [
 		currentParentEntry := treeNode parent.
 		currentChildPointer := CMFReactChildPointer
 			type: (treeNode isKeyed ifTrue: [#key] ifFalse: [#index])

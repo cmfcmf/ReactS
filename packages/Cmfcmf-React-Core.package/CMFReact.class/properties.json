@@ -8,12 +8,12 @@
 	"instvars" : [
 		"rootElement",
 		"elementTree",
-		"hooks",
 		"hookIndex",
 		"renderResult",
 		"isSubscribedToCodeChanges",
 		"maxNumHooks",
-		"batchedUpdates" ],
+		"batchedUpdates",
+		"pendingEffects" ],
 	"name" : "CMFReact",
 	"pools" : [
 		 ],

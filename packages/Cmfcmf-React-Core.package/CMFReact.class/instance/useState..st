@@ -1,7 +1,7 @@
 hooks
 useState: default
 
-	^ self getHook: CMFReactHookUseState IfAbsent: [:nodeId |
+	^ self getHook: CMFReactHookUseState IfAbsent: [:node |
 		CMFReactHookUseState new
-			initState: default onChange: [self reRenderNodeWithId: nodeId];
+			initState: default onChange: [self reRenderNode: node];
 			yourself]

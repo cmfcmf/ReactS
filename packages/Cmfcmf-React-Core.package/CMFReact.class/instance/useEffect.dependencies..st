@@ -1,7 +1,6 @@
 hooks
 useEffect: effect dependencies: dependencies
 
-
 	| hook |
 	hook := self getHook: CMFReactHookUseEffect IfAbsent: [:nodeId |
 		CMFReactHookUseEffect new
@@ -11,5 +10,7 @@ useEffect: effect dependencies: dependencies
 	hook
 		updateDependencies: dependencies;
 		initEffect: effect.
+	
+	hook dependenciesChanged ifTrue: [self addPendingEffect: hook].
 	
 	^ hook

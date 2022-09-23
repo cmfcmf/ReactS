@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"contextClass",
-		"nodeId",
+		"node",
 		"lastValue" ],
 	"name" : "CMFReactHookUseContext",
 	"pools" : [

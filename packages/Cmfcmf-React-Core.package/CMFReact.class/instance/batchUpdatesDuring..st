@@ -6,4 +6,4 @@ batchUpdatesDuring: aBlock
 	self updateFrameDo: [ | updates |
 		updates := batchedUpdates.
 		batchedUpdates := nil.
-		updates do: [:id | self reRenderNodeWithId: id]]
+		updates do: [:id | self reRenderNodeNow: id]]

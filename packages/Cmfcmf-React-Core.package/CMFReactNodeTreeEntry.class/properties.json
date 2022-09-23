@@ -12,7 +12,7 @@
 		"renderResult",
 		"childrenTreeNodes",
 		"key",
-		"numHooks" ],
+		"hooks" ],
 	"name" : "CMFReactNodeTreeEntry",
 	"pools" : [
 		 ],

@@ -2,8 +2,8 @@ hooks
 useContext: contextClass
 
 	| hook |
-	hook := self getHook: CMFReactHookUseContext IfAbsent: [:nodeId |
+	hook := self getHook: CMFReactHookUseContext IfAbsent: [:node |
 		CMFReactHookUseContext new
-			contextClass: contextClass nodeId: nodeId;
+			contextClass: contextClass node: node;
 			yourself].
 	^ hook getValueBasedOnNodeTree: elementTree setLastValue: true

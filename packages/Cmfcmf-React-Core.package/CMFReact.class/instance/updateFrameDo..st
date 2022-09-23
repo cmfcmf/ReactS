@@ -1,4 +1,7 @@
 lifecycle
 updateFrameDo: aBlock
 
-	^ aBlock value
+	| ret |
+	ret := aBlock value.
+	self performPendingEffects.
+	^ ret
