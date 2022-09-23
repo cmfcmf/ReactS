@@ -6,8 +6,8 @@ renderingWithChildren: node during: aBlock
 	self resetCurrentParentEntryAndChildPointerAfter: [ | currentEntry renderInfo numHooks renderResultAndNumHooks |
 		isKeyed ifTrue: [
 			currentChildPointer := currentChildPointer copy
-				at: #key put: node key;
-				at: #type put: #key;
+				key: node key;
+				type: #key;
 				yourself].
 		
 		currentEntry := self currentEntryOrNil.
@@ -36,7 +36,7 @@ renderingWithChildren: node during: aBlock
 					yourself].
 		
 		"in any case,  reset the currentChildPointer, since we changed the parent to the newly inserted node."
-		currentChildPointer := JsonObject newFrom: {#type -> #index. #index -> 1. #key -> nil}.
+		currentChildPointer := CMFReactChildPointer initial.
 		
 		"now render the new node, and pass it the old node"
 		renderResultAndNumHooks := aBlock value: renderInfo.

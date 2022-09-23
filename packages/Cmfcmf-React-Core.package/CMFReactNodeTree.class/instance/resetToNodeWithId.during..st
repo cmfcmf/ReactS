@@ -6,9 +6,9 @@ resetToNodeWithId: id during: aBlock
 		self assert: treeNode notNil.
 		
 		currentParentEntry := treeNode parent.
-		currentChildPointer := JsonObject newFrom: {
-			#type -> (treeNode isKeyed ifTrue: [#key] ifFalse: [#index]).
-			#index -> treeNode index.
-			#key -> (treeNode isKeyed ifTrue: [treeNode key] ifFalse: [nil])}.
+		currentChildPointer := CMFReactChildPointer
+			type: (treeNode isKeyed ifTrue: [#key] ifFalse: [#index])
+			index: treeNode index
+			key: (treeNode isKeyed ifTrue: [treeNode key] ifFalse: [nil]).
 		
 		aBlock value: treeNode]
