@@ -15,4 +15,4 @@ executeUserCode: react renderInfo: renderInfo
 	
 	propsWithoutKey := (props includesKey: #key) ifTrue: [props copy removeKey: #key; yourself] ifFalse: [props].
 	
-	^ CMFCurrentReact value: react during: [elementClass new withArgs: {propsWithoutKey} executeMethod: method]
+	^ CMFCurrentReact value: react during: [elementClass basicNew withArgs: {propsWithoutKey} executeMethod: method]
