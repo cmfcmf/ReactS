@@ -2,7 +2,7 @@ printing
 printOn: aStream
 
 	self printWithoutChildrenOn: aStream.
-	(props includesKey: #children) ifTrue: [
+	(props notNil and: [props includesKey: #children]) ifTrue: [
 		(props at: #children) do: [:each | aStream cr. each printOn: aStream].
 		aStream 
 			cr;
