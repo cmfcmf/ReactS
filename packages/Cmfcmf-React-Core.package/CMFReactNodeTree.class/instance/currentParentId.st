@@ -1,4 +1,0 @@
-accessing
-currentParentId
-
-	^ currentParentEntry id

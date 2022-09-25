@@ -2,13 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
-		"currentEntryOrNil" : "cmfcmf 4/4/2021 13:10",
-		"currentParentId" : "cmfcmf 4/3/2021 21:29",
+		"advanceChildPointer" : "tobe 9/23/2022 12:36",
+		"allEntriesDo:" : "tobe 9/23/2022 10:52",
+		"currentEntryOrNil" : "tobe 9/17/2022 11:22",
+		"currentParentEntry" : "tobe 9/22/2022 20:38",
 		"currentParentNode" : "cmfcmf 4/3/2021 21:29",
 		"initialize" : "cmfcmf 4/3/2021 21:15",
-		"prepareForNextRender" : "cmfcmf 9/14/2022 21:05",
-		"renderingWithChildren:during:" : "cmfcmf 9/15/2022 23:10",
-		"resetCurrentParentEntryAndChildPointerAfter:" : "cmfcmf 9/14/2022 21:14",
-		"resetToNodeWithId:during:" : "cmfcmf 9/14/2022 21:14",
+		"prepareForNextRender" : "tobe 9/24/2022 10:41",
+		"renderer" : "tobe 9/17/2022 05:43",
+		"renderer:" : "tobe 9/17/2022 05:43",
+		"renderingWithChildren:during:" : "tobe 9/23/2022 11:12",
+		"resetCurrentParentEntryAndChildPointerAfter:" : "tobe 9/23/2022 08:38",
+		"resetToNode:during:" : "tobe 9/23/2022 10:49",
 		"rootEntry" : "cmfcmf 4/1/2021 13:48",
 		"treeSize" : "cmfcmf 4/3/2021 21:42" } }

@@ -1,0 +1,15 @@
+{
+	"category" : "Cmfcmf-React-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"child",
+		"container" ],
+	"name" : "CMFReactNodePortal",
+	"pools" : [
+		 ],
+	"super" : "CMFReactNode",
+	"type" : "normal" }

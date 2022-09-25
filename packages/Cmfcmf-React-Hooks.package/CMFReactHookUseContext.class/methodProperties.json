@@ -2,8 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"contextClass:nodeId:" : "cmfcmf 4/4/2021 12:06",
-		"getValueBasedOnNodeTree:setLastValue:" : "cmfcmf 4/4/2021 11:21",
+		"canTriggerRerender" : "tobe 9/22/2022 15:34",
+		"contextClass:node:" : "tobe 9/23/2022 13:43",
+		"getValueBasedOnNodeTree:setLastValue:" : "tobe 9/23/2022 13:43",
 		"isValueOutdatedBasedOnNodeTree:" : "cmfcmf 4/4/2021 11:21",
-		"lastValue" : "cmfcmf 4/4/2021 10:59",
-		"nodeId" : "cmfcmf 4/4/2021 11:25" } }
+		"lastValue" : "cmfcmf 4/4/2021 10:59" } }

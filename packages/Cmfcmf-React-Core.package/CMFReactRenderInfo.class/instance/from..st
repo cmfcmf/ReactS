@@ -1,6 +1,7 @@
-as yet unclassified
+initialize-release
 from: aCMFReactNodeTreeEntry
 
 	oldNode := aCMFReactNodeTreeEntry ifNotNil: #node.
 	oldRenderResult := aCMFReactNodeTreeEntry ifNotNil: #renderResult.
-	oldNumHooks := aCMFReactNodeTreeEntry ifNotNil: #numHooks 
+	oldNumHooks := aCMFReactNodeTreeEntry ifNotNil: #numberOfHooks.
+	treeEntry := aCMFReactNodeTreeEntry

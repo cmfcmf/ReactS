@@ -6,6 +6,8 @@ printWithoutChildrenOn: aStream
 		
 	self hasKey ifTrue: [aStream nextPutAll: ' key="'; nextPutAll: self key asString; nextPut: $"].
 	
+	props ifNil: [^ aStream nextPutAll: ' />'].
+	
 	props keysAndValuesDo: [:key :value | 
 		(key == #children or: [key == #key]) ifFalse: [aStream 
 			space; 

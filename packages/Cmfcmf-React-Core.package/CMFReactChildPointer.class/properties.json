@@ -1,0 +1,16 @@
+{
+	"category" : "Cmfcmf-React-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"type",
+		"index",
+		"key" ],
+	"name" : "CMFReactChildPointer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

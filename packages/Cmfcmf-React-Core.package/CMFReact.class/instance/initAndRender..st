@@ -1,8 +1,5 @@
 initialize-release
-initAndRender: rootElement_
+initAndRender: rootElement
 
-	rootElement := rootElement_.
-	hooks := OrderedDictionary new.
-	elementTree := CMFReactNodeTree new.
-	
+	self init: rootElement.
 	^ self render

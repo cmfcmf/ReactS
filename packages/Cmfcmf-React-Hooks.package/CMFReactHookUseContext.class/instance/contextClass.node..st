@@ -1,7 +1,7 @@
 private
-contextClass: aCMFReactContextClass nodeId: nodeId_
+contextClass: aCMFReactContextClass node: aTreeNode
 
 	self assert: (aCMFReactContextClass isKindOf: CMFReactContext class).
 	
 	contextClass := aCMFReactContextClass.
-	nodeId := nodeId_
+	node := aTreeNode
