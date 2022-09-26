@@ -3,7 +3,9 @@ onComponentWasRendered
 	"do not allow nested hooks"
 
 	CMFCurrentReact value: nil during: [ | ret |
-		cleanup ifNotNil: [cleanup value].
+		cleanup ifNotNil: [
+			cleanup value.
+			cleanup := nil].
 		ret := effect value.
 		ret isBlock ifTrue: [cleanup := ret]].
 	
