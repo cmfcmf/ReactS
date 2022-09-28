@@ -1,4 +1,4 @@
-as yet unclassified
+lifecycle
 onCodeChanged
 
 	dependenciesInitialized := false
