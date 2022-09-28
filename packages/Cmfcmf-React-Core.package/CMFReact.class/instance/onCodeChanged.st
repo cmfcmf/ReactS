@@ -3,8 +3,8 @@ onCodeChanged
 
 	self flag: #todo.
 	"Only re-render updated components"
-	"Do not catch Halt exceptions. These should be handled as normal."
 	elementTree allEntriesDo: [:entry | entry hooksDo: [:hook | hook onCodeChanged]].
+	"Do not catch Halt exceptions. These should be handled as normal."
 	[self render] on: Error do: [:error |
 		"If an error occurrs during the render, also reset hooks and retry"
 		"TODO: the hook recovery got lost in the refactor to store hooks in the tree directly"

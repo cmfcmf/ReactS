@@ -1,5 +1,5 @@
 {
-	"category" : "Cmfcmf-React-Components",
+	"category" : "Cmfcmf-React-Examples-Core",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,7 +7,7 @@
 	"commentStamp" : "cmfcmf 9/14/2022 20:37",
 	"instvars" : [
 		 ],
-	"name" : "CMFReactComponentString",
+	"name" : "CMFReactComponentStringWithName",
 	"pools" : [
 		 ],
 	"super" : "CMFReactComponentBasicMorphs",

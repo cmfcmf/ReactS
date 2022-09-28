@@ -15,7 +15,7 @@ component
 			children: {
 				CMFReactComponentContainer asReactNodeBuilder
 					children: {
-						CMFReactComponentString asReactNodeBuilder
+						CMFReactComponentStringWithName asReactNodeBuilder
 							props: {#name -> 'count'. #contents -> count get};
 							build.
 						CMFReactComponentButton asReactNodeBuilder
