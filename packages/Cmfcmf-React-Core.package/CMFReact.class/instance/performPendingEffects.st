@@ -1,5 +1,7 @@
 rendering
 performPendingEffects
 
-	pendingEffects ifNotNil: [pendingEffects do: [:effect | effect onComponentWasRendered]].
-	pendingEffects := nil
+	| currentPendingEffects |
+	currentPendingEffects := pendingEffects.
+	pendingEffects := nil.
+	currentPendingEffects ifNotNil: [currentPendingEffects do: [:effect | effect onComponentWasRendered]]
