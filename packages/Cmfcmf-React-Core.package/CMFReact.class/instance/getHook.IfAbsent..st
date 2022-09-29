@@ -6,13 +6,7 @@ getHook: aCMFReactHookClass IfAbsent: aBlock
 	
 	entry := elementTree currentParentEntry.
 	hook := entry hooks at: hookIndex ifAbsentPut: [aBlock value: entry].
+	hook class == aCMFReactHookClass ifFalse: [CMFReactHooksChanged new signal].
 	
-	"Transcript showln: CMFReactHookClass shortName, ' ', nodeId, ' ',
-		(String streamContents: [:s | elementTree currentNode printWithoutChildrenOn: s])."
-	
-	"verify that the type of hook did not change between re-renders"
-	self
-		assert: hook class == aCMFReactHookClass
-		description: 'Components must use the same hooks in the same order on every render'.
 	hookIndex := hookIndex + 1.
 	^ hook
