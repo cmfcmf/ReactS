@@ -7,7 +7,7 @@ WindowChild: props
 		
 	^ CMFReactComponentContainer asReactNodeBuilder
 		children: {
-			CMFReactComponentString asReactNodeBuilder props: {#name -> 'defaultValue'. #contents -> defaultValue}; build.
+			CMFReactComponentStringWithName asReactNodeBuilder props: {#name -> 'defaultValue'. #contents -> defaultValue}; build.
 	
 			CMFReactTestContext asProviderNodeWithValue: 'otherValue' children: {
 				(#Subscriber1 asReactNodeBuilder: self) build.

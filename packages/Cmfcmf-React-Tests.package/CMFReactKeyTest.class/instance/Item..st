@@ -15,5 +15,5 @@ Item: props
 	^ CMFReactComponentContainer asReactNodeBuilder 
 		children: {
 			'item'. item.
-			CMFReactComponentString asReactNodeBuilder props: {#name -> 'renderCount'. #contents -> renderCount get}; build};
+			CMFReactComponentStringWithName asReactNodeBuilder props: {#name -> 'renderCount'. #contents -> renderCount get}; build};
 		build

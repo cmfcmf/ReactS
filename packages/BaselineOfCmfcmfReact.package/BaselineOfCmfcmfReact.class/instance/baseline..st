@@ -17,7 +17,7 @@ baseline: spec
 				package: 'Cmfcmf-React-Hooks';
 				package: 'Cmfcmf-React-Morphs';
 				package: 'Cmfcmf-React-Tests'
-					with: [spec requires: #('Cmfcmf-React-Core' 'MorphicTestingFramework')];
+					with: [spec requires: #('Cmfcmf-React-Core' 'Cmfcmf-React-Examples-Core' 'MorphicTestingFramework')];
 				package: 'Cmfcmf-React-Examples-Core';
 				package: 'Cmfcmf-React-Examples-Pheno' with: [spec requires: #('Pheno')];
 				yourself.

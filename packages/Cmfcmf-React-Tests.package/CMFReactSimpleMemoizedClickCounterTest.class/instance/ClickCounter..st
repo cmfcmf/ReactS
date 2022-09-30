@@ -7,7 +7,7 @@ ClickCounter: props
 
 	^ CMFReactComponentWindow asReactNodeBuilder children: {
 		CMFReactComponentContainer asReactNodeBuilder children: {
-			CMFReactComponentString asReactNodeBuilder props: {#contents -> clicks get. #name -> 'cnt'}; build.
+			CMFReactComponentStringWithName asReactNodeBuilder props: {#contents -> clicks get. #name -> 'cnt'}; build.
 			CMFReactComponentButton asReactNodeBuilder props: {#name -> 'btn'. #label -> 'increment'. #onClick -> [clicks set: [:old | old + 1]]}; build
 		}; build.
 	}; build
