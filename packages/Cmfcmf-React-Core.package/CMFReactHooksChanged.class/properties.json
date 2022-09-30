@@ -1,0 +1,15 @@
+{
+	"category" : "Cmfcmf-React-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"node",
+		"renderInfo" ],
+	"name" : "CMFReactHooksChanged",
+	"pools" : [
+		 ],
+	"super" : "Exception",
+	"type" : "normal" }

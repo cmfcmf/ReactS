@@ -11,7 +11,6 @@
 		"hookIndex",
 		"renderResult",
 		"isSubscribedToCodeChanges",
-		"maxNumHooks",
 		"batchedUpdates",
 		"pendingEffects" ],
 	"name" : "CMFReact",
