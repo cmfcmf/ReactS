@@ -14,7 +14,7 @@ component
 					"The container is not necessary, but helpful to see that it is re-rendering"
 					CMFReactComponentContainer asReactNodeBuilder
 						children: {
-							CMFReactComponentString asReactNodeBuilder props: {#name -> 'complexValue'. #contents -> complexValue}; build.
+							CMFReactComponentStringWithName asReactNodeBuilder props: {#name -> 'complexValue'. #contents -> complexValue}; build.
 							a get.
 							CMFReactComponentButton asReactNodeBuilder
 								props: {#name -> 'a'. #label -> 'a'. #onClick -> [a set: [:old | old + 1]]};

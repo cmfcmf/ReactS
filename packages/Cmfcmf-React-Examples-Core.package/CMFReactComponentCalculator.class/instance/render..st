@@ -19,6 +19,6 @@ render: props
 		}; build.
 		CMFReactComponentContainer asReactNodeBuilder props: {#direction -> #leftToRight}; children: {
 			CMFReactComponentButton asReactNodeBuilder props: {#name -> 'btn'. #label -> 'a + b =' . #onClick -> [r set: (a get asNumber + b get asNumber) asString]}; build.
-			CMFReactComponentString asReactNodeBuilder props: {#name -> 'result'. #contents -> r get}; build.
+			CMFReactComponentStringWithName asReactNodeBuilder props: {#name -> 'result'. #contents -> r get}; build.
 		}; build.
 	}; build

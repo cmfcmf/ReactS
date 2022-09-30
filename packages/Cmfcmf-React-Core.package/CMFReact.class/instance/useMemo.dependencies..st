@@ -3,10 +3,10 @@ useMemo: block dependencies: dependencies
 
 
 	| hook |
-	hook := self getHook: CMFReactHookUseMemo IfAbsent: [:nodeId | CMFReactHookUseMemo new].
+	hook := self getHook: CMFReactHookUseMemo IfAbsent: [:node | CMFReactHookUseMemo new].
 	
 	hook 
-		initBlock: block;
+		updateBlock: block;
 		updateDependencies: dependencies.	
 		
 	^ hook get
