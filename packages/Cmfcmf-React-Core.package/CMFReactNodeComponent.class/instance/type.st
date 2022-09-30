@@ -1,8 +1,6 @@
 accessing
 type
 
-	^ {
-		#component.
-		elementClass.
-		selector.
-		blockClosure ifNotNil: [blockClosure startpc hash bitXor: blockClosure homeMethod selector hash]}
+	^ blockClosure
+		ifNil: [{#component. elementClass. selector}]
+		ifNotNil: [{#component. blockClosure homeMethod methodClass. blockClosure homeMethod selector. blockClosure startpc}]
