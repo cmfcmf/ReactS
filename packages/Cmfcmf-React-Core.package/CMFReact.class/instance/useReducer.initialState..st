@@ -9,7 +9,7 @@ useReducer: reducer initialState: initialState
 					showln: '';
 					showln: 'Re-render node ', nodeId, ' due to useState -> set'.
 				self halt."
-				self reRenderNode: node];
+			self queueRenderNode: node];
 			yourself].
 	hook reducer: reducer.
 	^ hook
