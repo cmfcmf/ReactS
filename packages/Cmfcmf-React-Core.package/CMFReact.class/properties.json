@@ -12,7 +12,8 @@
 		"renderResult",
 		"isSubscribedToCodeChanges",
 		"batchedUpdates",
-		"pendingEffects" ],
+		"pendingEffects",
+		"queuedUpdates" ],
 	"name" : "CMFReact",
 	"pools" : [
 		 ],

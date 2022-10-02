@@ -9,4 +9,4 @@ reRenderNodeNow: anEntry
 			by: newRenderResult
 			isRoot: treeNode isOneOfTheRootNodes].
 	
-	anEntry allEntriesDo: [:entry | entry hooksDo: [:hook | (hook canTriggerRerender and: [hook isValueOutdatedBasedOnNodeTree: elementTree]) ifTrue: [self reRenderNode: entry]]]
+	anEntry allEntriesDo: [:entry | entry hooksDo: [:hook | (hook canTriggerRerender and: [hook isValueOutdatedBasedOnNodeTree: elementTree]) ifTrue: [self queueRenderNode: entry]]]
