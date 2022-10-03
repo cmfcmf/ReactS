@@ -1,4 +1,4 @@
 accessing
 key
 
-	self shouldNotImplement 
+	^ nil

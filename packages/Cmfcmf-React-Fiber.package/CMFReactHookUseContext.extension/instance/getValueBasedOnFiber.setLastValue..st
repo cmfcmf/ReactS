@@ -1,5 +1,5 @@
-private
-getValueBasedOnNodeTree: aCMFReactNodeTree setLastValue: aBoolean
+*Cmfcmf-React-Fiber
+getValueBasedOnFiber: aCMFReactNodeTree setLastValue: aBoolean
 
 	| contextProviderNode newValue |
 	contextProviderNode := node findNearestContextProviderFor: contextClass.

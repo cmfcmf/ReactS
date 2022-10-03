@@ -23,6 +23,8 @@
 		"testReorderNodes" : "tobe 10/3/2022 16:20",
 		"testRootComponentStaysTheSame" : "tobe 10/3/2022 17:12",
 		"testSkipsNil" : "tobe 10/3/2022 09:19",
+		"testUseContextDefault" : "tobe 10/3/2022 19:07",
+		"testUseContextProvided" : "tobe 10/3/2022 19:12",
 		"testUseEffectInUnmount" : "tobe 10/3/2022 18:53",
 		"testUseEffectWithEmptyDeps" : "tobe 10/3/2022 17:45",
 		"testUseEffectWithoutDeps" : "tobe 10/3/2022 17:47",

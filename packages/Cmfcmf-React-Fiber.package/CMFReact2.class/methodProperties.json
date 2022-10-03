@@ -14,7 +14,11 @@
 		"reRenderFiberNow:" : "tobe 10/3/2022 18:40",
 		"renderRoot:in:" : "tobe 10/3/2022 09:16",
 		"updateFrameDo:" : "tobe 10/3/2022 17:30",
+		"useCallback:dependencies:" : "tobe 10/3/2022 18:54",
+		"useContext:" : "tobe 10/3/2022 18:55",
 		"useEffect:" : "tobe 10/3/2022 17:46",
 		"useEffect:dependencies:" : "tobe 10/3/2022 17:43",
+		"useMemo:dependencies:" : "tobe 10/3/2022 18:54",
+		"useRef:" : "tobe 10/3/2022 18:56",
 		"useState:" : "tobe 10/3/2022 17:28",
 		"workLoop" : "tobe 10/3/2022 18:34" } }
