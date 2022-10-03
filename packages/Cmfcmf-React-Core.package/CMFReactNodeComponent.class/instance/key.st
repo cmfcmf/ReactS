@@ -1,4 +1,4 @@
 accessing
 key
 
-	^ props at: #key
+	^ props at: #key ifAbsent: [nil]
