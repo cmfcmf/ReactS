@@ -1,0 +1,23 @@
+{
+	"category" : "Cmfcmf-React-Fiber",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"node",
+		"key",
+		"child",
+		"sibling",
+		"parent",
+		"index",
+		"alternate",
+		"output",
+		"changes",
+		"hooks" ],
+	"name" : "CMFFiber",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

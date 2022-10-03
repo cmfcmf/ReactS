@@ -1,0 +1,25 @@
+{
+	"category" : "Cmfcmf-React-Fiber",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workInProgressRoot",
+		"currentRoot",
+		"nextFiber",
+		"hostConfig",
+		"rootComponent",
+		"rootHostNode",
+		"currentFiber",
+		"batchedUpdates",
+		"queuedUpdates",
+		"pendingEffects",
+		"parentFiber",
+		"workInProgressChild" ],
+	"name" : "CMFReact2",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"allBubblesDo:" : "tobe 10/3/2022 17:20",
+		"appendChild:" : "tobe 10/3/2022 08:59",
+		"children" : "tobe 10/3/2022 08:59",
+		"findTag:" : "tobe 10/3/2022 17:20",
+		"initialize" : "tobe 10/3/2022 10:03",
+		"printOn:" : "tobe 10/3/2022 09:34",
+		"props" : "tobe 10/3/2022 10:03",
+		"removeChild:" : "tobe 10/3/2022 09:36",
+		"set:to:" : "tobe 10/3/2022 10:24",
+		"setAll:" : "tobe 10/3/2022 13:16",
+		"tag" : "tobe 10/3/2022 09:03",
+		"tag:" : "tobe 10/3/2022 09:03" } }

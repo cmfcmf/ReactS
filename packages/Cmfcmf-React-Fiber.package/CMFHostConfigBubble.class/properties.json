@@ -1,15 +1,14 @@
 {
-	"category" : "Cmfcmf-React-Core",
+	"category" : "Cmfcmf-React-Fiber",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"node",
-		"renderInfo" ],
-	"name" : "CMFReactHooksChanged",
+		 ],
+	"name" : "CMFHostConfigBubble",
 	"pools" : [
 		 ],
-	"super" : "Error",
+	"super" : "CMFHostConfig",
 	"type" : "normal" }

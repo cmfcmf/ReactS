@@ -1,15 +1,16 @@
 {
-	"category" : "Cmfcmf-React-Core",
+	"category" : "Cmfcmf-React-Fiber",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"node",
-		"renderInfo" ],
-	"name" : "CMFReactHooksChanged",
+		"children",
+		"tag",
+		"props" ],
+	"name" : "CMFBubble",
 	"pools" : [
 		 ],
-	"super" : "Error",
+	"super" : "Object",
 	"type" : "normal" }

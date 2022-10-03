@@ -1,0 +1,20 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addPendingEffect:" : "tobe 10/3/2022 18:33",
+		"commitNodeChanges" : "tobe 10/3/2022 18:53",
+		"componentRenderFor:do:" : "tobe 10/3/2022 17:27",
+		"currentRoot" : "tobe 10/3/2022 17:08",
+		"hostConfig" : "tobe 10/3/2022 08:22",
+		"hostConfig:" : "tobe 10/3/2022 08:41",
+		"performPendingEffects" : "tobe 10/3/2022 17:44",
+		"queueRenderFiber:" : "tobe 10/3/2022 17:28",
+		"reRenderAll" : "tobe 10/3/2022 17:45",
+		"reRenderFiberNow:" : "tobe 10/3/2022 18:40",
+		"renderRoot:in:" : "tobe 10/3/2022 09:16",
+		"updateFrameDo:" : "tobe 10/3/2022 17:30",
+		"useEffect:" : "tobe 10/3/2022 17:46",
+		"useEffect:dependencies:" : "tobe 10/3/2022 17:43",
+		"useState:" : "tobe 10/3/2022 17:28",
+		"workLoop" : "tobe 10/3/2022 18:34" } }

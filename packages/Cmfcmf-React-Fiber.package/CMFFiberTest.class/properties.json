@@ -1,15 +1,15 @@
 {
-	"category" : "Cmfcmf-React-Core",
+	"category" : "Cmfcmf-React-Fiber",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"node",
-		"renderInfo" ],
-	"name" : "CMFReactHooksChanged",
+		"root",
+		"react" ],
+	"name" : "CMFFiberTest",
 	"pools" : [
 		 ],
-	"super" : "Error",
+	"super" : "TestCase",
 	"type" : "normal" }
