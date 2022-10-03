@@ -1,5 +1,5 @@
 tests - useRef
-testUseRef
+testUseRefForHostComponent
 
 	self openComponentBlock: [ | ref |
 		ref := CMFReact useRef: nil.
