@@ -9,7 +9,8 @@
 		"children",
 		"tag",
 		"props",
-		"key" ],
+		"key",
+		"ref" ],
 	"name" : "CMFReactNodeBubble",
 	"pools" : [
 		 ],
