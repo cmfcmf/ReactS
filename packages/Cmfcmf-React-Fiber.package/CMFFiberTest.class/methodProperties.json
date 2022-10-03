@@ -8,6 +8,8 @@
 		"testCanReRender" : "tobe 10/3/2022 09:28",
 		"testChangeNodeType" : "tobe 10/3/2022 10:01",
 		"testChangeProps" : "tobe 10/3/2022 14:43",
+		"testComponentMemoization" : "tobe 10/3/2022 22:09",
+		"testComponentMemoizationAfterChange" : "tobe 10/3/2022 22:11",
 		"testComponentStaysTheSame" : "tobe 10/3/2022 17:16",
 		"testCreateHostNode" : "tobe 10/3/2022 13:17",
 		"testCreateHostNodeNoArray" : "tobe 10/3/2022 09:36",
