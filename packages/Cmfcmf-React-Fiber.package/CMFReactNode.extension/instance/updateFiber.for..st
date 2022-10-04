@@ -7,6 +7,8 @@ updateFiber: aFiber for: aState
 		componentRenderFor: aFiber
 		do: [self computeChildrenAndUpdate: aFiber for: aState]) ifNil: [#()].
 	children ifNotNil: [ | newChild |
-		children isCollection ifFalse: [children := {children}].
+		children isCollection
+			ifFalse: [children := {children}]
+			ifTrue: [children := children flatten].
 		newChild := aFiber reconcileChildren: (children select: [:child | child notNil]) for: aState.
 		aFiber child: newChild]

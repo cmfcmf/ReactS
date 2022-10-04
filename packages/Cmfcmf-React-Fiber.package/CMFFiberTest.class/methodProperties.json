@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"bubble:" : "tobe 10/3/2022 09:03",
-		"openComponentBlock:" : "tobe 10/3/2022 09:50",
+		"openComponentBlock:" : "tobe 10/4/2022 16:20",
 		"testApplyProps" : "tobe 10/3/2022 10:06",
 		"testCanReRender" : "tobe 10/3/2022 09:28",
 		"testChangeNodeType" : "tobe 10/3/2022 10:01",
@@ -25,6 +25,8 @@
 		"testDeleteOnlyChild" : "tobe 10/3/2022 17:52",
 		"testDiscardsChildTreeOnTypeChange" : "tobe 10/4/2022 11:34",
 		"testInsertNestedNode" : "tobe 10/3/2022 16:48",
+		"testNestedPortal" : "tobe 10/4/2022 15:16",
+		"testOptionalChildInNestedPortal" : "tobe 10/4/2022 15:27",
 		"testPortal" : "tobe 10/3/2022 20:00",
 		"testReloadWithHooksChangeType" : "tobe 10/4/2022 08:19",
 		"testReorderNodes" : "tobe 10/3/2022 16:20",

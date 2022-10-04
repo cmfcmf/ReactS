@@ -7,4 +7,7 @@ doIn: aParentFiber for: aState
 		aState hostConfig
 			removeChild: fiber firstHostChild output
 			in: aParentFiber nextHostParent output].
-	fiber allFibersDo: [:child | child onComponentWasDestroyed]
+	fiber allFibersDo: [:child |
+		"FIXME not so pretty that this is here"
+		child node class = CMFReactNodePortal ifTrue: [child hostChildrenDo: [:c | aState hostConfig removeChild: c output in: child node container get]].
+		child onComponentWasDestroyed]

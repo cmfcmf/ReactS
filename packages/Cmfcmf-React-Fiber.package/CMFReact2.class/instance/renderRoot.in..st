@@ -5,6 +5,4 @@ renderRoot: aNode in: aHostNode
 	rootHostNode := aHostNode.
 	currentRoot := CMFFiber new node: (CMFRootNode new
 		child: rootComponent;
-		root: rootHostNode).
-	
-	self reRenderAll
+		root: rootHostNode)
