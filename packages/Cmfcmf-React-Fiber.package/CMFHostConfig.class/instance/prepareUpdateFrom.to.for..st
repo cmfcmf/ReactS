@@ -1,4 +1,4 @@
-as yet unclassified
+reconciliation
 prepareUpdateFrom: aNode to: anotherNode for: aHostNode
 
 	self subclassResponsibility

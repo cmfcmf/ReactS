@@ -2,15 +2,11 @@
 updateFiber: aFiber for: aState
 
 	| children |
-	aFiber resetHooks.
-	children := aState
+	aFiber prepareHooks.
+	children := (aState
 		componentRenderFor: aFiber
-		do: [self computeChildrenAndUpdate: aFiber for: aState].
-	children
-		ifNotNil: [
-			children isCollection ifFalse: [children := {children}].
-			
-			aFiber child: (aFiber reconcileChildren: (children select: [:child | child notNil]) for: aState)]
-		ifNil: [
-			aFiber child: nil.
-			aFiber alternate ifNotNil: [aFiber alternate childrenDo: [:child | aFiber addChange: (CMFChangeChildDeletion new fiber: child)]]]
+		do: [self computeChildrenAndUpdate: aFiber for: aState]) ifNil: [#()].
+	children ifNotNil: [ | newChild |
+		children isCollection ifFalse: [children := {children}].
+		newChild := aFiber reconcileChildren: (children select: [:child | child notNil]) for: aState.
+		aFiber child: newChild]

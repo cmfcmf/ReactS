@@ -1,6 +1,6 @@
 as yet unclassified
 reRenderFiberNow: aFiber
 
-	parentFiber := aFiber parent.
-	workInProgressChild := nextFiber := aFiber forReRender.
+	workInProgressParent := aFiber parent.
+	workInProgress := nextFiber := aFiber forReRender.
 	self workLoop

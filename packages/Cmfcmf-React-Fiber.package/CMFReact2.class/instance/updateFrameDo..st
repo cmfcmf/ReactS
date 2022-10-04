@@ -7,7 +7,7 @@ updateFrameDo: aBlock
 	batchedUpdates := Set new.
 	ret := aBlock value.
 	[
-		batchedUpdates do: [:id | self reRenderFiberNow: id].
+		batchedUpdates do: [:fiber | self reRenderFiberNow: fiber].
 		self performPendingEffects.
 		batchedUpdates := queuedUpdates.
 		queuedUpdates := Set new] doWhileTrue: [batchedUpdates notEmpty].

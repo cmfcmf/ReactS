@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"workInProgressRoot",
 		"currentRoot",
+		"workInProgress",
+		"workInProgressParent",
 		"nextFiber",
 		"hostConfig",
 		"rootComponent",
@@ -16,8 +17,7 @@
 		"batchedUpdates",
 		"queuedUpdates",
 		"pendingEffects",
-		"parentFiber",
-		"workInProgressChild" ],
+		"codeReload" ],
 	"name" : "CMFReact2",
 	"pools" : [
 		 ],

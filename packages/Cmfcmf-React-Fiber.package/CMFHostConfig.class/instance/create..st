@@ -1,4 +1,4 @@
-as yet unclassified
-create: aHostNode
+reconciliation
+create: aNode
 
 	^ self subclassResponsibility

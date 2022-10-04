@@ -1,4 +1,4 @@
-as yet unclassified
+reconciliation
 removeChild: aHostNode in: aParentHostNode
 
 	^ self subclassResponsibility

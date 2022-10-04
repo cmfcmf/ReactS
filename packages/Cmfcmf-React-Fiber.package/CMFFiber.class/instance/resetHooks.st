@@ -1,4 +1,4 @@
 hooks
 resetHooks
 
-	hooks ifNotNil: #removeAll
+	hooks := nil

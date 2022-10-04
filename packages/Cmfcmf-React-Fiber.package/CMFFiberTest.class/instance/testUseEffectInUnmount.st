@@ -11,7 +11,8 @@ testUseEffectInUnmount
 					useEffect: [
 						runs add: #effect.
 						[runs add: #cleanup]]
-					dependencies: {}] asComponent]].
+					dependencies: {}.
+				nil] asComponent]].
 	self assert: #(#effect) equals: runs asArray.
 	mounted := false.
 	react reRenderAll.

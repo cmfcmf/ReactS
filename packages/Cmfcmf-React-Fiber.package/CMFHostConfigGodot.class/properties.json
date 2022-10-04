@@ -6,7 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"pendingUpdates",
+		"callbacks",
+		"session",
+		"pendingRefs",
+		"changesBlock",
+		"waitingRefs" ],
 	"name" : "CMFHostConfigGodot",
 	"pools" : [
 		 ],

@@ -1,15 +1,14 @@
 as yet unclassified
 commitNodeChanges
 
+	hostConfig prepareForCommit.
+	workInProgress commitNodeChangesFor: self.
 	
-	parentFiber
-		ifNil: [
-			workInProgressRoot child ifNotNil: [:fiber | fiber commitNodeChangesFor: self].
-			currentRoot := workInProgressRoot]
-		ifNotNil: [
-			workInProgressChild ifNotNil: [:fiber | fiber commitNodeChangesFor: self].
-			parentFiber child: workInProgressChild].
+	workInProgressParent ifNil: [currentRoot := workInProgress] ifNotNil: [
+		self assert: workInProgressParent child = workInProgress alternate.
+		workInProgressParent child: workInProgress].
 	
-	parentFiber := nil.
-	workInProgressChild := nil.
-	workInProgressRoot := nil
+	workInProgressParent := nil.
+	workInProgress := nil.
+	
+	hostConfig resetAfterCommit

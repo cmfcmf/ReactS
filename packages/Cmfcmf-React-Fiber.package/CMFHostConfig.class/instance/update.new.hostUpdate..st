@@ -1,4 +1,4 @@
-as yet unclassified
+reconciliation
 update: aHostNode new: aNewNode hostUpdate: aHostUpdate
 
 	^ self subclassResponsibility

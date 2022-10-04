@@ -2,7 +2,15 @@ as yet unclassified
 createNodeTreeAndReturnNextFor: aState
 
 	| nextFiber |
-	self node updateFiber: self for: aState.
+	[self node updateFiber: self for: aState]
+		on: CMFReactHooksChanged
+		do: [:err |
+			aState codeReload ifFalse: [^ err signal].
+			self assert: err renderInfo = self.
+			self alternate resetHooks.
+			^ self].
+	
+	self node completeUpdateFiber: self for: aState.
 	
 	self child ifNotNil: [^ self child].
 	
@@ -10,8 +18,5 @@ createNodeTreeAndReturnNextFor: aState
 	[nextFiber] whileNotNil: [
 		nextFiber sibling ifNotNil: [^ nextFiber sibling].
 		nextFiber := nextFiber parent].
-	
-	"TODO move this to the respective component classes"
-	(self alternate notNil and: [self node isHostComponent]) ifTrue: [(aState hostConfig prepareUpdateFrom: self alternate node to: self node for: self output) ifNotNil: [:hostUpdate | self addChange: (CMFChangeUpdate new hostUpdate: hostUpdate)]].
 	
 	^ nil
