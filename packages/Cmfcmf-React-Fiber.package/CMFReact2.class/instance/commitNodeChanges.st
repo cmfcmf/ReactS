@@ -2,13 +2,11 @@ as yet unclassified
 commitNodeChanges
 
 	hostConfig prepareForCommit.
+	workInProgress changes.
 	workInProgress commitNodeChangesFor: self.
 	
-	workInProgressParent ifNil: [currentRoot := workInProgress] ifNotNil: [
-		self assert: workInProgressParent child = workInProgress alternate.
-		workInProgressParent child: workInProgress].
-	
-	workInProgressParent := nil.
+	attachNewFiber value: workInProgress.
 	workInProgress := nil.
+	attachNewFiber := nil.
 	
 	hostConfig resetAfterCommit

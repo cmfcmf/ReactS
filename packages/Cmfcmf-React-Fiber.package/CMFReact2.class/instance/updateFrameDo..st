@@ -3,16 +3,16 @@ updateFrameDo: aBlock
 
 	| ret |
 	self assert: batchedUpdates isNil.
-	queuedUpdates := Set new.
-	batchedUpdates := Set new.
+	queuedUpdates := OrderedCollection new.
+	batchedUpdates := OrderedCollection new.
 	
 	self hostConfig updateFrameDo: [
 		ret := aBlock value.
 		[
-			batchedUpdates do: [:fiber | self reRenderFiberNow: fiber].
+			batchedUpdates do: [:hook | self reRenderFiberNow: hook fiber].
 			self performPendingEffects.
 			batchedUpdates := queuedUpdates.
-			queuedUpdates := Set new] doWhileTrue: [batchedUpdates notEmpty]].
+			queuedUpdates := OrderedCollection new] doWhileTrue: [batchedUpdates notEmpty]].
 	batchedUpdates := nil.
 	queuedUpdates := nil.
 	self assert: batchedUpdates isNil.

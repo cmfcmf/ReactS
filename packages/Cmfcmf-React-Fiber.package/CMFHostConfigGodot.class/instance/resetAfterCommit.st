@@ -3,9 +3,11 @@ resetAfterCommit
 
 	changesBlock ifNil: [^ self].
 	
-	true ifTrue: [pendingUpdates do: [:u | Transcript showln: u]].
+	false ifTrue: [
+		Transcript showln: '------------'.
+		pendingUpdates do: [:u | Transcript showln: u]].
 	
 	waitingRefs := pendingRefs collect: #second.
-	changesBlock value: {pendingUpdates. pendingRefs collect: #first}.
+	changesBlock value: {pendingUpdates. pendingRefs collect: [:ref | self fullPathFor: ref first]}.
 	pendingUpdates removeAll.
 	pendingRefs removeAll

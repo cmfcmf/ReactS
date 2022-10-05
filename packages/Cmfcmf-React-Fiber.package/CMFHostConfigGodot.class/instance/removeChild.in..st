@@ -1,4 +1,6 @@
 reconciliation
 removeChild: aHostNode in: aParentHostNode
 
-	pendingUpdates add: {#delete. aHostNode second, '/', aHostNode fourth}
+	| path |
+	path := aHostNode second, '/', aHostNode fourth.
+	pendingUpdates add: {#delete. path. aHostNode fifth}

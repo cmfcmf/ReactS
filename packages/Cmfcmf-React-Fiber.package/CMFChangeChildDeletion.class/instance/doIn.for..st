@@ -3,10 +3,11 @@ doIn: aParentFiber for: aState
 
 	fiber commitNodeChangesFor: aState.
 	
-	fiber firstHostChild ifNotNil: [
+	fiber firstHostChild ifNotNil: [:child |
 		aState hostConfig
 			removeChild: fiber firstHostChild output
 			in: aParentFiber nextHostParent output].
+	
 	fiber allFibersDo: [:child |
 		"FIXME not so pretty that this is here"
 		child node class = CMFReactNodePortal ifTrue: [child hostChildrenDo: [:c | aState hostConfig removeChild: c output in: child node container get]].
