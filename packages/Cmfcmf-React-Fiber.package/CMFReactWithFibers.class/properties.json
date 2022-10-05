@@ -18,7 +18,7 @@
 		"pendingEffects",
 		"codeReload",
 		"attachNewFiber" ],
-	"name" : "CMFReact2",
+	"name" : "CMFReactWithFibers",
 	"pools" : [
 		 ],
 	"super" : "Object",
