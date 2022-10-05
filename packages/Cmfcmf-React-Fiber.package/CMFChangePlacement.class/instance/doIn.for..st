@@ -6,5 +6,6 @@ doIn: aFiber for: aState
 	aFiber node class = CMFReactNodePortal ifTrue: [^ self].
 	
 	parent := aFiber parent nextHostParent output.
-	sibling := aFiber getHostSibling ifNotNil: #output.
-	self insertOrAppend: aFiber before: sibling parent: parent for: aState
+	sibling := aFiber getHostSibling.
+	self assert: (aFiber node isHostComponent not or: [sibling isNil or: [sibling parent nextHostParent output = parent]]).
+	self insertOrAppend: aFiber before: (sibling ifNotNil: #output) parent: parent for: aState

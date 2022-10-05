@@ -3,10 +3,9 @@ doIn: aParentFiber for: aState
 
 	fiber commitNodeChangesFor: aState.
 	
-	fiber firstHostChild ifNotNil: [:child |
-		aState hostConfig
-			removeChild: fiber firstHostChild output
-			in: aParentFiber nextHostParent output].
+	fiber node isHostComponent
+		ifTrue: [aState hostConfig removeChild: fiber output in: aParentFiber nextHostParent output]
+		ifFalse: [fiber hostChildrenDo: [:child | aState hostConfig removeChild: child output in: aParentFiber nextHostParent output]].
 	
 	fiber allFibersDo: [:child |
 		"FIXME not so pretty that this is here"
