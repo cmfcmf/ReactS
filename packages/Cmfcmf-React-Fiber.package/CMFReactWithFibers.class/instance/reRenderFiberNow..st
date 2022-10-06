@@ -1,10 +1,10 @@
 as yet unclassified
 reRenderFiberNow: aFiber
 
+	| resultFiber |
 	attachNewFiber := aFiber parent
-		ifNil: [
-			"root fiber"
-			[:fiber | currentRoot := fiber]]
+		ifNil: ["root fiber"
+		[:fiber | currentRoot := fiber]]
 		ifNotNil: [
 			aFiber parent child = aFiber
 				ifTrue: [ | parent sibling |
@@ -23,4 +23,6 @@ reRenderFiberNow: aFiber
 						previous sibling: fiber.
 						fiber sibling: next]]].
 	workInProgress := nextFiber := aFiber forReRender.
-	self workLoop
+	resultFiber := self workLoop.
+	
+	resultFiber allFibersDo: [:fiber | fiber hooksDo: [:hook | (hook canTriggerRerender and: [hook valueOutdated]) ifTrue: [self queueRenderFrom: hook]]]

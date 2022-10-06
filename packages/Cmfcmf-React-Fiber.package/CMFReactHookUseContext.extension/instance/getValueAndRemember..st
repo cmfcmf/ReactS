@@ -1,5 +1,5 @@
 *Cmfcmf-React-Fiber
-getValueBasedOnFiber: aCMFReactNodeTree setLastValue: aBoolean
+getValueAndRemember: aBoolean
 
 	| contextProviderNode newValue |
 	contextProviderNode := fiber findNearestContextProviderFor: contextClass.

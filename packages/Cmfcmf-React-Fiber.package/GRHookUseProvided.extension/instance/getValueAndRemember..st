@@ -1,5 +1,5 @@
 *Cmfcmf-React-Fiber
-getValueBasedOnFiber: aCMFReactNodeTree setLastValue: aBoolean
+getValueAndRemember: aBoolean
 
 	| newValue validNamespaces |
 	validNamespaces := OrderedCollection with: namespace.

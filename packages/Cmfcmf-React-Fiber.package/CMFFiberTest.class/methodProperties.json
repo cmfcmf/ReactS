@@ -13,6 +13,7 @@
 		"testComponentMemoizationAfterChange" : "tobe 10/3/2022 22:11",
 		"testComponentStaysTheSame" : "tobe 10/3/2022 17:16",
 		"testConditionalReplace" : "tobe 10/4/2022 08:42",
+		"testContextInMemoizedComponent" : "tobe 10/6/2022 07:48",
 		"testCreateHostNode" : "tobe 10/3/2022 13:17",
 		"testCreateHostNodeNoArray" : "tobe 10/3/2022 09:36",
 		"testCreateMultipleHostNodes" : "tobe 10/3/2022 16:40",

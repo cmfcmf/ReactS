@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"getValueBasedOnFiber:setLastValue:" : "tobe 10/4/2022 16:18" } }
+		"getValueAndRemember:" : "tobe 10/6/2022 07:32",
+		"valueOutdated" : "tobe 10/6/2022 07:33" } }

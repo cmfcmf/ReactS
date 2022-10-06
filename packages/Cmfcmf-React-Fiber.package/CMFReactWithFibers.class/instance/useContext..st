@@ -6,4 +6,4 @@ useContext: contextClass
 		CMFReactHookUseContext new
 			contextClass: contextClass node: node;
 			yourself].
-	^ hook getValueBasedOnFiber: currentFiber setLastValue: true
+	^ hook getValueAndRemember: true
