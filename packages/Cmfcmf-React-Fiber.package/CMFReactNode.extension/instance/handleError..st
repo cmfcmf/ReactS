@@ -1,4 +1,4 @@
 *Cmfcmf-React-Fiber
-computeChildrenAndUpdate: aFiber for: aState
+handleError: anError
 
 	self subclassResponsibility

@@ -26,6 +26,8 @@
 		"testDeleteNodesWithNestedChildren" : "tobe 10/5/2022 22:43",
 		"testDeleteOnlyChild" : "tobe 10/3/2022 17:52",
 		"testDiscardsChildTreeOnTypeChange" : "tobe 10/4/2022 11:34",
+		"testErrorBoundary" : "tobe 10/6/2022 12:43",
+		"testErrorBoundaryWithPartialResults" : "tobe 10/6/2022 15:01",
 		"testInsertNestedNode" : "tobe 10/3/2022 16:48",
 		"testNestedPortal" : "tobe 10/4/2022 15:16",
 		"testOptionalChildInNestedPortal" : "tobe 10/4/2022 15:27",

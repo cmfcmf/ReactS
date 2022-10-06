@@ -1,8 +1,8 @@
 as yet unclassified
-createNodeTreeAndReturnNextFor: aState
+createNodeTreeAndReturnNextFor: aState caughtError: anErrorOrNil
 
 	| nextFiber |
-	[self node updateFiber: self for: aState]
+	[self node updateFiber: self for: aState caughtError: anErrorOrNil]
 		on: CMFReactHooksChanged
 		do: [:err |
 			aState codeReload ifFalse: [^ err signal].
