@@ -11,14 +11,12 @@ updateFrameDo: aBlock
 		[
 			batchedUpdates do: [:hook |
 				true
-					ifTrue: [
-						"rerendering just the fiber not the entire app still results in subtle reconciliation bugs during use. sadly haven't managed to isolate them in tests yet, so this is what we have for now. Note that re-rendering through contexts still works because memoized components consult this class to know whether they are forced to rerender."
-						self reRenderFiberNow: currentRoot]
+					ifTrue: ["rerendering just the fiber not the entire app still results in subtle reconciliation bugs during use. sadly haven't managed to isolate them in tests yet, so this is what we have for now. Note that re-rendering through contexts still works because memoized components consult this class to know whether they are forced to rerender."
+					self reRenderFiberNow: currentRoot]
 					ifFalse: [self reRenderFiberNow: hook fiber]].
 			self performPendingEffects.
-			batchedUpdates := queuedUpdates.
+			batchedUpdates := queuedUpdates withoutDuplicates.
 			queuedUpdates := OrderedCollection new] doWhileTrue: [batchedUpdates notEmpty]].
 	batchedUpdates := nil.
 	queuedUpdates := nil.
-	self assert: batchedUpdates isNil.
 	^ ret
