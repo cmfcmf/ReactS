@@ -9,7 +9,8 @@
 		"elementClass",
 		"selector",
 		"props",
-		"blockClosure" ],
+		"blockClosure",
+		"memoize" ],
 	"name" : "CMFReactNodeComponent",
 	"pools" : [
 		 ],

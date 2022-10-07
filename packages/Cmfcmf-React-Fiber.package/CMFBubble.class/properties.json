@@ -1,0 +1,16 @@
+{
+	"category" : "Cmfcmf-React-Fiber",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"children",
+		"tag",
+		"props" ],
+	"name" : "CMFBubble",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

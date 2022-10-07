@@ -1,0 +1,18 @@
+{
+	"category" : "Cmfcmf-React-Fiber",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"children",
+		"tag",
+		"props",
+		"key",
+		"ref" ],
+	"name" : "CMFReactNodeBubble",
+	"pools" : [
+		 ],
+	"super" : "CMFReactNode",
+	"type" : "normal" }

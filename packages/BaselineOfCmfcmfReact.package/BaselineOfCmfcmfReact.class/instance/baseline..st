@@ -18,11 +18,12 @@ baseline: spec
 				package: 'Cmfcmf-React-Morphs';
 				package: 'Cmfcmf-React-Tests'
 					with: [spec requires: #('Cmfcmf-React-Core' 'Cmfcmf-React-Examples-Core' 'MorphicTestingFramework')];
+				package: 'Cmfcmf-React-Fiber' with: [spec requires: #('Cmfcmf-React-Core')];
 				package: 'Cmfcmf-React-Examples-Core';
 				package: 'Cmfcmf-React-Examples-Pheno' with: [spec requires: #('Pheno')];
 				yourself.
 			spec
 				group: 'default' with: #('Cmfcmf-React-Core' 'Cmfcmf-React-Examples-Core');
-				group: 'tests' with: #('Cmfcmf-React-Tests');
+				group: 'tests' with: #('Cmfcmf-React-Tests' 'Cmfcmf-React-Fiber');
 				group: 'withPheno' with: #('default' 'Cmfcmf-React-Examples-Pheno') yourself];
 		yourself

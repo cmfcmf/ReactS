@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Fiber",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"hostUpdate" ],
+	"name" : "CMFChangeUpdate",
+	"pools" : [
+		 ],
+	"super" : "CMFChange",
+	"type" : "normal" }

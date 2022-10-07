@@ -1,7 +1,7 @@
 hooks
 useState: default
 
-	^ self getHook: CMFReactHookUseState IfAbsent: [:node |
+	^ self getHook: CMFReactHookUseState ifAbsent: [:node |
 		CMFReactHookUseState new
 			initState: default onChange: [self queueRenderNode: node];
 			yourself]

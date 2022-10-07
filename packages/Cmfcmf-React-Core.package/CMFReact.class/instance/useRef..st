@@ -1,7 +1,7 @@
 hooks
 useRef: default
 
-	^ self getHook: CMFReactHookUseRef IfAbsent: [:node |
+	^ self getHook: CMFReactHookUseRef ifAbsent: [:node |
 		CMFReactHookUseRef new
 			initState: default;
 			yourself]

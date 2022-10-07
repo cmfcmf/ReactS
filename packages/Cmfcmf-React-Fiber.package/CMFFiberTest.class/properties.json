@@ -1,0 +1,15 @@
+{
+	"category" : "Cmfcmf-React-Fiber",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"root",
+		"react" ],
+	"name" : "CMFFiberTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

@@ -1,0 +1,16 @@
+{
+	"category" : "Cmfcmf-React-Fiber",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"children",
+		"fallback",
+		"caughtError" ],
+	"name" : "CMFErrorBoundary",
+	"pools" : [
+		 ],
+	"super" : "CMFReactNode",
+	"type" : "normal" }
