@@ -13,8 +13,8 @@ testOptionalNonHostChildInNestedPortal
 				self bubble: #Child1.
 				optional
 					ifTrue: [
-						GRUseProviderNamespace
-							namespace: #a
+						CMFReactTestContext
+							asProviderNodeWithValue: #a
 							children: {CMFReactNodePortal child: (self bubble: #Teleported) in: ref}]
 					ifFalse: [].
 				self bubble: #Child2}}].
