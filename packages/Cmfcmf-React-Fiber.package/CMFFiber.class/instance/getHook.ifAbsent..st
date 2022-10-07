@@ -1,5 +1,5 @@
 hooks
-getHook: aCMFReactHookClass IfAbsent: aBlock
+getHook: aCMFReactHookClass ifAbsent: aBlock
 
 	| hook |
 	(self alternate isNil or: [self alternate hasPreviousHooks not]) ifTrue: [^ self hooks add: ((aBlock value: nil) fiber: self)].

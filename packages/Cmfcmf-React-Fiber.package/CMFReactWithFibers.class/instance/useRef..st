@@ -1,7 +1,7 @@
 as yet unclassified
 useRef: default
 
-	^ currentFiber getHook: CMFReactHookUseRef IfAbsent: [:node |
+	^ currentFiber getHook: CMFReactHookUseRef ifAbsent: [:node |
 		CMFReactHookUseRef new
 			initState: default;
 			yourself]

@@ -4,7 +4,7 @@ useEffect: effect dependencies: dependencies
 	| hook |
 	hook := currentFiber
 		getHook: CMFReactHookUseEffect
-		IfAbsent: [:node | CMFReactHookUseEffect new].
+		ifAbsent: [:node | CMFReactHookUseEffect new].
 	hook
 		updateEffect: effect;
 		updateDependencies: dependencies.

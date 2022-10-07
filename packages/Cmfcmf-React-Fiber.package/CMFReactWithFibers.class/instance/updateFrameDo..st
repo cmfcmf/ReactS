@@ -12,9 +12,7 @@ updateFrameDo: aBlock
 			batchedUpdates do: [:hook |
 				true
 					ifTrue: [
-						"rerendering just the fiber not the entire app still results in subtle reconciliation bugs during use. sadly haven't managed to isolate them in tests yet, so this is what we have for now. Note that re-rendering through contexts still works because memoized components consult this class to know whether they are "
-						forced to rerender.
-						"."
+						"rerendering just the fiber not the entire app still results in subtle reconciliation bugs during use. sadly haven't managed to isolate them in tests yet, so this is what we have for now. Note that re-rendering through contexts still works because memoized components consult this class to know whether they are forced to rerender."
 						self reRenderFiberNow: currentRoot]
 					ifFalse: [self reRenderFiberNow: hook fiber]].
 			self performPendingEffects.

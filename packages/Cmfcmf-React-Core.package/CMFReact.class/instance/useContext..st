@@ -2,7 +2,7 @@ hooks
 useContext: contextClass
 
 	| hook |
-	hook := self getHook: CMFReactHookUseContext IfAbsent: [:node |
+	hook := self getHook: CMFReactHookUseContext ifAbsent: [:node |
 		CMFReactHookUseContext new
 			contextClass: contextClass node: node;
 			yourself].

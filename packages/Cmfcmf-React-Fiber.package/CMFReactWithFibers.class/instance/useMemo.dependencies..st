@@ -4,7 +4,7 @@ useMemo: block dependencies: dependencies
 	| hook |
 	hook := currentFiber
 		getHook: CMFReactHookUseMemo
-		IfAbsent: [:node | CMFReactHookUseMemo new].
+		ifAbsent: [:node | CMFReactHookUseMemo new].
 	hook
 		updateBlock: block;
 		updateDependencies: dependencies.
