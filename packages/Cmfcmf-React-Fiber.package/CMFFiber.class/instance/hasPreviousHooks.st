@@ -1,0 +1,4 @@
+hooks
+hasPreviousHooks
+
+	^ hooks notNil

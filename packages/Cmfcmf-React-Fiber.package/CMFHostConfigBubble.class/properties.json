@@ -1,0 +1,14 @@
+{
+	"category" : "Cmfcmf-React-Fiber",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CMFHostConfigBubble",
+	"pools" : [
+		 ],
+	"super" : "CMFHostConfig",
+	"type" : "normal" }

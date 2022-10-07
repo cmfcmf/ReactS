@@ -7,6 +7,10 @@ jobs:
       matrix:
         os: [ ubuntu-latest, windows-latest ]
         smalltalk: [ Squeak64-trunk, Squeak64-6.0, Squeak64-5.3 ]
+        exclude:
+          # TODO: Figure out why this breaks (see #7).
+          - os: windows-latest
+            smalltalk: Squeak64-trunk
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2

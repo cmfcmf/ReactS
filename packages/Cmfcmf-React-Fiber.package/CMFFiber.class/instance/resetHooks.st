@@ -1,0 +1,4 @@
+hooks
+resetHooks
+
+	hooks := nil

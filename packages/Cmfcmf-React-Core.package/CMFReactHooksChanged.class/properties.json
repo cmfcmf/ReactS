@@ -11,5 +11,5 @@
 	"name" : "CMFReactHooksChanged",
 	"pools" : [
 		 ],
-	"super" : "Exception",
+	"super" : "Error",
 	"type" : "normal" }

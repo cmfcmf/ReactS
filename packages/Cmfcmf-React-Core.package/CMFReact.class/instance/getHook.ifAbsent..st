@@ -1,5 +1,5 @@
 hooks
-getHook: aCMFReactHookClass IfAbsent: aBlock
+getHook: aCMFReactHookClass ifAbsent: aBlock
 
 	| hook entry |
 	self assert: hookIndex notNil.

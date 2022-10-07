@@ -1,12 +1,11 @@
 hooks
 useMemo: block dependencies: dependencies
 
-
 	| hook |
-	hook := self getHook: CMFReactHookUseMemo IfAbsent: [:node | CMFReactHookUseMemo new].
+	hook := self getHook: CMFReactHookUseMemo ifAbsent: [:node | CMFReactHookUseMemo new].
 	
-	hook 
+	hook
 		updateBlock: block;
-		updateDependencies: dependencies.	
-		
+		updateDependencies: dependencies.
+	
 	^ hook get
