@@ -9,4 +9,4 @@ testDiscardsChildTreeOnTypeChange
 	change := true.
 	react reRenderAll.
 	new := (root findTag: #B) findTag: #Child.
-	self deny: original identical: new
+	self deny: original == new

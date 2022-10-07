@@ -10,4 +10,4 @@ testDeleteNodeAtStart
 	delete := true.
 	react reRenderAll.
 	self assert: {#Hello} equals: (root children collect: #tag as: Array).
-	self deny: second identical: root children first
+	self deny: second == root children first
