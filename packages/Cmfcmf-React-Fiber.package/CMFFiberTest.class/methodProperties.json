@@ -28,6 +28,8 @@
 		"testDiscardsChildTreeOnTypeChange" : "tobe 10/4/2022 11:34",
 		"testErrorBoundary" : "tobe 10/6/2022 12:43",
 		"testErrorBoundaryWithPartialResults" : "tobe 10/6/2022 15:01",
+		"testErrorWithoutBoundary" : "tobe 10/7/2022 05:22",
+		"testErrorWithoutBoundaryAtStart" : "tobe 10/7/2022 05:23",
 		"testInsertNestedNode" : "tobe 10/3/2022 16:48",
 		"testNestedPortal" : "tobe 10/4/2022 15:16",
 		"testOptionalChildInNestedPortal" : "tobe 10/4/2022 15:27",

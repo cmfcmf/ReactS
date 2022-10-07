@@ -2,9 +2,9 @@ as yet unclassified
 updateFrameDo: aBlock
 
 	| ret |
-	self assert: batchedUpdates isNil.
 	queuedUpdates := OrderedCollection new.
-	batchedUpdates := OrderedCollection new.
+	"if not nil, a previous attempt to update failed"
+	batchedUpdates := batchedUpdates ifNil: [OrderedCollection new].
 	
 	self hostConfig updateFrameDo: [
 		ret := aBlock value.
