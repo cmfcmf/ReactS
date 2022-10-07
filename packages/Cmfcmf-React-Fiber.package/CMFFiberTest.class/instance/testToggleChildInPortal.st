@@ -12,8 +12,8 @@ testToggleChildInPortal
 			(self bubble: #Parent) children: {
 				self bubble: #Child1.
 				optional ifTrue: [
-					GRUseProviderNamespace
-						namespace: #a
+					CMFReactTestContext
+						asProviderNodeWithValue: #a
 						children: {CMFReactNodePortal child: (self bubble: #Teleported) in: ref}].
 				self bubble: #Child2}}].
 	
