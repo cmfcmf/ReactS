@@ -5,7 +5,7 @@ workLoop
 		nextFiber := [nextFiber createNodeTreeAndReturnNextFor: self caughtError: nil]
 			on: Error
 			do: [:error |
-				(nextFiber orParentFiberSatisfying: [:fiber | fiber node handlesError])
+				(nextFiber orParentSatisfying: [:fiber | fiber node handlesError])
 					ifNotNil: [:fiber | fiber createNodeTreeAndReturnNextFor: self caughtError: error]
 					ifNil: [error signal]]].
 	^ self commitNodeChanges

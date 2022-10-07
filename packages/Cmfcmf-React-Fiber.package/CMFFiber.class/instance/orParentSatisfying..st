@@ -2,5 +2,5 @@ as yet unclassified
 orParentSatisfying: aBlock
 
 	^ (aBlock value: self)
-		ifTrue: [node]
+		ifTrue: [self]
 		ifFalse: [parent ifNotNil: [parent orParentSatisfying: aBlock]]
