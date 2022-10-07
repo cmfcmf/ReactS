@@ -22,7 +22,7 @@ baseline: spec
 				package: 'Cmfcmf-React-Examples-Pheno' with: [spec requires: #('Pheno')];
 				yourself.
 			spec
-				group: 'default' with: #('Cmfcmf-React-Core' 'Cmfcmf-React-Examples-Core');
+				group: 'default' with: #('Cmfcmf-React-Core' 'Cmfcmf-React-Fiber' 'Cmfcmf-React-Examples-Core');
 				group: 'tests' with: #('Cmfcmf-React-Tests');
 				group: 'withPheno' with: #('default' 'Cmfcmf-React-Examples-Pheno') yourself];
 		yourself
