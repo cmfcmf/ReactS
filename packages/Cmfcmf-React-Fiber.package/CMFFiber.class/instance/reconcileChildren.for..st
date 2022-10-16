@@ -66,7 +66,13 @@ reconcileChildren: aCollection for: aState
 				CMFFiber new
 					parent: self;
 					node: newNode]
-			ifNotNil: [oldFiber reuseFor: newNode parent: self].
+			ifNotNil: [
+				oldFiber node type = newNode type
+					ifTrue: [oldFiber reuseFor: newNode parent: self]
+					ifFalse: [
+						CMFFiber new
+							node: newNode;
+							parent: self]].
 		
 		newFiber ifNotNil: [
 			newFiber alternate ifNotNil: [" we chose to reuse the fiber, so we should not delete it later on "

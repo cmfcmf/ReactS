@@ -27,6 +27,7 @@
 		"testDeleteNodesWithNestedChildren" : "tobe 10/5/2022 22:43",
 		"testDeleteOnlyChild" : "tobe 10/3/2022 17:52",
 		"testDiscardsChildTreeOnTypeChange" : "tobe 10/7/2022 08:28",
+		"testDynamicListWithHooksAfter" : "tobe 10/16/2022 16:55",
 		"testErrorBoundary" : "tobe 10/6/2022 12:43",
 		"testErrorBoundaryWithPartialResults" : "tobe 10/6/2022 15:01",
 		"testErrorWithoutBoundary" : "tobe 10/7/2022 05:22",
