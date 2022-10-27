@@ -2,4 +2,5 @@ as yet unclassified
 initialize
 
 	super initialize.
-	codeReload := false
+	codeReload := false.
+	closed := false

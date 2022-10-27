@@ -17,6 +17,7 @@
 		"queuedUpdates",
 		"pendingEffects",
 		"codeReload",
+		"closed",
 		"attachNewFiber" ],
 	"name" : "CMFReactWithFibers",
 	"pools" : [
