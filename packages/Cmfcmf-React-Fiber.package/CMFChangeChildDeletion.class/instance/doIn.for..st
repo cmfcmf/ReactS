@@ -9,5 +9,5 @@ doIn: aParentFiber for: aState
 	
 	fiber allFibersDo: [:child |
 		"FIXME not so pretty that this is here"
-		child node class = CMFReactNodePortal ifTrue: [child hostChildrenDo: [:c | aState hostConfig removeChild: c output in: child node container get]].
+		(fiber ~= child and: [child node class = CMFReactNodePortal]) ifTrue: [child hostChildrenDo: [:c | aState hostConfig removeChild: c output in: child node container get]].
 		child onComponentWasDestroyed]
