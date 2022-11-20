@@ -1,4 +1,4 @@
-as yet unclassified
+lifecycle
 updateEffect: aBlock
 
 	effect := aBlock

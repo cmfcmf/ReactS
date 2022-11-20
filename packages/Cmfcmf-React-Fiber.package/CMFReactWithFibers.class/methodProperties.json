@@ -26,5 +26,6 @@
 		"useEffect:dependencies:" : "tobe 10/7/2022 05:56",
 		"useMemo:dependencies:" : "tobe 10/7/2022 05:56",
 		"useRef:" : "tobe 10/7/2022 05:56",
+		"useSingletonEffect:dependencies:" : "generated 11/20/2022 18:08",
 		"useState:" : "tobe 10/7/2022 05:56",
 		"workLoop" : "tobe 10/7/2022 05:52" } }

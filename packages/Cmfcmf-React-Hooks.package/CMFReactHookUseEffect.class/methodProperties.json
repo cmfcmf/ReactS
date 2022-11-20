@@ -2,6 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
+		"initialize" : "generated 11/20/2022 17:59",
+		"onCodeChanged" : "generated 11/20/2022 17:59",
 		"onComponentWasDestroyed" : "tobe 10/1/2022 20:05",
 		"onComponentWasRendered" : "tobe 10/1/2022 21:05",
+		"rerunOnCodeChange" : "generated 11/20/2022 17:58",
+		"rerunOnCodeChange:" : "generated 11/20/2022 17:58",
 		"updateEffect:" : "cmfcmf 9/28/2022 20:15" } }

@@ -11,6 +11,7 @@
 		"useReducer:initialArg:init:" : "cmfcmf 4/2/2021 14:09",
 		"useReducer:initialState:" : "cmfcmf 4/2/2021 14:09",
 		"useRef:" : "cmfcmf 4/2/2021 12:44",
+		"useSingletonEffect:dependencies:" : "generated 11/20/2022 18:01",
 		"useState:" : "cmfcmf 4/2/2021 12:44" },
 	"instance" : {
 		"addChild:in:" : "tobe 9/17/2022 12:04",
@@ -50,4 +51,5 @@
 		"useReducer:initialArg:init:" : "cmfcmf 4/2/2021 14:23",
 		"useReducer:initialState:" : "tobe 10/7/2022 05:57",
 		"useRef:" : "tobe 10/7/2022 05:57",
+		"useSingletonEffect:dependencies:" : "generated 11/20/2022 18:00",
 		"useState:" : "tobe 10/7/2022 05:56" } }
