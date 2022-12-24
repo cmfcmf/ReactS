@@ -18,7 +18,8 @@
 		"pendingEffects",
 		"codeReload",
 		"closed",
-		"attachNewFiber" ],
+		"attachNewFiber",
+		"codeLocations" ],
 	"name" : "CMFReactWithFibers",
 	"pools" : [
 		 ],

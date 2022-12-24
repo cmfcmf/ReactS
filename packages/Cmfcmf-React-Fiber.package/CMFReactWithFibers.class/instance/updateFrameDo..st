@@ -7,7 +7,7 @@ updateFrameDo: aBlock
 	batchedUpdates := batchedUpdates ifNil: [OrderedCollection new].
 	
 	self hostConfig updateFrameDo: [
-		ret := aBlock value.
+		CMFCurrentReact value: self during: [ret := aBlock value].
 		[
 			true
 				ifTrue: ["rerendering just the fiber not the entire app still results in subtle reconciliation bugs during use. sadly haven't managed to isolate them in tests yet, so this is what we have for now. Note that re-rendering through contexts still works because memoized components consult this class to know whether they are forced to rerender."
